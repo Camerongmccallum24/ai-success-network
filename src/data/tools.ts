@@ -310,5 +310,255 @@ export const tools: Tool[] = [
       'Success plan collaboration',
       'Shared account management'
     ]
-  }
-];
+  },
+  {
+    id: '13',
+      name: 'AdoptionPilot',
+      description: 'AI-driven product adoption platform that identifies user behavior patterns and delivers personalized in-app guidance to drive customer success.',
+      category: 'Product Adoption',
+      pricing: {
+        type: 'Freemium',
+        startingPrice: '$99/mo'
+      },
+      features: [
+        'Behavioral analytics dashboard',
+        'Personalized in-app walkthroughs',
+        'Adoption success scoring',
+        'Feature usage tracking'
+      ],
+      integrations: ['Mixpanel', 'Amplitude', 'Salesforce', 'Segment'],
+      rating: 4.7,
+      reviews: 88,
+      imageUrl: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Driving feature adoption',
+        'Reducing time-to-value',
+        'Improving user activation'
+      ]
+    },
+    {
+      id: '14',
+      name: 'AccountIntel',
+      description: 'Strategic account management tool that uses AI to analyze customer relationships and identify upsell/retention opportunities.',
+      category: 'Strategic Account Management',
+      pricing: {
+        type: 'Paid',
+        startingPrice: '$199/mo'
+      },
+      features: [
+        'Opportunity detection engine',
+        'Cross-functional account planning',
+        'Risk alert system',
+        'Competitor benchmarking'
+      ],
+      integrations: ['Salesforce', 'LinkedIn Sales Navigator', 'G Suite', 'ZoomInfo'],
+      rating: 4.6,
+      reviews: 76,
+      imageUrl: 'https://images.unsplash.com/photo-1596394512332-ecb7a74f0d1f?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Maximizing account growth',
+        'Mitigating relationship risks',
+        'Coordinating cross-functional teams'
+      ]
+    },
+    {
+      id: '15',
+      name: 'RevForecast AI',
+      description: 'Revenue intelligence platform that predicts customer revenue risks and opportunities using historical and behavioral data.',
+      category: 'Revenue Intelligence',
+      pricing: {
+        type: 'Paid',
+        startingPrice: '$249/mo'
+      },
+      features: [
+        'Predictive revenue modeling',
+        'Deal risk probability scoring',
+        'Expansion opportunity mapping',
+        'Renewal likelihood analysis'
+      ],
+      integrations: ['Stripe', 'HubSpot', 'Tableau', 'Looker'],
+      rating: 4.5,
+      reviews: 63,
+      imageUrl: 'https://images.unsplash.com/photo-1602073441803-112fcda04576?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Forecasting renewal rates',
+        'Identifying expansion risks',
+        'Optimizing upsell timing'
+      ]
+    },
+    {
+      id: '16',
+      name: 'Learnify',
+      description: 'AI-powered customer education platform that creates personalized learning paths to improve product proficiency.',
+      category: 'Customer Education',
+      pricing: {
+        type: 'Freemium',
+        startingPrice: '$49/mo'
+      },
+      features: [
+        'Adaptive learning paths',
+        'Knowledge gap analysis',
+        'Interactive training modules',
+        'Certification tracking'
+      ],
+      integrations: ['LearnUpon', 'Docebo', 'Udemy', 'Salesforce'],
+      rating: 4.4,
+      reviews: 57,
+      imageUrl: 'https://images.unsplash.com/photo-1603398938378-3b3e9b426a6c?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Onboarding new users',
+        'Product certification programs',
+        'Continuous skill development'
+      ]
+    },
+    {
+      id: '17',
+      name: 'KnowledgeMate',
+      description: 'Self-service support platform with AI-powered knowledge base that evolves with customer queries and feedback.',
+      category: 'Self-Service Solutions',
+      pricing: {
+        type: 'Paid',
+        startingPrice: '$89/mo'
+      },
+      features: [
+        'Smart search with intent recognition',
+        'Predictive content suggestions',
+        'Usage analytics dashboard',
+        'Automated content updates'
+      ],
+      integrations: ['Zendesk', 'Intercom', 'Freshdesk', 'Notion'],
+      rating: 4.5,
+      reviews: 71,
+      imageUrl: 'https://images.unsplash.com/photo-1581090762342-fbs562c72575e?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Reducing support tickets',
+        'Scaling customer education',
+        'Improving resolution speed'
+      ]
+    },
+    {
+      id: '18',
+      name: 'FutureInsight',
+      description: 'Advanced predictive analytics engine that forecasts customer behavior and recommends proactive actions.',
+      category: 'Predictive Analytics',
+      pricing: {
+        type: 'Paid',
+        startingPrice: '$349/mo'
+      },
+      features: [
+        'Multi-scenario forecasting',
+        'Anomaly detection',
+        'Action recommendation engine',
+        'Custom prediction models'
+      ],
+      integrations: ['Snowflake', 'AWS SageMaker', 'Google BigQuery', 'Microsoft Azure'],
+      rating: 4.6,
+      reviews: 94,
+      imageUrl: 'https://images.unsplash.com/photo-1550751822-b3c4ffd2f7c6?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Churn risk prediction',
+        'Expansion opportunity identification',
+        'Behavioral forecasting'
+      ]
+    },
+    {
+      id: '19',
+      name: 'TaskFlow AI',
+      description: 'Workflow automation tool that prioritizes and automates repetitive customer success tasks using AI-driven insights.',
+      category: 'Workflow Automation',
+      pricing: {
+        type: 'Freemium',
+        startingPrice: '$39/mo'
+      },
+      features: [
+        'Task prioritization engine',
+        'Rule-based automation',
+        'Time-saving analytics',
+        'Team workload balancing'
+      ],
+      integrations: ['Zapier', 'Slack', 'Asana', 'Trello'],
+      rating: 4.3,
+      reviews: 52,
+      imageUrl: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Streamlining daily workflows',
+        'Automating follow-ups',
+        'Optimizing team productivity'
+      ]
+    },
+    {
+      id: '20',
+      name: 'PathFinder',
+      description: 'AI-powered customer journey mapping tool that visualizes touchpoints and recommends optimizations.',
+      category: 'Customer Journey Mapping',
+      pricing: {
+        type: 'Paid',
+        startingPrice: '$149/mo'
+      },
+      features: [
+        'Interactive journey visualization',
+        'Touchpoint optimization',
+        'Behavioral pattern recognition',
+        'Impact analysis simulations'
+      ],
+      integrations: ['Google Analytics', 'Hotjar', 'Heap', 'Segment'],
+      rating: 4.4,
+      reviews: 68,
+      imageUrl: 'https://images.unsplash.com/photo-1552674603-0e1fd9b2398e?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Identifying friction points',
+        'Optimizing onboarding flows',
+        'Aligning cross-functional teams'
+      ]
+    },
+    {
+      id: '21',
+      name: 'VoiceHub',
+      description: 'Unified feedback management platform that consolidates and analyzes customer feedback across all channels.',
+      category: 'Feedback Management',
+      pricing: {
+        type: 'Paid',
+        startingPrice: '$109/mo'
+      },
+      features: [
+        'Omnichannel feedback aggregation',
+        'Trend detection engine',
+        'Sentiment clustering',
+        'Action item prioritization'
+      ],
+      integrations: ['SurveyMonkey', 'Typeform', 'Zendesk', 'Intercom'],
+      rating: 4.5,
+      reviews: 83,
+      imageUrl: 'https://images.unsplash.com/photo-1506126613408-eca07ce687b7?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Centralizing feedback',
+        'Prioritizing product improvements',
+        'Tracking satisfaction trends'
+      ]
+    },
+    {
+      id: '22',
+      name: 'PartnerSync',
+      description: 'AI-enabled partner success platform that manages and optimizes relationships with resellers, agencies, and integrators.',
+      category: 'Partner Success',
+      pricing: {
+        type: 'Paid',
+        startingPrice: '$189/mo'
+      },
+      features: [
+        'Partner performance analytics',
+        'Co-selling opportunity identification',
+        'Collaboration hub',
+        'Joint success planning'
+      ],
+      integrations: ['Slack', 'Salesforce', 'Microsoft Teams', 'HubSpot'],
+      rating: 4.3,
+      reviews: 47,
+      imageUrl: 'https://images.unsplash.com/photo-1526044800702-f4f5bd26f597?auto=format&fit=crop&w=800&q=80',
+      useCases: [
+        'Managing channel partners',
+        'Aligning co-selling strategies',
+        'Optimizing ecosystem relationships'
+      ]
+    }
+  ]

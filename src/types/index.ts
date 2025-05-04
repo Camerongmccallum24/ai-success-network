@@ -15,10 +15,20 @@ export interface Tool {
   useCases: string[];
 }
 
-export type Category =
+export type ToolCategory = 
   | 'Customer Analytics'
   | 'Support Automation'
   | 'Sentiment Analysis'
   | 'Onboarding Tools'
   | 'Retention Management'
-  | 'Customer Health Scoring';
+  | 'Customer Health Scoring'
+  | 'Product Adoption'
+  | 'Strategic Account Management'
+  | 'Revenue Intelligence'
+  | 'Customer Education'
+  | 'Self-Service Solutions'
+  | 'Predictive Analytics'
+  | 'Workflow Automation'
+  | 'Customer Journey Mapping'
+  | 'Feedback Management'
+  | 'Partner Success';

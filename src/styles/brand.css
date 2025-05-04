@@ -1,0 +1,36 @@
+/* AI Success Network Brand System */
+
+:root {
+  /* Brand Colors */
+  --brand-midnight: #0A244A;
+  --brand-emerald: #1EC46D;
+  --brand-orange: #FF7F50;
+  --brand-sky: #47A3F3;
+  --brand-dark: #2F394D;
+  --brand-darker: #1A2B4A;
+  --brand-light: #F5F5F5;
+}
+
+/* Brand-specific utility classes */
+.brand-gradient {
+  background: linear-gradient(135deg, var(--brand-midnight), var(--brand-darker));
+  position: relative;
+  overflow: hidden;
+}
+
+.brand-button {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  background-color: var(--brand-orange);
+  color: white;
+}
+
+.brand-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.brand-network-pattern {
+  background-image: radial-gradient(var(--brand-sky) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.1;
+}

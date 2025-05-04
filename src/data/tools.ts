@@ -180,5 +180,135 @@ export const tools: Tool[] = [
       'Training improvement',
       'Customer feedback analysis'
     ]
+  },
+  {
+    id: '8',
+    name: 'ProactiveReach',
+    description: 'AI-powered communication platform that automates personalized outreach based on customer behavior and lifecycle stage.',
+    category: 'Support Automation',
+    pricing: {
+      type: 'Freemium',
+      startingPrice: '$59/mo'
+    },
+    features: [
+      'Behavior-triggered messaging',
+      'Personalized email sequences',
+      'In-app notification automation',
+      'Multi-channel campaign builder',
+      'Engagement analytics dashboard'
+    ],
+    integrations: ['HubSpot', 'Salesforce', 'Braze', 'Intercom', 'Slack'],
+    rating: 4.7,
+    reviews: 103,
+    imageUrl: 'https://images.unsplash.com/photo-1581092160612-3d4d75a1d7ca?auto=format&fit=crop&w=800&q=80',
+    useCases: [
+      'Lifecycle email campaigns',
+      'Customer engagement automation',
+      'Proactive support outreach'
+    ]
+  },
+  {
+    id: '9',
+    name: 'SurveyGenius',
+    description: 'AI-driven customer feedback platform that creates intelligent surveys and provides actionable insights from responses.',
+    category: 'Customer Analytics',
+    pricing: {
+      type: 'Paid',
+      startingPrice: '$129/mo'
+    },
+    features: [
+      'Smart survey question generation',
+      'NLP-based response analysis',
+      'Real-time sentiment dashboards',
+      'Predictive analytics engine',
+      'Automated action item suggestions'
+    ],
+    integrations: ['Typeform', 'SurveyMonkey', 'Google Forms', 'Zendesk', 'CRM'],
+    rating: 4.6,
+    reviews: 81,
+    imageUrl: 'https://images.unsplash.com/photo-1506126613408-eca07ce687b7?auto=format&fit=crop&w=800&q=80',
+    useCases: [
+      'Customer satisfaction surveys',
+      'Product feedback collection',
+      'Experience improvement tracking'
+    ]
+  },
+  {
+    id: '10',
+    name: 'StrategizeAI',
+    description: 'Interactive strategy planning tool for customer success managers to build and optimize playbooks using AI guidance.',
+    category: 'Retention Management',
+    pricing: {
+      type: 'Paid',
+      startingPrice: '$219/mo'
+    },
+    features: [
+      'AI playbook suggestions',
+      'Scenario planning simulator',
+      'Playbook effectiveness analysis',
+      'Cross-functional workflow builder',
+      'Best practice knowledge base'
+    ],
+    integrations: ['Gainsight', 'Totango', 'Salesforce', 'Miro', 'Asana'],
+    rating: 4.5,
+    reviews: 67,
+    imageUrl: 'https://images.unsplash.com/photo-1560448070-cf5de7c2be2d?auto=format&fit=crop&w=800&q=80',
+    useCases: [
+      'Playbook optimization',
+      'Risk mitigation planning',
+      'Cross-functional strategy alignment'
+    ]
+  },
+  {
+    id: '11',
+    name: 'TrainingBot',
+    description: 'Personalized learning platform for customer success teams with AI-curated training paths and skills assessments.',
+    category: 'Support Automation',
+    pricing: {
+      type: 'Freemium',
+      startingPrice: '$39/mo'
+    },
+    features: [
+      'Skills gap analysis',
+      'Interactive training simulations',
+      'Knowledge retention quizzes',
+      'Role-specific learning paths',
+      'Team performance tracking'
+    ],
+    integrations: ['LearnUpon', 'Docebo', 'Udemy', 'LMS platforms', 'Zoom'],
+    rating: 4.4,
+    reviews: 55,
+    imageUrl: 'https://images.unsplash.com/photo-1581090762342-fbs562c72575e?auto=format&fit=crop&w=800&q=80',
+    useCases: [
+      'New hire onboarding',
+      'Product knowledge training',
+      'Customer interaction simulations'
+    ]
+  },
+  {
+    id: '12',
+    name: 'CollabHub',
+    description: 'AI-enhanced collaboration platform for cross-functional teams working on customer success initiatives.',
+    category: 'Retention Management',
+    pricing: {
+      type: 'Paid',
+      startingPrice: '$179/mo'
+    },
+    features: [
+      'Meeting agenda generator',
+      'Action item tracker',
+      'Shared customer context workspace',
+      'Task automation engine',
+      'Meeting transcription & summary'
+    ],
+    integrations: ['Microsoft Teams', 'Slack', 'Asana', 'Notion', 'Google Workspace'],
+    rating: 4.5,
+    reviews: 92,
+    imageUrl: 'https://images.unsplash.com/photo-1526044800702-f4f5bd26f597?auto=format&fit=crop&w=800&q=80',
+    useCases: [
+      'Cross-team customer meetings',
+      'Success plan collaboration',
+      'Shared account management'
+    ]
   }
 ];

@@ -78,10 +78,18 @@ export default function ToolCard({ tool }: ToolCardProps) {
         </div>
 
         <div className="flex items-center gap-3">
-          <button className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+          {/* 🔗 External Website Link */}
+          <a 
+            href={tool.website} 
+            className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
             View Details
             <ExternalLink className="w-4 h-4" />
-          </button>
+          </a>
+          
+          {/* Conditional Try Free Button */}
           {tool.pricing.type !== 'Paid' && (
             <button className="flex-1 border border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 py-2 px-4 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors">
               Try Free

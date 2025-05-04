@@ -13,6 +13,7 @@ export interface Tool {
   reviews: number;
   imageUrl: string;
   useCases: string[];
+  website: string; // 🔗 New field
 }
 
 export type ToolCategory = 

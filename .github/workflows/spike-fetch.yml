@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write  # spike only: commits results back to this branch
 
 jobs:
   fetch:
@@ -31,3 +31,12 @@ jobs:
           path: |
             spike/fetch/results.json
             spike/fetch/summary.md
+      - name: Commit results to the spike branch
+        if: always()
+        run: |
+          mkdir -p out && cp results.json summary.md out/ 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f out
+          git commit -m "chore(spike): fetch results [skip ci]" || exit 0
+          git push

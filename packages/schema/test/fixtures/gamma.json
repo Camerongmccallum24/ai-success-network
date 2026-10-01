@@ -1,0 +1,230 @@
+{
+  "slug": "gamma",
+  "name": "Gamma",
+  "vendor": "Gamma Tech, Inc.",
+  "website": "https://gamma.app",
+  "summary": "AI-generated presentations, documents and web pages from a prompt or outline.",
+  "workflows": ["qbr-prep", "onboarding"],
+  "worksWith": ["standalone"],
+  "form": ["web"],
+  "assessment": {
+    "bestFor": "PILOT PLACEHOLDER — written by Cameron in Phase 1",
+    "watchOut": "PILOT PLACEHOLDER — written by Cameron in Phase 1",
+    "take": "PILOT PLACEHOLDER — written by Cameron in Phase 1"
+  },
+  "sources": [
+    {
+      "id": "gamma-pricing",
+      "url": "https://gamma.app/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "gamma-privacy",
+      "url": "https://gamma.app/privacy",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "gamma-business-help",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "gamma-pricing",
+            "quote": "No credit card required"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account Settings → Data Controls",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "gamma-training-help",
+            "quote": "Data is allowed to be used to train AI models."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "gamma-training-help",
+            "quote": "You can opt out any time."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "gamma-dpa",
+            "quote": "Service provider for hosting large language models and embeddings"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "gamma-dpa",
+            "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "gamma-business-help",
+            "quote": "Locked training opt-out"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Plus",
+      "audience": "personal",
+      "price": {
+        "status": "unverified",
+        "reason": "Pricing page renders amounts client-side; help articles don't state Plus, Pro or Ultra prices."
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account Settings → Data Controls",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "gamma-training-help",
+            "quote": "Data is allowed to be used to train AI models."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "gamma-training-help",
+            "quote": "You can opt out any time."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "gamma-dpa",
+            "quote": "Service provider for hosting large language models and embeddings"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "gamma-dpa",
+            "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "gamma-business-help",
+            "quote": "Locked training opt-out"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Gamma's privacy policy (April 2025) reserves the right to use personal information to train its AI models.",
+          "evidence": [
+            {
+              "source": "gamma-privacy",
+              "quote": "to train our artificial intelligence models"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 40,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "gamma-business-help",
+            "quote": "Business is $40 per member per month, billed annually"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "admin-enforced",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "gamma-training-help",
+            "quote": "For all Business and Enterprise workspaces, data is automatically excluded from being used for training."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "gamma-business-help",
+            "quote": "Locked training opt-out"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "gamma-dpa",
+            "quote": "Service provider for hosting large language models and embeddings"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "gamma-dpa",
+            "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "gamma-business-help",
+            "quote": "Locked training opt-out"
+          }
+        ]
+      }
+    }
+  ]
+}

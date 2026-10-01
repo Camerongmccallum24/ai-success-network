@@ -1,0 +1,115 @@
+---
+import { getCollection } from 'astro:content';
+
+const tools = await getCollection('tools');
+const title = 'AI Success Network — Verified AI tools for CSMs';
+const description =
+  'Which AI tools help a customer success manager, which plan is safe for customer data, and the vendor evidence behind each answer. Rebuild in progress.';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">AI Success Network</p>
+      <h1>Verified AI tools for customer success managers.</h1>
+      <p class="lead">
+        Which tools help your workflow, which plan is safe for customer data, and the vendor
+        evidence behind every answer.
+      </p>
+      <p class="status">
+        <strong>Rebuild in progress.</strong>
+        {tools.length === 0
+          ? 'No tools are published yet: each one is verified against the vendor’s own pages before it appears here.'
+          : `${tools.length} verified tools so far.`}
+      </p>
+      <p>
+        <a href="https://github.com/Camerongmccallum24/ai-success-network">
+          Follow the build on GitHub
+        </a>
+        ·{' '}
+        <a href="https://github.com/Camerongmccallum24/ai-success-network/releases/tag/v0.1.0-2025-original">
+          See the May 2025 prototype
+        </a>
+      </p>
+    </main>
+  </body>
+</html>
+
+<style>
+  :root {
+    --bg: #f4f1ea;
+    --ink: #1b1f1e;
+    --muted: #4a5552;
+    --accent: #0f3d3e;
+    --rule: #d8d2c4;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121615;
+      --ink: #eceae4;
+      --muted: #b4bcb9;
+      --accent: #8fd3c8;
+      --rule: #2c3331;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font:
+      1.0625rem/1.6 ui-sans-serif,
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      sans-serif;
+  }
+  main {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: clamp(3rem, 12vh, 8rem) 1.25rem 4rem;
+  }
+  .eyebrow {
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h1 {
+    font-size: clamp(2rem, 6vw, 2.75rem);
+    line-height: 1.15;
+    margin: 0.25rem 0 1rem;
+  }
+  .lead {
+    font-size: 1.1875rem;
+    color: var(--muted);
+  }
+  .status {
+    border-top: 1px solid var(--rule);
+    padding-top: 1.25rem;
+    margin-top: 2rem;
+  }
+  a {
+    color: var(--accent);
+    text-underline-offset: 0.2em;
+  }
+  a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+</style>

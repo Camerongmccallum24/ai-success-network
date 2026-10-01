@@ -13,3 +13,5 @@ Format: [MADR](https://adr.github.io/madr/). One decision per file; a reversal g
 | [0007](0007-read-only-stdio-mcp-server.md)        | Read-only stdio MCP server                                         | Accepted |
 | [0008](0008-one-shared-zod-schema.md)             | One shared Zod schema package                                      | Accepted |
 | [0009](0009-typescript-6-not-7.md)                | Pin TypeScript 6.0, not 7                                          | Accepted |
+| [0010](0010-vanilla-script-filters.md)            | Directory filters are an inline script, not React                  | Accepted |
+| [0011](0011-quotes-verified-on-the-page.md)       | Every cited quote is checked against the live page                 | Accepted |

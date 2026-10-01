@@ -1,86 +1,52 @@
 # AI Success Network
 
-[![GitHub Stars](https://img.shields.io/github/stars/camerongmccallum24/ai-success-network?style=social)](https://github.com/camerongmccallum24/ai-success-network)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+**Verified AI tools for customer success managers.** Which tools help a CSM's workflow, which plan is safe for customer data, and the vendor evidence behind every answer.
 
-**Your Curated Network for the Best AI Tools in Customer Success**
+> Status: rebuild in progress. Phase 0 (foundations) is in review. The May 2025 prototype is preserved as [v0.1.0-2025-original](https://github.com/Camerongmccallum24/ai-success-network/releases/tag/v0.1.0-2025-original).
 
-Discover, compare, and implement the most relevant AI tools for your customer success team. This repository powers the [AI Success Network](https://aisuccessnetwork.com) - a centralized hub for evaluating and adopting AI-driven solutions tailored to customer success workflows.
+## The problem
 
----
+Most individual CSMs have an employer-approved assistant, no CS platform and no clear answer on what they can paste where. Vendors' data policies differ by **plan**, not by product, and change without notice. Public guidance is mostly listicles.
 
-## Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
+Every tool page answers three questions:
 
----
+1. Can this tool help with a specific CSM workflow?
+2. Can I use it with customer data on my plan, in my environment?
+3. What evidence supports that, and when was it last checked?
 
-## Overview
+## How it works
 
-The AI Success Network is a meticulously curated directory of **22+ AI-powered tools** designed to optimize customer success operations. Whether you're looking to automate support workflows, predict churn, or enhance customer engagement, this platform provides:
+- **Data:** one JSON file per tool in `data/tools/`. Every fact cites the vendor's own page with a short verbatim quote.
+- **Ratings:** computed per plan by a tested rules function (`packages/schema`), never typed by hand. [ADR 0004](docs/adr/0004-ratings-computed-from-cited-facts.md) has the rules.
+- **Site:** a static Astro site that validates every record at build time.
+- **Verification (Phase 2–3):** a weekly GitHub Action re-reads every source, flags changes, and opens a draft PR with AI-proposed edits. A human merges every change.
+- **MCP server (Phase 4):** the verified dataset, readable by AI assistants.
 
-- **Detailed Tool Profiles**: Pricing, features, integrations, and user reviews for each tool
-- **Category Filtering**: Organized by use cases like analytics, automation, retention management, and more
-- **Comparison Tool**: Side-by-side feature and pricing comparisons
-- **Community-Driven Updates**: Regularly updated based on user feedback and emerging trends
+## Repository
 
-![AI Success Network Screenshot](screenshot.png)
+```text
+apps/web/           Astro site
+packages/schema/    Zod schema, rating rules, derived fields (100% branch coverage)
+data/tools/         One record per tool — the source of truth
+docs/adr/           Architecture decision records
+```
 
----
+```sh
+pnpm install
+pnpm test        # schema and rating rules
+pnpm build       # builds the site and validates every record
+```
 
-## Key Features
+Node 22 and pnpm (version pinned in `package.json`).
 
-### 1. Curated Tool Directory
-Access profiles for tools like:
-- **CS Insight AI** (Customer Analytics)
-- **AutoSupport Pro** (Support Automation)
-- **SentimentScope** (Sentiment Analysis)
-- **RetentionGuard** (Retention Management)
-- ...and many more across 16 categories
+## Decisions and limitations
 
-### 2. Actionable Insights
-Each tool includes:
-- Pricing tiers (Freemium/Paid)
-- Star ratings (based on user reviews)
-- Key features summary
-- Integration compatibility
+Decisions are recorded in [docs/adr](docs/adr/). This is not legal or compliance advice: a green rating means a vendor's terms make approval possible, not that a tool is safe. Your employer's policy takes precedence.
 
-### 3. Comparison Engine
-Easily compare tools side-by-side using our interactive comparison tool.
+## Built with AI
 
-### 4. Newsletter Integration
-Stay updated with weekly insights on new tools, exclusive deals, and expert tips via our integrated newsletter.
+Built by Cameron McCallum with Claude as an engineering collaborator. Every change lands through a reviewed pull request with green CI.
 
----
+## Licences
 
-## How to Use
-
-1. **Explore Tools**: Browse the curated list using category filters or search functionality
-2. **Compare Options**: Select tools to compare their features and pricing
-3. **Try Free Trials**: Click "Try Free" for eligible freemium tools
-4. **Provide Feedback**: Contribute reviews or suggest new tools via GitHub Issues
-
----
-
-## Contributing
-
-We welcome contributions to improve this resource! To contribute:
-
-1. Fork the repository
-2. Add/update tool data in `data/tools.ts`
-3. Submit a pull request with your changes
-
-For major contributions, please open an issue first to discuss proposed changes.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-*Last Updated: May 5, 2025*
+Code: [MIT](LICENSE). Dataset (`data/`): [CC BY 4.0](LICENSE-DATA).

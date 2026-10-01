@@ -1,0 +1,8 @@
+{
+  "name": "spike-schema-pilot",
+  "private": true,
+  "type": "module",
+  "description": "Throwaway pilot: does the draft schema fit ChatGPT, Granola and Gamma? Not merged to main.",
+  "scripts": { "validate": "node validate.mjs", "test": "node --test" },
+  "dependencies": { "zod": "4.6.5" }
+}

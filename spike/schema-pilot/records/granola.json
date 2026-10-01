@@ -1,0 +1,74 @@
+{
+  "slug": "granola",
+  "name": "Granola",
+  "vendor": "Granola",
+  "website": "https://www.granola.ai",
+  "summary": "AI meeting notes that capture audio on your device, with no bot joining the call.",
+  "workflows": ["call-notes", "follow-up-email"],
+  "worksWith": ["standalone"],
+  "form": ["desktop"],
+  "assessment": {
+    "bestFor": "PILOT PLACEHOLDER — written by Cameron in Phase 1",
+    "watchOut": "PILOT PLACEHOLDER — written by Cameron in Phase 1",
+    "take": "PILOT PLACEHOLDER — written by Cameron in Phase 1"
+  },
+  "sources": [
+    { "id": "granola-pricing", "url": "https://www.granola.ai/pricing", "kind": "pricing", "lastVerified": "2026-10-01" },
+    { "id": "granola-security", "url": "https://www.granola.ai/security", "kind": "trust", "lastVerified": "2026-10-01" },
+    { "id": "granola-model-training", "url": "https://docs.granola.ai/help-center/consent-security-privacy/model-training", "kind": "help", "lastVerified": "2026-10-01" }
+  ],
+  "plans": [
+    {
+      "name": "Basic",
+      "audience": "personal",
+      "price": { "status": "listed", "currency": "USD", "per": "user-month", "amounts": [{ "amount": 0, "billing": "unstated" }], "evidence": [{ "source": "granola-pricing", "quote": "$0" }] },
+      "facts": { "trainingDefault": "on", "trainingControl": "user-setting", "optOutPath": "Settings → Preferences → Use my data to improve models for everyone", "subprocessorTraining": "excluded", "dpa": "on-request", "adminEnforcement": false },
+      "evidence": {
+        "trainingDefault": [{ "source": "granola-security", "quote": "Granola trains on your anonymized data so we can keep making Granola better." }],
+        "trainingControl": [{ "source": "granola-security", "quote": "You can opt out of this in your Settings." }],
+        "subprocessorTraining": [
+          { "source": "granola-security", "quote": "We do not allow third parties (like OpenAI or Anthropic) to use your data to train their AI models." },
+          { "source": "granola-model-training", "quote": "we have enterprise agreements with all of our service providers that prevent your data from being used in their model training" }
+        ],
+        "dpa": [
+          { "source": "granola-pricing", "quote": "DPA available" },
+          { "source": "granola-security", "quote": "Data Processing Agreement available upon request" }
+        ],
+        "adminEnforcement": [{ "source": "granola-pricing", "quote": "Admin controls for sharing & API access" }]
+      },
+      "caveats": [
+        { "text": "Granola says training uses anonymised data.", "evidence": [{ "source": "granola-security", "quote": "Granola trains on your anonymized data so we can keep making Granola better." }] },
+        { "text": "Audio is deleted after transcription; the transcript is kept.", "evidence": [{ "source": "granola-pricing", "quote": "Audio deleted after transcription" }] }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": { "status": "listed", "currency": "USD", "per": "user-month", "amounts": [{ "amount": 14, "billing": "unstated" }], "evidence": [{ "source": "granola-pricing", "quote": "$14" }] },
+      "facts": { "trainingDefault": "on", "trainingControl": "user-setting", "optOutPath": "Settings → Preferences → Use my data to improve models for everyone", "subprocessorTraining": "excluded", "dpa": "on-request", "adminEnforcement": false },
+      "evidence": {
+        "trainingDefault": [{ "source": "granola-security", "quote": "Granola trains on your anonymized data so we can keep making Granola better." }],
+        "trainingControl": [{ "source": "granola-security", "quote": "You can opt out of this in your Settings." }],
+        "subprocessorTraining": [{ "source": "granola-security", "quote": "We do not allow third parties (like OpenAI or Anthropic) to use your data to train their AI models." }],
+        "dpa": [{ "source": "granola-security", "quote": "Data Processing Agreement available upon request" }],
+        "adminEnforcement": [{ "source": "granola-pricing", "quote": "Admin controls for sharing & API access" }]
+      },
+      "caveats": [
+        { "text": "Granola says training uses anonymised data.", "evidence": [{ "source": "granola-security", "quote": "Granola trains on your anonymized data so we can keep making Granola better." }] }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": { "status": "listed", "currency": "USD", "per": "user-month", "amounts": [{ "amount": 35, "billing": "unstated" }], "evidence": [{ "source": "granola-pricing", "quote": "$35" }] },
+      "facts": { "trainingDefault": "off", "trainingControl": "admin-enforced", "subprocessorTraining": "excluded", "dpa": "on-request", "adminEnforcement": true },
+      "evidence": {
+        "trainingDefault": [{ "source": "granola-security", "quote": "Enterprise users have model training turned off by default." }],
+        "trainingControl": [{ "source": "granola-model-training", "quote": "Use my workspace data to improve models for everyone" }],
+        "subprocessorTraining": [{ "source": "granola-security", "quote": "We do not allow third parties (like OpenAI or Anthropic) to use your data to train their AI models." }],
+        "dpa": [{ "source": "granola-security", "quote": "Data Processing Agreement available upon request" }],
+        "adminEnforcement": [{ "source": "granola-pricing", "quote": "Admin controls for sharing & API access" }]
+      }
+    }
+  ]
+}

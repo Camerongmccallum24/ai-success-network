@@ -1,0 +1,91 @@
+{
+  "slug": "chatgpt",
+  "name": "ChatGPT",
+  "vendor": "OpenAI",
+  "website": "https://chatgpt.com",
+  "summary": "General-purpose AI assistant; the plan you're on decides whether your conversations train OpenAI's models.",
+  "baseline": true,
+  "workflows": ["follow-up-email", "account-research", "qbr-prep", "feedback-synthesis"],
+  "worksWith": ["standalone"],
+  "form": ["web", "desktop", "mobile"],
+  "assessment": {
+    "bestFor": "PILOT PLACEHOLDER — written by Cameron in Phase 1",
+    "watchOut": "PILOT PLACEHOLDER — written by Cameron in Phase 1",
+    "take": "PILOT PLACEHOLDER — written by Cameron in Phase 1"
+  },
+  "sources": [
+    { "id": "chatgpt-pricing", "url": "https://chatgpt.com/pricing/", "kind": "pricing", "render": "browser", "lastVerified": "2026-10-01" },
+    { "id": "openai-business-data", "url": "https://openai.com/business-data/", "kind": "privacy", "lastVerified": "2026-10-01" },
+    { "id": "openai-data-controls-faq", "url": "https://help.openai.com/en/articles/7730893-data-controls-faq", "kind": "help", "lastVerified": "2026-10-01" },
+    { "id": "openai-go-help", "url": "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go", "kind": "help", "lastVerified": "2026-10-01" },
+    { "id": "openai-plus-help", "url": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus", "kind": "help", "lastVerified": "2026-10-01" },
+    { "id": "openai-business-help", "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team", "kind": "help", "lastVerified": "2026-10-01" }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": { "status": "listed", "currency": "USD", "per": "month", "amounts": [{ "amount": 0, "billing": "monthly" }], "evidence": [{ "source": "chatgpt-pricing", "quote": "$0" }] },
+      "facts": { "trainingDefault": "on", "trainingControl": "user-setting", "optOutPath": "Settings → Data controls → Improve the model for everyone", "subprocessorTraining": "first-party", "dpa": "none", "adminEnforcement": false },
+      "evidence": {
+        "trainingDefault": [{ "source": "openai-go-help", "quote": "OpenAI may use conversations to improve model performance and safety." }],
+        "trainingControl": [{ "source": "openai-data-controls-faq", "quote": "When Improve the model for everyone is off, your new conversations won't be used to train OpenAI models." }],
+        "subprocessorTraining": [{ "source": "openai-data-controls-faq", "quote": "your new conversations won't be used to train OpenAI models" }],
+        "dpa": [{ "source": "openai-business-data", "quote": "We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements." }],
+        "adminEnforcement": [{ "source": "openai-business-help", "quote": "Admin controls for managing users, roles, and access" }]
+      },
+      "caveats": [
+        { "text": "Rating a reply with thumbs up or down can send that whole conversation to training, even with training switched off.", "evidence": [{ "source": "openai-data-controls-faq", "quote": "the entire conversation associated with that feedback may be used to train OpenAI models" }] }
+      ]
+    },
+    {
+      "name": "Go",
+      "audience": "personal",
+      "price": { "status": "unverified", "reason": "Price is rendered client-side by region; not readable from the help article or a non-browser fetch." },
+      "facts": { "trainingDefault": "on", "trainingControl": "user-setting", "optOutPath": "Settings → Data controls → Improve the model for everyone", "subprocessorTraining": "first-party", "dpa": "none", "adminEnforcement": false },
+      "evidence": {
+        "trainingDefault": [{ "source": "openai-go-help", "quote": "OpenAI may use conversations to improve model performance and safety." }],
+        "trainingControl": [{ "source": "openai-go-help", "quote": "You can opt out of having your data used for training at any time." }],
+        "subprocessorTraining": [{ "source": "openai-go-help", "quote": "OpenAI may use conversations to improve model performance and safety." }],
+        "dpa": [{ "source": "openai-business-data", "quote": "We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements." }],
+        "adminEnforcement": [{ "source": "openai-business-help", "quote": "Admin controls for managing users, roles, and access" }]
+      }
+    },
+    {
+      "name": "Plus",
+      "audience": "personal",
+      "price": { "status": "listed", "currency": "USD", "per": "month", "amounts": [{ "amount": 20, "billing": "monthly" }], "evidence": [{ "source": "openai-plus-help", "quote": "$20/month (billed monthly)" }] },
+      "facts": { "trainingDefault": "on", "trainingControl": "user-setting", "optOutPath": "Settings → Data controls → Improve the model for everyone", "subprocessorTraining": "first-party", "dpa": "none", "adminEnforcement": false },
+      "evidence": {
+        "trainingDefault": [{ "source": "openai-go-help", "quote": "OpenAI may use conversations to improve model performance and safety." }],
+        "trainingControl": [{ "source": "openai-data-controls-faq", "quote": "When Improve the model for everyone is off, your new conversations won't be used to train OpenAI models." }],
+        "subprocessorTraining": [{ "source": "openai-data-controls-faq", "quote": "your new conversations won't be used to train OpenAI models" }],
+        "dpa": [{ "source": "openai-business-data", "quote": "We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements." }],
+        "adminEnforcement": [{ "source": "openai-business-help", "quote": "Admin controls for managing users, roles, and access" }]
+      },
+      "caveats": [
+        { "text": "Rating a reply with thumbs up or down can send that whole conversation to training, even with training switched off.", "evidence": [{ "source": "openai-data-controls-faq", "quote": "the entire conversation associated with that feedback may be used to train OpenAI models" }] }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": { "status": "listed", "currency": "USD", "per": "user-month", "amounts": [{ "amount": 25, "billing": "monthly" }, { "amount": 20, "billing": "annual" }], "minSeats": 2,
+        "evidence": [
+          { "source": "openai-business-help", "quote": "Monthly plan: $25 per user per month" },
+          { "source": "openai-business-help", "quote": "$20 per user per month, billed annually" },
+          { "source": "openai-business-help", "quote": "ChatGPT Business workspaces require 2 Standard or Premium ChatGPT seats" }
+        ] },
+      "facts": { "trainingDefault": "off", "trainingControl": "not-needed", "subprocessorTraining": "first-party", "dpa": "on-request", "adminEnforcement": true },
+      "evidence": {
+        "trainingDefault": [
+          { "source": "openai-business-help", "quote": "OpenAI won't train on your workspace's data." },
+          { "source": "openai-business-data", "quote": "We do not use data from ChatGPT Enterprise, ChatGPT Business, ChatGPT Edu" }
+        ],
+        "subprocessorTraining": [{ "source": "openai-business-help", "quote": "OpenAI won't train on your workspace's data." }],
+        "dpa": [{ "source": "openai-business-data", "quote": "We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements." }],
+        "adminEnforcement": [{ "source": "openai-business-help", "quote": "Admin controls for managing users, roles, and access" }]
+      }
+    }
+  ]
+}

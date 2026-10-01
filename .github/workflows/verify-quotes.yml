@@ -1,0 +1,35 @@
+name: verify-quotes
+
+# Checks every cited quote appears verbatim on its source page. Manual for now; Phase 2
+# turns this into the scheduled verification pipeline.
+on:
+  workflow_dispatch:
+  push:
+    branches: [phase-1/dataset]
+    paths: ['data/tools/**', 'scripts/verify-quotes.ts']
+
+permissions:
+  contents: write # commits the report to the branch it ran on
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm verify:quotes
+        continue-on-error: true
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/reports/quote-check.json
+          git commit -m "chore(data): quote check report [skip ci]" || exit 0
+          git push

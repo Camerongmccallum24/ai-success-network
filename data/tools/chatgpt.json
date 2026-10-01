@@ -22,6 +22,12 @@
       "lastVerified": "2026-10-01"
     },
     {
+      "id": "openai-go-intro",
+      "url": "https://openai.com/index/introducing-chatgpt-go/",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
       "id": "openai-data-controls-faq",
       "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
       "kind": "help",
@@ -43,6 +49,12 @@
     {
       "id": "openai-business-help",
       "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "openai-consumer-data-faq",
+      "url": "https://help.openai.com/en/articles/7039943-data-usage-for-consumer-services-faq",
       "kind": "help",
       "lastVerified": "2026-10-01"
     }
@@ -78,6 +90,10 @@
       },
       "evidence": {
         "trainingDefault": [
+          {
+            "source": "openai-consumer-data-faq",
+            "quote": "We may use content submitted to ChatGPT and our other services for individuals to improve model performance."
+          },
           {
             "source": "openai-go-help",
             "quote": "OpenAI may use conversations to improve model performance and safety."
@@ -124,8 +140,21 @@
       "name": "Go",
       "audience": "personal",
       "price": {
-        "status": "unverified",
-        "reason": "Price is rendered client-side by region; not readable from the help article or a non-browser fetch."
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 8,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "openai-go-intro",
+            "quote": "In the US, Go is available for $8 per month."
+          }
+        ]
       },
       "facts": {
         "trainingDefault": "on",
@@ -137,6 +166,10 @@
       },
       "evidence": {
         "trainingDefault": [
+          {
+            "source": "openai-consumer-data-faq",
+            "quote": "We may use content submitted to ChatGPT and our other services for individuals to improve model performance."
+          },
           {
             "source": "openai-go-help",
             "quote": "OpenAI may use conversations to improve model performance and safety."
@@ -198,6 +231,10 @@
       },
       "evidence": {
         "trainingDefault": [
+          {
+            "source": "openai-consumer-data-faq",
+            "quote": "We may use content submitted to ChatGPT and our other services for individuals to improve model performance."
+          },
           {
             "source": "openai-go-help",
             "quote": "OpenAI may use conversations to improve model performance and safety."

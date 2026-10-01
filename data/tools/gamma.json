@@ -107,12 +107,128 @@
       "audience": "personal",
       "price": {
         "status": "unverified",
-        "reason": "Pricing page renders amounts client-side; help articles don't state Plus, Pro or Ultra prices."
+        "reason": "Pricing page text returned no amounts to a non-browser fetch; help articles state no Plus, Pro or Ultra prices."
       },
       "facts": {
         "trainingDefault": "on",
         "trainingControl": "user-setting",
         "optOutPath": "Account Settings → Data Controls",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "gamma-training-help",
+            "quote": "Data is allowed to be used to train AI models."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "gamma-training-help",
+            "quote": "You can opt out any time."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "gamma-dpa",
+            "quote": "Service provider for hosting large language models and embeddings"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "gamma-dpa",
+            "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "gamma-business-help",
+            "quote": "Locked training opt-out"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Gamma's privacy policy (April 2025) reserves the right to use personal information to train its AI models.",
+          "evidence": [
+            {
+              "source": "gamma-privacy",
+              "quote": "to train our artificial intelligence models"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "unverified",
+        "reason": "Pricing page text returned no amounts to a non-browser fetch; help articles state no Plus, Pro or Ultra prices."
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "unclear",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "gamma-training-help",
+            "quote": "Data is allowed to be used to train AI models."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "gamma-training-help",
+            "quote": "You can opt out any time."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "gamma-dpa",
+            "quote": "Service provider for hosting large language models and embeddings"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "gamma-dpa",
+            "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "gamma-business-help",
+            "quote": "Locked training opt-out"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Gamma's privacy policy (April 2025) reserves the right to use personal information to train its AI models.",
+          "evidence": [
+            {
+              "source": "gamma-privacy",
+              "quote": "to train our artificial intelligence models"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ultra",
+      "audience": "personal",
+      "price": {
+        "status": "unverified",
+        "reason": "Pricing page text returned no amounts to a non-browser fetch; help articles state no Plus, Pro or Ultra prices."
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "unclear",
         "subprocessorTraining": "not-stated",
         "dpa": "incorporated",
         "adminEnforcement": false

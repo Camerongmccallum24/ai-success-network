@@ -1,0 +1,237 @@
+{
+  "slug": "gemini",
+  "name": "Google Gemini",
+  "vendor": "Google",
+  "website": "https://gemini.google.com",
+  "summary": "Google's AI assistant: consumer Gemini app and Google AI Pro, plus Gemini in Workspace. Data handling differs sharply between personal and Workspace accounts.",
+  "baseline": true,
+  "workflows": [
+    "follow-up-email",
+    "account-research",
+    "qbr-prep",
+    "feedback-synthesis",
+    "call-notes",
+    "knowledge-search"
+  ],
+  "worksWith": ["google-workspace", "standalone"],
+  "form": ["web", "mobile", "integration"],
+  "sources": [
+    {
+      "id": "gemini-subscriptions",
+      "url": "https://gemini.google/subscriptions/",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "workspace-pricing",
+      "url": "https://workspace.google.com/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "gemini-apps-privacy",
+      "url": "https://support.google.com/gemini/answer/13594961",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "google-cloud-dpa",
+      "url": "https://cloud.google.com/terms/data-processing-addendum",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Google AI Pro (personal Google Account)",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 19.99,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "gemini-subscriptions",
+            "quote": "$19.99"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "user-setting",
+        "optOutPath": "Gemini Apps Activity → turn off Keep Activity",
+        "subprocessorTraining": "first-party",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "gemini-apps-privacy",
+            "quote": "Your future chats won't appear in your Activity, and won't be used to train our AI models, unless you choose to send Google feedback."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "gemini-apps-privacy",
+            "quote": "Your future chats won't appear in your Activity, and won't be used to train our AI models, unless you choose to send Google feedback."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "gemini-apps-privacy",
+            "quote": "Human reviewers (including trained reviewers from our service providers) review some of the data we collect for these purposes."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "gemini-apps-privacy",
+            "quote": "If you have a work or school Google Account, your use of Gemini Apps may be subject to different data handling terms."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "gemini-apps-privacy",
+            "quote": "If you have a work or school Google Account, your use of Gemini Apps may be subject to different data handling terms."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Human reviewers, including service providers' staff, review some chats.",
+          "evidence": [
+            {
+              "source": "gemini-apps-privacy",
+              "quote": "Human reviewers (including trained reviewers from our service providers) review some of the data we collect for these purposes."
+            }
+          ]
+        },
+        {
+          "text": "Temporary chats are not used to train Google's models.",
+          "evidence": [
+            {
+              "source": "gemini-apps-privacy",
+              "quote": "Temporary chats are not used to train Google's AI models."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gemini in Google Workspace (Business)",
+      "audience": "business",
+      "price": {
+        "status": "unverified",
+        "reason": "workspace.google.com/pricing renders per-user amounts client-side; no figures readable in fetched page text."
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "first-party",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "workspace-gemini-privacy-hub",
+            "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "workspace-gemini-privacy-hub",
+            "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "google-cloud-dpa",
+            "quote": "This Cloud Data Processing Addendum (including its appendices, the \"Addendum\") is incorporated into the Agreement(s) (as defined below) between Google and Customer."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "workspace-gemini-privacy-hub",
+            "quote": "Admins have control over conversation history for their organization."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Privacy Hub protections apply only to a qualifying Google Workspace edition, not personal accounts.",
+          "evidence": [
+            {
+              "source": "workspace-gemini-privacy-hub",
+              "quote": "For clarity this Privacy Hub only applies when you are using Gemini and Gemini Notebook with a qualifying edition of Google Workspace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gemini in Google Workspace (Enterprise)",
+      "audience": "enterprise",
+      "price": {
+        "status": "unverified",
+        "reason": "workspace.google.com/pricing renders per-user amounts client-side; no figures readable in fetched page text."
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "first-party",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "workspace-gemini-privacy-hub",
+            "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "workspace-gemini-privacy-hub",
+            "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "google-cloud-dpa",
+            "quote": "This Cloud Data Processing Addendum (including its appendices, the \"Addendum\") is incorporated into the Agreement(s) (as defined below) between Google and Customer."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "workspace-gemini-privacy-hub",
+            "quote": "Admins have control over conversation history for their organization."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Privacy Hub protections apply only to a qualifying Google Workspace edition, not personal accounts.",
+          "evidence": [
+            {
+              "source": "workspace-gemini-privacy-hub",
+              "quote": "For clarity this Privacy Hub only applies when you are using Gemini and Gemini Notebook with a qualifying edition of Google Workspace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

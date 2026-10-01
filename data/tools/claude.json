@@ -1,0 +1,452 @@
+{
+  "slug": "claude",
+  "name": "Claude",
+  "vendor": "Anthropic",
+  "website": "https://claude.ai",
+  "summary": "General-purpose AI assistant; consumer plans give a training choice, Team and Enterprise do not train on your content by default.",
+  "baseline": true,
+  "workflows": ["follow-up-email", "account-research", "qbr-prep", "feedback-synthesis"],
+  "worksWith": ["standalone"],
+  "form": ["web", "desktop", "mobile"],
+  "sources": [
+    {
+      "id": "claude-pricing",
+      "url": "https://claude.com/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "claude-consumer-training",
+      "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "claude-model-improvement-setting",
+      "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "claude-retention",
+      "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "claude-commercial-training",
+      "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "claude-commercial-terms",
+      "url": "https://www.anthropic.com/legal/commercial-terms",
+      "kind": "terms",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "claude-dpa",
+      "url": "https://www.anthropic.com/legal/data-processing-addendum",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "claude-team-help",
+      "url": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "claude-enterprise-help",
+      "url": "https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "claude-pricing",
+            "quote": "$0"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "Settings → Privacy → Help improve our AI models",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "claude-consumer-training",
+            "quote": "You choose to allow us to use your chats and coding sessions to improve Claude"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "claude-model-improvement-setting",
+            "quote": "click the button to toggle it off/on"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "claude-consumer-training",
+            "quote": "Claude Free, Pro, Max and when accounts from those plans use Claude Code"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "claude-dpa",
+            "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "claude-model-improvement-setting",
+            "quote": "click the button to toggle it off/on"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "If you allow training, de-identified data may be kept up to 5 years; otherwise deleted from back-end storage within 30 days.",
+          "evidence": [
+            {
+              "source": "claude-retention",
+              "quote": "If you allow us to use your chats or coding sessions to improve Claude, we may retain your data in a de-identified format for up to 5 years"
+            },
+            {
+              "source": "claude-retention",
+              "quote": "Deleted from our back-end storage systems within 30 days"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 20,
+            "billing": "monthly"
+          },
+          {
+            "amount": 17,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "claude-pricing",
+            "quote": "$17 Per month with annual subscription discount ($200 billed up front). $20 if billed monthly."
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "Settings → Privacy → Help improve our AI models",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "claude-consumer-training",
+            "quote": "You choose to allow us to use your chats and coding sessions to improve Claude"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "claude-model-improvement-setting",
+            "quote": "click the button to toggle it off/on"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "claude-consumer-training",
+            "quote": "Claude Free, Pro, Max and when accounts from those plans use Claude Code"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "claude-dpa",
+            "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "claude-model-improvement-setting",
+            "quote": "click the button to toggle it off/on"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "If you allow training, de-identified data may be kept up to 5 years; otherwise deleted from back-end storage within 30 days.",
+          "evidence": [
+            {
+              "source": "claude-retention",
+              "quote": "If you allow us to use your chats or coding sessions to improve Claude, we may retain your data in a de-identified format for up to 5 years"
+            },
+            {
+              "source": "claude-retention",
+              "quote": "Deleted from our back-end storage systems within 30 days"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Max",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 100,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "claude-pricing",
+            "quote": "From $100 Per month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "Settings → Privacy → Help improve our AI models",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "claude-consumer-training",
+            "quote": "You choose to allow us to use your chats and coding sessions to improve Claude"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "claude-model-improvement-setting",
+            "quote": "click the button to toggle it off/on"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "claude-consumer-training",
+            "quote": "Claude Free, Pro, Max and when accounts from those plans use Claude Code"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "claude-dpa",
+            "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "claude-model-improvement-setting",
+            "quote": "click the button to toggle it off/on"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "If you allow training, de-identified data may be kept up to 5 years; otherwise deleted from back-end storage within 30 days.",
+          "evidence": [
+            {
+              "source": "claude-retention",
+              "quote": "If you allow us to use your chats or coding sessions to improve Claude, we may retain your data in a de-identified format for up to 5 years"
+            },
+            {
+              "source": "claude-retention",
+              "quote": "Deleted from our back-end storage systems within 30 days"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 25,
+            "billing": "monthly"
+          },
+          {
+            "amount": 20,
+            "billing": "annual"
+          }
+        ],
+        "minSeats": 2,
+        "evidence": [
+          {
+            "source": "claude-team-help",
+            "quote": "$25 per member per month, billed monthly"
+          },
+          {
+            "source": "claude-team-help",
+            "quote": "$20 per member per month, billed annually"
+          },
+          {
+            "source": "claude-team-help",
+            "quote": "Team plans require a minimum of two members."
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "claude-commercial-training",
+            "quote": "By default, we will not use your inputs or outputs from our commercial products to train our models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "claude-dpa",
+            "quote": "enter into a contractual agreement with each Subprocessor imposing data protection obligations"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "claude-commercial-terms",
+            "quote": "which is incorporated into these Terms by reference"
+          },
+          {
+            "source": "claude-dpa",
+            "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "claude-team-help",
+            "quote": "Admin tools and billing management: Manage access and billing in a centralized place."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Feedback you submit (e.g. thumbs up/down) or data you choose to share may be used to train models.",
+          "evidence": [
+            {
+              "source": "claude-commercial-training",
+              "quote": "If you explicitly report feedback or bugs to us (e.g. via our thumbs up/down feedback button)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 20,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "claude-pricing",
+            "quote": "US$20/seat/month, billed annually"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "claude-commercial-training",
+            "quote": "By default, we will not use your inputs or outputs from our commercial products to train our models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "claude-dpa",
+            "quote": "enter into a contractual agreement with each Subprocessor imposing data protection obligations"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "claude-commercial-terms",
+            "quote": "which is incorporated into these Terms by reference"
+          },
+          {
+            "source": "claude-dpa",
+            "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "claude-enterprise-help",
+            "quote": "Custom data retention controls"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Feedback you submit (e.g. thumbs up/down) or data you choose to share may be used to train models.",
+          "evidence": [
+            {
+              "source": "claude-commercial-training",
+              "quote": "If you explicitly report feedback or bugs to us (e.g. via our thumbs up/down feedback button)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

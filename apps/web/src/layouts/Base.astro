@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const full = title === 'AI Success Network' ? title : `${title} · AI Success Network`;
+---
+
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{full}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={full} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body>
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <header class="site">
+      <div class="wrap bar">
+        <a class="brand" href="/">
+          AI Success Network
+        </a>
+        <nav aria-label="Main">
+          <a href="/">Tools</a>
+          <a href="/methodology">Methodology</a>
+          <a href="https://github.com/Camerongmccallum24/ai-success-network">GitHub</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <p>
+          Independent. Built from vendors’ own published pages, with every fact cited. Not legal
+          advice — check your own contract and policies before using any tool with customer data.
+        </p>
+        <p>
+          Data is <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; code is MIT.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Methodology"
+  description="How AI Success Network collects facts, computes data ratings, and what it does not cover."
+>
+  <p class="eyebrow">Methodology</p>
+  <h1>How this works, and what it can’t tell you</h1>
+  <p class="lead">
+    The short version: facts come from vendors’ own pages, ratings are computed by a fixed rule, and
+    opinions are labelled as opinions.
+  </p>
+
+  <h2>Where facts come from</h2>
+  <p>
+    Only the vendor’s own primary sources: pricing pages, privacy policies, trust centres, help
+    articles and data processing agreements. Every fact shows the short quote it rests on and the
+    page it came from, with the date it was last checked. No reviews, no forums, no hearsay.
+  </p>
+  <p>
+    If a vendor’s pages don’t clearly say something, it is recorded as <em>unclear</em>, and unclear
+    counts against the tool.
+  </p>
+
+  <h2>How ratings are computed</h2>
+  <p>
+    A rating belongs to a <strong>plan</strong>, not a tool: the same product can be safe on one
+    tier and unsuitable on another. The rule looks at five cited facts per plan.
+  </p>
+  <ul>
+    <li>
+      <span class="chip red">Red</span> Anything unclear; training on your inputs with no way to
+      turn it off; or the vendor’s AI subprocessors may train on your data.
+    </li>
+    <li>
+      <span class="chip green">Green</span> Training is off (by default or enforced by an admin), a
+      data processing agreement exists, an admin can enforce settings, and AI subprocessors are
+      barred from training or the vendor is itself the model provider.
+    </li>
+    <li>
+      <span class="chip amber">Amber</span> Everything else. “Only after you switch off training”
+      means training is on by default and you must change a personal setting your employer cannot
+      enforce.
+    </li>
+  </ul>
+  <p>
+    The rule is a tested function in the open-source repository. A person can override a rating, but
+    only with a written reason shown beside it.
+  </p>
+
+  <h2>Facts versus opinion</h2>
+  <p>
+    Each tool page has two clearly separated parts. The solid-edged panel is what the vendor
+    publishes plus the computed rating. The dashed panel is Cameron’s assessment — a judgement
+    written by hand, never generated, and never changed by automation.
+  </p>
+
+  <h2>What this does not cover</h2>
+  <ul>
+    <li>It is not legal advice. Check your own contract, your company’s policies, and your DPA.</li>
+    <li>
+      It rates data handling as the vendor describes it. It cannot tell you whether a vendor follows
+      its own policy.
+    </li>
+    <li>Pages change. Each fact shows when it was last checked; older means less reliable.</li>
+    <li>
+      Prices are shown in the currency the vendor publishes, as listed on the day checked. Taxes,
+      regional pricing and discounts are not included.
+    </li>
+    <li>
+      “May need IT approval” is a flag, not a ruling: it appears when a tool joins calls with a bot
+      or can only be installed on a desktop.
+    </li>
+  </ul>
+
+  <h2>Corrections</h2>
+  <p>
+    Spotted something wrong or out of date?
+    <a href="https://github.com/Camerongmccallum24/ai-success-network/issues">Open an issue</a>
+    with a link to the vendor page. Changes happen through a public pull request.
+  </p>
+</Base>

@@ -1,0 +1,298 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Base from '../../layouts/Base.astro';
+import {
+  ENV_LABEL,
+  FACT_TEXT,
+  getRatedTools,
+  priceText,
+  RATING_LABEL,
+  type RatedPlan,
+  type RatedTool,
+  WORKFLOW_LABEL,
+} from '../../lib/tools';
+
+export const getStaticPaths = (async () => {
+  const tools = await getRatedTools();
+  return tools.map((t) => ({ params: { slug: t.tool.slug }, props: { rated: t } }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  rated: RatedTool;
+}
+const { rated } = Astro.props;
+const { tool } = rated;
+const sourceById = new Map(tool.sources.map((s) => [s.id, s]));
+
+const facts = (p: RatedPlan) =>
+  [
+    [
+      'trainingDefault',
+      'Training on your inputs',
+      FACT_TEXT.trainingDefault[p.plan.facts.trainingDefault],
+    ],
+    [
+      'trainingControl',
+      'Who can turn it off',
+      FACT_TEXT.trainingControl[p.plan.facts.trainingControl],
+    ],
+    [
+      'subprocessorTraining',
+      'AI subprocessors',
+      FACT_TEXT.subprocessorTraining[p.plan.facts.subprocessorTraining],
+    ],
+    ['dpa', 'Data processing agreement', FACT_TEXT.dpa[p.plan.facts.dpa]],
+    [
+      'adminEnforcement',
+      'Admin can enforce settings',
+      p.plan.facts.adminEnforcement ? 'Yes' : 'No',
+    ],
+  ] as const;
+---
+
+<Base
+  title={tool.name}
+  description={`${tool.summary} Per-plan data rating and the vendor sources behind it.`}
+>
+  <p class="eyebrow">
+    <a href="/">All tools</a>
+  </p>
+  <h1>{tool.name}</h1>
+  <p class="lead">{tool.summary}</p>
+  <p class="meta">
+    <span>{tool.vendor}</span>
+    <span>·</span>
+    <a href={tool.website}>{tool.website.replace('https://', '')}</a>
+  </p>
+  <p class="tags">
+    {tool.workflows.map((w) => (
+      <span class="tag">{WORKFLOW_LABEL[w] ?? w}</span>
+    ))}
+    {tool.worksWith.map((e) => (
+      <span class="tag">{ENV_LABEL[e] ?? e}</span>
+    ))}
+    {rated.itApproval && <span class="tag">May need IT approval</span>}
+  </p>
+
+  <section class="claims" aria-labelledby="claims-h">
+    <p class="label">Source-backed · computed by rule</p>
+    <h2 id="claims-h">What the vendor publishes, plan by plan</h2>
+    <p class="note">
+      Each fact below is quoted from the vendor’s own pages. The rating is computed from those facts
+      by a fixed rule; nobody’s opinion changes it. <a href="/methodology">How</a>.
+    </p>
+
+    <div class="plans">
+      {rated.plans.map((p) => (
+        <section class="plan" aria-labelledby={`plan-${p.plan.name}`}>
+          <h3 id={`plan-${p.plan.name}`}>{p.plan.name}</h3>
+          <p class="price">{priceText(p.plan)}</p>
+          <p>
+            <span class={`chip ${p.rating}`}>
+              {RATING_LABEL[p.rating]}
+              {p.result.condition ? ` — ${p.result.condition}` : ''}
+            </span>
+          </p>
+          <p class="why">
+            {p.result.reasons.join('; ')}.
+            {p.plan.ratingOverride && ` Overridden: ${p.plan.ratingOverride.reason}`}
+          </p>
+          <dl>
+            {facts(p).map(([key, label, value]) => (
+              <>
+                <dt>{label}</dt>
+                <dd>
+                  {value}
+                  {key === 'trainingControl' && p.plan.facts.optOutPath && (
+                    <span class="path"> — {p.plan.facts.optOutPath}</span>
+                  )}
+                  <details>
+                    <summary>Evidence</summary>
+                    <ul>
+                      {(p.plan.evidence[key] ?? []).map((c) => {
+                        const s = sourceById.get(c.source);
+                        return (
+                          <li>
+                            <q>{c.quote}</q> — {s && <a href={s.url}>{s.id}</a>}
+                          </li>
+                        );
+                      })}
+                      {key === 'trainingControl' &&
+                        p.plan.facts.trainingControl === 'not-needed' && (
+                          <li>Training is off, so no control is needed.</li>
+                        )}
+                    </ul>
+                  </details>
+                </dd>
+              </>
+            ))}
+          </dl>
+          {p.plan.caveats.length > 0 && (
+            <>
+              <h4>Worth knowing</h4>
+              <ul class="caveats">
+                {p.plan.caveats.map((c) => (
+                  <li>
+                    {c.text}{' '}
+                    <span class="src">
+                      (
+                      {c.evidence.map((e, i) => (
+                        <>
+                          {i > 0 && ', '}
+                          <a href={sourceById.get(e.source)?.url}>{e.source}</a>
+                        </>
+                      ))}
+                      )
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </section>
+      ))}
+    </div>
+
+    <h3>Sources</h3>
+    <ul class="sources">
+      {tool.sources.map((s) => (
+        <li>
+          <a href={s.url}>{s.url}</a> <span class="tag">{s.kind}</span>
+          <span class="tag">checked {s.lastVerified}</span>
+          {s.verify === 'manual' && <span class="tag">checked by hand</span>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="judgement" aria-labelledby="judge-h">
+    <p class="label">Cameron’s assessment · opinion</p>
+    <h2 id="judge-h">Is it worth it for a CSM?</h2>
+    {tool.assessment ? (
+      <>
+        <p class="take">{tool.assessment.take}</p>
+        <p>
+          <strong>Best for:</strong> {tool.assessment.bestFor}
+        </p>
+        <p>
+          <strong>Watch out for:</strong> {tool.assessment.watchOut}
+        </p>
+      </>
+    ) : (
+      <p>Assessment pending. It is written by hand, never generated.</p>
+    )}
+  </section>
+</Base>
+
+<style>
+  .meta {
+    color: var(--muted);
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 0 0.75rem;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0 0 1.5rem;
+  }
+  .claims,
+  .judgement {
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 0.5rem 1.5rem 1.5rem;
+    margin-top: 2rem;
+  }
+  .claims {
+    background: var(--claim-bg);
+    border-left: 6px solid var(--accent);
+  }
+  .judgement {
+    background: var(--judge-bg);
+    border-left: 6px dashed var(--muted);
+  }
+  .label {
+    margin: 1rem 0 0;
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .claims h2,
+  .judgement h2 {
+    margin-top: 0.25rem;
+  }
+  .note {
+    color: var(--muted);
+  }
+  .plans {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    margin-top: 1rem;
+  }
+  .plan {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 0.25rem 1.1rem 1rem;
+  }
+  .plan h3 {
+    margin-bottom: 0.25rem;
+  }
+  .price {
+    margin: 0 0 0.5rem;
+    color: var(--muted);
+  }
+  .why {
+    font-size: 0.9375rem;
+  }
+  dl {
+    margin: 1rem 0 0;
+  }
+  dt {
+    font-size: 0.8125rem;
+    color: var(--muted);
+    margin-top: 0.75rem;
+  }
+  dd {
+    margin: 0;
+    font-weight: 600;
+  }
+  dd .path {
+    font-weight: 400;
+    font-size: 0.9375rem;
+  }
+  details {
+    font-weight: 400;
+    font-size: 0.9375rem;
+  }
+  summary {
+    cursor: pointer;
+    color: var(--accent);
+    min-height: 1.5rem;
+  }
+  details ul,
+  .caveats {
+    padding-left: 1.1rem;
+  }
+  h4 {
+    margin: 1.25rem 0 0.25rem;
+    font-size: 0.9375rem;
+  }
+  .caveats {
+    font-size: 0.9375rem;
+  }
+  .sources {
+    padding-left: 1.1rem;
+    word-break: break-word;
+  }
+  .sources li {
+    margin-bottom: 0.4rem;
+  }
+  .take {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+</style>

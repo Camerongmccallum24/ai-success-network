@@ -1,115 +1,248 @@
 ---
-import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import {
+  ENV_LABEL,
+  getRatedTools,
+  RATING_LABEL,
+  RATING_MEANING,
+  WORKFLOW_LABEL,
+} from '../lib/tools';
 
-const tools = await getCollection('tools');
-const title = 'AI Success Network — Verified AI tools for CSMs';
-const description =
-  'Which AI tools help a customer success manager, which plan is safe for customer data, and the vendor evidence behind each answer. Rebuild in progress.';
-const canonical = new URL(Astro.url.pathname, Astro.site);
+const tools = await getRatedTools();
+const workflows = [...new Set(tools.flatMap((t) => t.tool.workflows))].sort();
+const envs = [...new Set(tools.flatMap((t) => t.tool.worksWith))].sort();
 ---
 
-<!doctype html>
-<html lang="en-GB">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:type" content="website" />
-    <meta name="color-scheme" content="light dark" />
-  </head>
-  <body>
-    <main>
-      <p class="eyebrow">AI Success Network</p>
-      <h1>Verified AI tools for customer success managers.</h1>
-      <p class="lead">
-        Which tools help your workflow, which plan is safe for customer data, and the vendor
-        evidence behind every answer.
+<Base
+  title="AI Success Network"
+  description="Which AI tools help a customer success manager, which plan is safe for customer data, and the vendor evidence behind each answer."
+>
+  <p class="eyebrow">AI Success Network</p>
+  <h1>Which AI tools are safe to use with customer data?</h1>
+  <p class="lead">
+    A verified directory for customer success managers. Every rating is computed from what the
+    vendor itself publishes, per plan, and every fact links to its source.
+  </p>
+
+  {tools.length === 0 ? (
+    <p class="empty">
+      No tools are published yet: each one is verified against the vendor’s own pages before it
+      appears here.
+    </p>
+  ) : (
+    <>
+      <form id="filters" class="filters" aria-label="Filter tools">
+        <label>
+          Workflow
+          <select name="workflow">
+            <option value="">All</option>
+            {workflows.map((w) => (
+              <option value={w}>{WORKFLOW_LABEL[w] ?? w}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Works with
+          <select name="env">
+            <option value="">Any</option>
+            {envs.map((e) => (
+              <option value={e}>{ENV_LABEL[e] ?? e}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Best plan rating
+          <select name="rating">
+            <option value="">Any</option>
+            <option value="green">Green</option>
+            <option value="amber">Amber or better</option>
+          </select>
+        </label>
+        <label class="check">
+          <input type="checkbox" name="free" /> Has a free plan
+        </label>
+      </form>
+
+      <p id="count" class="count" role="status" aria-live="polite">
+        {tools.length} tools
       </p>
-      <p class="status">
-        <strong>Rebuild in progress.</strong>{' '}
-        {tools.length === 0
-          ? 'No tools are published yet: each one is verified against the vendor’s own pages before it appears here.'
-          : `${tools.length} tool records drafted; none is published until its quotes pass verification.`}
+
+      <ul class="grid" id="grid">
+        {tools.map((t) => (
+          <li
+            data-workflows={t.tool.workflows.join(' ')}
+            data-env={t.tool.worksWith.join(' ')}
+            data-best={t.best}
+            data-free={t.hasFreeTier ? '1' : '0'}
+          >
+            <article>
+              <h2>
+                <a href={`/tools/${t.tool.slug}`}>{t.tool.name}</a>
+              </h2>
+              <p class="vendor">{t.tool.vendor}</p>
+              <p>{t.tool.summary}</p>
+              <p class="plans" aria-label="Rating per plan">
+                {t.plans.map((p) => (
+                  <span class="plan">
+                    <span class="pn">{p.plan.name}</span>
+                    <span class={`chip ${p.rating}`}>{RATING_LABEL[p.rating]}</span>
+                  </span>
+                ))}
+              </p>
+              <p class="tags">
+                {t.itApproval && <span class="tag">May need IT approval</span>}
+                {t.hasFreeTier && <span class="tag">Free plan</span>}
+                <span class="tag">Checked {t.lastVerified}</span>
+              </p>
+            </article>
+          </li>
+        ))}
+      </ul>
+      <p id="none" hidden>
+        No tools match those filters.
       </p>
-      <p>
-        <a href="https://github.com/Camerongmccallum24/ai-success-network">
-          Follow the build on GitHub
-        </a>{' '}
-        ·{' '}
-        <a href="https://github.com/Camerongmccallum24/ai-success-network/releases/tag/v0.1.0-2025-original">
-          See the May 2025 prototype
-        </a>
-      </p>
-    </main>
-  </body>
-</html>
+
+      <aside class="key" aria-label="How to read the ratings">
+        <h2>Reading the ratings</h2>
+        <ul>
+          {(['green', 'amber', 'red'] as const).map((r) => (
+            <li>
+              <span class={`chip ${r}`}>{RATING_LABEL[r]}</span> {RATING_MEANING[r]}
+            </li>
+          ))}
+        </ul>
+        <p>
+          Ratings are per plan, not per tool. <a href="/methodology">How they are computed</a>.
+        </p>
+      </aside>
+    </>
+  )}
+</Base>
+
+<script>
+  const form = document.getElementById('filters') as HTMLFormElement | null;
+  const items = [...document.querySelectorAll<HTMLElement>('#grid > li')];
+  const count = document.getElementById('count');
+  const none = document.getElementById('none');
+  const rank = { red: 0, amber: 1, green: 2 } as const;
+
+  function apply() {
+    if (!form) return;
+    const data = new FormData(form);
+    const workflow = String(data.get('workflow') ?? '');
+    const env = String(data.get('env') ?? '');
+    const rating = String(data.get('rating') ?? '');
+    const free = data.get('free') === 'on';
+    let shown = 0;
+    for (const li of items) {
+      const best = li.dataset.best as keyof typeof rank;
+      const ok =
+        (!workflow || (li.dataset.workflows ?? '').split(' ').includes(workflow)) &&
+        (!env || (li.dataset.env ?? '').split(' ').includes(env)) &&
+        (!rating || rank[best] >= rank[rating as keyof typeof rank]) &&
+        (!free || li.dataset.free === '1');
+      li.hidden = !ok;
+      if (ok) shown++;
+    }
+    if (count) count.textContent = `${shown} ${shown === 1 ? 'tool' : 'tools'}`;
+    if (none) none.hidden = shown !== 0;
+  }
+  form?.addEventListener('input', apply);
+  form?.addEventListener('submit', (e) => e.preventDefault());
+</script>
 
 <style>
-  :root {
-    --bg: #f4f1ea;
-    --ink: #1b1f1e;
-    --muted: #4a5552;
-    --accent: #0f3d3e;
-    --rule: #d8d2c4;
-    color-scheme: light dark;
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    align-items: end;
+    margin: 2rem 0 0.5rem;
+    padding: 1rem 0;
+    border-block: 1px solid var(--rule);
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #121615;
-      --ink: #eceae4;
-      --muted: #b4bcb9;
-      --accent: #8fd3c8;
-      --rule: #2c3331;
-    }
+  .filters label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.9375rem;
+    color: var(--muted);
   }
-  body {
-    margin: 0;
-    background: var(--bg);
+  .filters .check {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  select {
+    font: inherit;
+    padding: 0.35rem 0.5rem;
+    background: var(--surface);
     color: var(--ink);
-    font:
-      1.0625rem/1.6 ui-sans-serif,
-      system-ui,
-      -apple-system,
-      'Segoe UI',
-      sans-serif;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    min-height: 2.5rem;
   }
-  main {
-    max-width: 40rem;
-    margin: 0 auto;
-    padding: clamp(3rem, 12vh, 8rem) 1.25rem 4rem;
+  input[type='checkbox'] {
+    width: 1.25rem;
+    height: 1.25rem;
   }
-  .eyebrow {
-    font-size: 0.8125rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+  .count {
     color: var(--muted);
+    margin: 0.5rem 0 1rem;
   }
-  h1 {
-    font-size: clamp(2rem, 6vw, 2.75rem);
-    line-height: 1.15;
-    margin: 0.25rem 0 1rem;
+  .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   }
-  .lead {
-    font-size: 1.1875rem;
+  .grid li[hidden] {
+    display: none;
+  }
+  article {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1.1rem 1.25rem;
+    height: 100%;
+  }
+  article h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  .vendor {
+    margin: 0 0 0.5rem;
     color: var(--muted);
+    font-size: 0.9375rem;
   }
-  .status {
+  .plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.75rem;
+    margin: 0.75rem 0;
+  }
+  .plan {
+    display: inline-flex;
+    gap: 0.4rem;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+  }
+  .key {
+    margin-top: 3rem;
     border-top: 1px solid var(--rule);
-    padding-top: 1.25rem;
-    margin-top: 2rem;
   }
-  a {
-    color: var(--accent);
-    text-underline-offset: 0.2em;
-  }
-  a:focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: 3px;
+  .key ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
   }
 </style>

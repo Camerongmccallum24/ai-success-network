@@ -5,18 +5,12 @@
     "url": "https://chatgpt.com/pricing/",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://chatgpt.com/pricing/",
-      "textLength": 41,
-      "challenge": true,
-      "prices": 0
-    },
+    "plain": null,
     "browserUS": {
       "status": 200,
       "finalUrl": "https://chatgpt.com/pricing/",
       "title": "Pricing | ChatGPT",
-      "textLength": 7670,
+      "textLength": 7653,
       "challenge": false,
       "prices": 4,
       "currencies": {
@@ -25,21 +19,9 @@
         "eur": 0
       }
     },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://chatgpt.com/pricing/",
-      "title": "Pricing | ChatGPT",
-      "textLength": 7638,
-      "challenge": false,
-      "prices": 0,
-      "currencies": {
-        "usd": 0,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
+    "browserGB": null,
     "errors": [],
-    "outcome": "ok-browser-only"
+    "outcome": "ok"
   },
   {
     "tool": "chatgpt",
@@ -47,13 +29,7 @@
     "url": "https://openai.com/business-data/",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://openai.com/business-data/",
-      "textLength": 41,
-      "challenge": true,
-      "prices": 0
-    },
+    "plain": null,
     "browserUS": {
       "status": 200,
       "finalUrl": "https://openai.com/business-data/",
@@ -69,7 +45,535 @@
     },
     "browserGB": null,
     "errors": [],
-    "outcome": "ok-browser-only"
+    "outcome": "ok"
+  },
+  {
+    "tool": "granola",
+    "kind": "pricing",
+    "url": "https://www.granola.ai/pricing",
+    "pilot": true,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.granola.ai/pricing",
+      "title": "Pricing plans | Granola",
+      "textLength": 6759,
+      "challenge": false,
+      "prices": 3,
+      "currencies": {
+        "usd": 3,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "gamma",
+    "kind": "pricing",
+    "url": "https://gamma.app/pricing",
+    "pilot": true,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 403,
+      "finalUrl": "https://gamma.app/pricing",
+      "title": "Just a moment...",
+      "textLength": 16,
+      "challenge": true,
+      "prices": 0,
+      "currencies": {
+        "usd": 0,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "blocked"
+  },
+  {
+    "tool": "m365-copilot",
+    "kind": "pricing",
+    "url": "https://www.microsoft.com/en-gb/microsoft-365/copilot/business",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.microsoft.com/en-gb/microsoft-365-copilot/business",
+      "title": "Microsoft 365 Copilot for Business: Enterprise AI Solutions | Microsoft 365 Copilot",
+      "textLength": 11297,
+      "challenge": false,
+      "prices": 6,
+      "currencies": {
+        "usd": 0,
+        "gbp": 6,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "gemini",
+    "kind": "pricing",
+    "url": "https://workspace.google.com/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://workspace.google.com/pricing",
+      "title": "Compare Flexible Pricing Plan Options | Google Workspace",
+      "textLength": 17595,
+      "challenge": false,
+      "prices": 6,
+      "currencies": {
+        "usd": 6,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "gemini",
+    "kind": "pricing",
+    "url": "https://gemini.google/subscriptions/",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://gemini.google/subscriptions/",
+      "title": "Google AI Pro & Ultra — get access to Gemini 3.1 Pro & more",
+      "textLength": 9410,
+      "challenge": false,
+      "prices": 6,
+      "currencies": {
+        "usd": 6,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "claude",
+    "kind": "pricing",
+    "url": "https://claude.com/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://claude.com/pricing",
+      "title": "Plans & Pricing | Claude by Anthropic",
+      "textLength": 7454,
+      "challenge": false,
+      "prices": 6,
+      "currencies": {
+        "usd": 6,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "fathom",
+    "kind": "pricing",
+    "url": "https://www.fathom.ai/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.fathom.ai/pricing",
+      "title": "Fathom Pricing 2026: Free Plan or Plans from $15/mo",
+      "textLength": 5040,
+      "challenge": false,
+      "prices": 5,
+      "currencies": {
+        "usd": 5,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "tldv",
+    "kind": "pricing",
+    "url": "https://tldv.io/app-pricing/",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 404,
+      "finalUrl": "https://tldv.io/app-pricing/",
+      "title": "Page not found - tl;dv",
+      "textLength": 1803,
+      "challenge": false,
+      "prices": 0,
+      "currencies": {
+        "usd": 0,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "not-found"
+  },
+  {
+    "tool": "otter",
+    "kind": "pricing",
+    "url": "https://otter.ai/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://otter.ai/pricing",
+      "title": "Pricing | Otter.ai",
+      "textLength": 7864,
+      "challenge": false,
+      "prices": 7,
+      "currencies": {
+        "usd": 7,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "fireflies",
+    "kind": "pricing",
+    "url": "https://fireflies.ai/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://fireflies.ai/pricing",
+      "title": "Pricing & Plans | Fireflies.ai AI App for Smarter Meeting Notes",
+      "textLength": 9173,
+      "challenge": false,
+      "prices": 11,
+      "currencies": {
+        "usd": 11,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "read-ai",
+    "kind": "pricing",
+    "url": "https://www.read.ai/plans-pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.read.ai/plans-pricing",
+      "title": "Plans & Pricing",
+      "textLength": 7409,
+      "challenge": false,
+      "prices": 4,
+      "currencies": {
+        "usd": 4,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "perplexity",
+    "kind": "pricing",
+    "url": "https://www.perplexity.ai/pro",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.perplexity.ai/pro",
+      "title": "Perplexity Pro",
+      "textLength": 10952,
+      "challenge": false,
+      "prices": 21,
+      "currencies": {
+        "usd": 21,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "canva",
+    "kind": "pricing",
+    "url": "https://www.canva.com/pricing/",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.canva.com/pricing/",
+      "title": "Canva Pricing: Compare Free, Pro, Business and Enterprise plans",
+      "textLength": 8770,
+      "challenge": false,
+      "prices": 3,
+      "currencies": {
+        "usd": 3,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "beautiful-ai",
+    "kind": "pricing",
+    "url": "https://www.beautiful.ai/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.beautiful.ai/pricing",
+      "title": "Beautiful.ai Pricing and Plans",
+      "textLength": 4256,
+      "challenge": false,
+      "prices": 6,
+      "currencies": {
+        "usd": 6,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "loom",
+    "kind": "pricing",
+    "url": "https://www.loom.com/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.loom.com/pricing",
+      "title": "Loom Pricing | Start Recording For Free | Loom",
+      "textLength": 8582,
+      "challenge": false,
+      "prices": 3,
+      "currencies": {
+        "usd": 3,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "grammarly",
+    "kind": "pricing",
+    "url": "https://www.grammarly.com/plans",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.grammarly.com/plans",
+      "title": "Grammarly Prices and Plans | Grammarly",
+      "textLength": 4516,
+      "challenge": false,
+      "prices": 3,
+      "currencies": {
+        "usd": 3,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "superhuman",
+    "kind": "pricing",
+    "url": "https://superhuman.com/plans",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://superhuman.com/plans",
+      "title": "Superhuman Suite | Pricing & Plans",
+      "textLength": 8570,
+      "challenge": false,
+      "prices": 8,
+      "currencies": {
+        "usd": 8,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "notion",
+    "kind": "pricing",
+    "url": "https://www.notion.com/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://www.notion.com/pricing",
+      "title": "Notion Pricing Plans: Free, Plus, Business, & Enterprise.",
+      "textLength": 5585,
+      "challenge": false,
+      "prices": 7,
+      "currencies": {
+        "usd": 7,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "obsidian",
+    "kind": "pricing",
+    "url": "https://obsidian.md/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://obsidian.md/pricing",
+      "title": "Pricing - Obsidian",
+      "textLength": 3399,
+      "challenge": false,
+      "prices": 4,
+      "currencies": {
+        "usd": 4,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "zapier",
+    "kind": "pricing",
+    "url": "https://zapier.com/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://zapier.com/pricing",
+      "title": "Plans & Pricing | Zapier",
+      "textLength": 5513,
+      "challenge": false,
+      "prices": 3,
+      "currencies": {
+        "usd": 3,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "make",
+    "kind": "pricing",
+    "url": "https://www.make.com/en/pricing",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 403,
+      "finalUrl": "https://www.make.com/en/pricing",
+      "title": "Just a moment...",
+      "textLength": 260,
+      "challenge": false,
+      "prices": 0,
+      "currencies": {
+        "usd": 0,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "blocked"
+  },
+  {
+    "tool": "dovetail",
+    "kind": "pricing",
+    "url": "https://dovetail.com/pricing/",
+    "pilot": false,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://dovetail.com/pricing/",
+      "title": "Pricing | Dovetail",
+      "textLength": 9803,
+      "challenge": false,
+      "prices": 1,
+      "currencies": {
+        "usd": 1,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
   },
   {
     "tool": "chatgpt",
@@ -77,13 +581,7 @@
     "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://help.openai.com/en/articles/7730893-data-controls-faq",
-      "textLength": 41,
-      "challenge": true,
-      "prices": 0
-    },
+    "plain": null,
     "browserUS": {
       "status": 403,
       "finalUrl": "https://help.openai.com/en/articles/7730893-data-controls-faq",
@@ -102,150 +600,12 @@
     "outcome": "blocked"
   },
   {
-    "tool": "chatgpt",
-    "kind": "help",
-    "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
-    "pilot": true,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
-      "textLength": 41,
-      "challenge": true,
-      "prices": 0
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://help.openai.com/en/articles/8792828-chatgpt-business-overview",
-      "title": "ChatGPT Business - Overview | OpenAI Help Center",
-      "textLength": 7080,
-      "challenge": false,
-      "prices": 8,
-      "currencies": {
-        "usd": 8,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": null,
-    "errors": [],
-    "outcome": "ok-browser-only"
-  },
-  {
-    "tool": "chatgpt",
-    "kind": "help",
-    "url": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
-    "pilot": true,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
-      "textLength": 41,
-      "challenge": true,
-      "prices": 0
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
-      "title": "What is ChatGPT Plus? | OpenAI Help Center",
-      "textLength": 5947,
-      "challenge": false,
-      "prices": 2,
-      "currencies": {
-        "usd": 2,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": null,
-    "errors": [],
-    "outcome": "ok-browser-only"
-  },
-  {
-    "tool": "chatgpt",
-    "kind": "dpa",
-    "url": "https://openai.com/policies/data-processing-addendum/",
-    "pilot": true,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://openai.com/policies/data-processing-addendum/",
-      "textLength": 41,
-      "challenge": true,
-      "prices": 0
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://openai.com/policies/data-processing-addendum/",
-      "title": "OpenAI Data Processing Addendum | OpenAI",
-      "textLength": 20754,
-      "challenge": false,
-      "prices": 0,
-      "currencies": {
-        "usd": 0,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": null,
-    "errors": [],
-    "outcome": "ok-browser-only"
-  },
-  {
-    "tool": "granola",
-    "kind": "pricing",
-    "url": "https://www.granola.ai/pricing",
-    "pilot": true,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.granola.ai/pricing",
-      "textLength": 7050,
-      "challenge": false,
-      "prices": 3
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.granola.ai/pricing",
-      "title": "Pricing plans | Granola",
-      "textLength": 6759,
-      "challenge": false,
-      "prices": 3,
-      "currencies": {
-        "usd": 3,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.granola.ai/pricing",
-      "title": "Pricing plans | Granola",
-      "textLength": 6759,
-      "challenge": false,
-      "prices": 3,
-      "currencies": {
-        "usd": 3,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
     "tool": "granola",
     "kind": "trust",
     "url": "https://www.granola.ai/security",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.granola.ai/security",
-      "textLength": 4809,
-      "challenge": false,
-      "prices": 0
-    },
+    "plain": null,
     "browserUS": {
       "status": 200,
       "finalUrl": "https://www.granola.ai/security",
@@ -261,7 +621,55 @@
     },
     "browserGB": null,
     "errors": [],
-    "outcome": "ok-static"
+    "outcome": "ok"
+  },
+  {
+    "tool": "gamma",
+    "kind": "privacy",
+    "url": "https://gamma.app/privacy",
+    "pilot": true,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 200,
+      "finalUrl": "https://gamma.app/privacy",
+      "title": "Gamma Tech, Inc. Privacy",
+      "textLength": 28755,
+      "challenge": false,
+      "prices": 0,
+      "currencies": {
+        "usd": 0,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "ok"
+  },
+  {
+    "tool": "chatgpt",
+    "kind": "help",
+    "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+    "pilot": true,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 403,
+      "finalUrl": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "title": "Just a moment...",
+      "textLength": 0,
+      "challenge": false,
+      "prices": 0,
+      "currencies": {
+        "usd": 0,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "blocked"
   },
   {
     "tool": "granola",
@@ -269,13 +677,7 @@
     "url": "https://docs.granola.ai/help-center/consent-security-privacy/model-training",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://docs.granola.ai/help-center/consent-security-privacy/model-training",
-      "textLength": 4780,
-      "challenge": false,
-      "prices": 0
-    },
+    "plain": null,
     "browserUS": {
       "status": 200,
       "finalUrl": "https://docs.granola.ai/help-center/consent-security-privacy/model-training",
@@ -291,66 +693,18 @@
     },
     "browserGB": null,
     "errors": [],
-    "outcome": "ok-static"
+    "outcome": "ok"
   },
   {
     "tool": "gamma",
-    "kind": "pricing",
-    "url": "https://gamma.app/pricing",
+    "kind": "dpa",
+    "url": "https://gamma.app/dpa",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://gamma.app/pricing",
-      "textLength": 58,
-      "challenge": true,
-      "prices": 0
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://gamma.app/pricing",
-      "title": "Plans and pricing | Gamma",
-      "textLength": 2646,
-      "challenge": false,
-      "prices": 7,
-      "currencies": {
-        "usd": 7,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 403,
-      "finalUrl": "https://gamma.app/pricing",
-      "title": "Just a moment...",
-      "textLength": 16,
-      "challenge": true,
-      "prices": 0,
-      "currencies": {
-        "usd": 0,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-browser-only"
-  },
-  {
-    "tool": "gamma",
-    "kind": "privacy",
-    "url": "https://gamma.app/privacy",
-    "pilot": true,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://gamma.app/privacy",
-      "textLength": 58,
-      "challenge": true,
-      "prices": 0
-    },
+    "plain": null,
     "browserUS": {
       "status": 403,
-      "finalUrl": "https://gamma.app/privacy",
+      "finalUrl": "https://gamma.app/dpa",
       "title": "Just a moment...",
       "textLength": 16,
       "challenge": true,
@@ -366,24 +720,18 @@
     "outcome": "blocked"
   },
   {
-    "tool": "gamma",
-    "kind": "dpa",
-    "url": "https://gamma.app/dpa",
+    "tool": "chatgpt",
+    "kind": "help",
+    "url": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://gamma.app/dpa",
-      "textLength": 58,
-      "challenge": true,
-      "prices": 0
-    },
+    "plain": null,
     "browserUS": {
       "status": 403,
-      "finalUrl": "https://gamma.app/dpa",
+      "finalUrl": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
       "title": "Just a moment...",
-      "textLength": 16,
-      "challenge": true,
+      "textLength": 0,
+      "challenge": false,
       "prices": 0,
       "currencies": {
         "usd": 0,
@@ -401,13 +749,7 @@
     "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
-      "textLength": 2935,
-      "challenge": false,
-      "prices": 0
-    },
+    "plain": null,
     "browserUS": {
       "status": 200,
       "finalUrl": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
@@ -423,7 +765,31 @@
     },
     "browserGB": null,
     "errors": [],
-    "outcome": "ok-static"
+    "outcome": "ok"
+  },
+  {
+    "tool": "chatgpt",
+    "kind": "dpa",
+    "url": "https://openai.com/policies/data-processing-addendum/",
+    "pilot": true,
+    "robotsAllowed": true,
+    "plain": null,
+    "browserUS": {
+      "status": 403,
+      "finalUrl": "https://openai.com/policies/data-processing-addendum/",
+      "title": "Just a moment...",
+      "textLength": 0,
+      "challenge": false,
+      "prices": 0,
+      "currencies": {
+        "usd": 0,
+        "gbp": 0,
+        "eur": 0
+      }
+    },
+    "browserGB": null,
+    "errors": [],
+    "outcome": "blocked"
   },
   {
     "tool": "gamma",
@@ -431,13 +797,7 @@
     "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
     "pilot": true,
     "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
-      "textLength": 5713,
-      "challenge": false,
-      "prices": 1
-    },
+    "plain": null,
     "browserUS": {
       "status": 200,
       "finalUrl": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
@@ -453,846 +813,6 @@
     },
     "browserGB": null,
     "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "m365-copilot",
-    "kind": "pricing",
-    "url": "https://www.microsoft.com/en-gb/microsoft-365/copilot/business",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.microsoft.com/en-gb/microsoft-365-copilot/business",
-      "textLength": 44599,
-      "challenge": false,
-      "prices": 18
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.microsoft.com/en-gb/microsoft-365-copilot/business",
-      "title": "Microsoft 365 Copilot for Business: Enterprise AI Solutions | Microsoft 365 Copilot",
-      "textLength": 11297,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 0,
-        "gbp": 6,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.microsoft.com/en-gb/microsoft-365-copilot/business",
-      "title": "Microsoft 365 Copilot for Business: Enterprise AI Solutions | Microsoft 365 Copilot",
-      "textLength": 11297,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 0,
-        "gbp": 6,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "gemini",
-    "kind": "pricing",
-    "url": "https://workspace.google.com/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://workspace.google.com/pricing",
-      "textLength": 23024,
-      "challenge": false,
-      "prices": 30
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://workspace.google.com/pricing",
-      "title": "Compare Flexible Pricing Plan Options | Google Workspace",
-      "textLength": 17719,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 6,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://workspace.google.com/pricing",
-      "title": "Compare Flexible Pricing Plan Options | Google Workspace",
-      "textLength": 17605,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 6,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "gemini",
-    "kind": "pricing",
-    "url": "https://gemini.google/subscriptions/",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://gemini.google/subscriptions/",
-      "textLength": 21555,
-      "challenge": false,
-      "prices": 8
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://gemini.google/subscriptions/",
-      "title": "Google AI Pro & Ultra — get access to Gemini 3.1 Pro & more",
-      "textLength": 9410,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 6,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://gemini.google/subscriptions/",
-      "title": "Google AI Pro & Ultra — get access to Gemini 3.1 Pro & more",
-      "textLength": 9525,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 6,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "claude",
-    "kind": "pricing",
-    "url": "https://claude.com/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://claude.com/pricing",
-      "textLength": 21049,
-      "challenge": false,
-      "prices": 66
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://claude.com/pricing",
-      "title": "Plans & Pricing | Claude by Anthropic",
-      "textLength": 7585,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 6,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://claude.com/pricing",
-      "title": "Plans & Pricing | Claude by Anthropic",
-      "textLength": 7595,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 6,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "fathom",
-    "kind": "pricing",
-    "url": "https://www.fathom.ai/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.fathom.ai/pricing",
-      "textLength": 6824,
-      "challenge": false,
-      "prices": 15
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.fathom.ai/pricing",
-      "title": "Fathom Pricing 2026: Free Plan or Plans from $15/mo",
-      "textLength": 5040,
-      "challenge": false,
-      "prices": 5,
-      "currencies": {
-        "usd": 5,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.fathom.ai/pricing",
-      "title": "Fathom Pricing 2026: Free Plan or Plans from $15/mo",
-      "textLength": 5040,
-      "challenge": false,
-      "prices": 5,
-      "currencies": {
-        "usd": 5,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "tldv",
-    "kind": "pricing",
-    "url": "https://tldv.io/pricing/",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 404,
-      "finalUrl": "https://tldv.io/pricing/",
-      "textLength": 5489,
-      "challenge": false,
-      "prices": 0
-    },
-    "browserUS": {
-      "status": 404,
-      "finalUrl": "https://tldv.io/pricing/",
-      "title": "Page not found - tl;dv",
-      "textLength": 1722,
-      "challenge": false,
-      "prices": 0,
-      "currencies": {
-        "usd": 0,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 404,
-      "finalUrl": "https://tldv.io/pricing/",
-      "title": "Page not found - tl;dv",
-      "textLength": 1722,
-      "challenge": false,
-      "prices": 0,
-      "currencies": {
-        "usd": 0,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "not-found"
-  },
-  {
-    "tool": "otter",
-    "kind": "pricing",
-    "url": "https://otter.ai/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://otter.ai/pricing",
-      "textLength": 10569,
-      "challenge": false,
-      "prices": 14
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://otter.ai/pricing",
-      "title": "Pricing | Otter.ai",
-      "textLength": 7864,
-      "challenge": false,
-      "prices": 7,
-      "currencies": {
-        "usd": 7,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://otter.ai/pricing",
-      "title": "Pricing | Otter.ai",
-      "textLength": 7864,
-      "challenge": false,
-      "prices": 7,
-      "currencies": {
-        "usd": 7,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "fireflies",
-    "kind": "pricing",
-    "url": "https://fireflies.ai/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://fireflies.ai/pricing",
-      "textLength": 10820,
-      "challenge": false,
-      "prices": 12
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://fireflies.ai/pricing",
-      "title": "Pricing & Plans | Fireflies.ai AI App for Smarter Meeting Notes",
-      "textLength": 9173,
-      "challenge": false,
-      "prices": 11,
-      "currencies": {
-        "usd": 11,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://fireflies.ai/pricing",
-      "title": "Pricing & Plans | Fireflies.ai AI App for Smarter Meeting Notes",
-      "textLength": 9173,
-      "challenge": false,
-      "prices": 11,
-      "currencies": {
-        "usd": 11,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "read-ai",
-    "kind": "pricing",
-    "url": "https://www.read.ai/plans-pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.read.ai/plans-pricing",
-      "textLength": 11655,
-      "challenge": false,
-      "prices": 10
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.read.ai/plans-pricing",
-      "title": "Plans & Pricing",
-      "textLength": 7409,
-      "challenge": false,
-      "prices": 4,
-      "currencies": {
-        "usd": 4,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.read.ai/plans-pricing",
-      "title": "Plans & Pricing",
-      "textLength": 7409,
-      "challenge": false,
-      "prices": 4,
-      "currencies": {
-        "usd": 4,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "perplexity",
-    "kind": "pricing",
-    "url": "https://www.perplexity.ai/pro",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://www.perplexity.ai/pro",
-      "textLength": 58,
-      "challenge": true,
-      "prices": 0
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.perplexity.ai/pro",
-      "title": "Perplexity Pro",
-      "textLength": 10952,
-      "challenge": false,
-      "prices": 21,
-      "currencies": {
-        "usd": 21,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.perplexity.ai/pro",
-      "title": "Perplexity Pro",
-      "textLength": 10224,
-      "challenge": false,
-      "prices": 17,
-      "currencies": {
-        "usd": 17,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-browser-only"
-  },
-  {
-    "tool": "canva",
-    "kind": "pricing",
-    "url": "https://www.canva.com/pricing/",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://www.canva.com/pricing/",
-      "textLength": 192,
-      "challenge": true,
-      "prices": 0
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.canva.com/pricing/",
-      "title": "Canva Pricing: Compare Free, Pro, Business and Enterprise plans",
-      "textLength": 8779,
-      "challenge": false,
-      "prices": 3,
-      "currencies": {
-        "usd": 3,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.canva.com/en_gb/pricing/",
-      "title": "Canva Pricing: Compare Free, Pro, Business and Enterprise plans",
-      "textLength": 8458,
-      "challenge": false,
-      "prices": 3,
-      "currencies": {
-        "usd": 3,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-browser-only"
-  },
-  {
-    "tool": "beautiful-ai",
-    "kind": "pricing",
-    "url": "https://www.beautiful.ai/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.beautiful.ai/pricing",
-      "textLength": 11190,
-      "challenge": false,
-      "prices": 10
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.beautiful.ai/pricing",
-      "title": "Beautiful.ai Pricing and Plans",
-      "textLength": 4256,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 6,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.beautiful.ai/pricing",
-      "title": "Beautiful.ai Pricing and Plans",
-      "textLength": 4256,
-      "challenge": false,
-      "prices": 6,
-      "currencies": {
-        "usd": 6,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "loom",
-    "kind": "pricing",
-    "url": "https://www.loom.com/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.loom.com/pricing",
-      "textLength": 16202,
-      "challenge": false,
-      "prices": 3
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.loom.com/pricing",
-      "title": "Loom Pricing | Start Recording For Free | Loom",
-      "textLength": 8582,
-      "challenge": false,
-      "prices": 3,
-      "currencies": {
-        "usd": 3,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.loom.com/pricing",
-      "title": "Loom Pricing | Start Recording For Free | Loom",
-      "textLength": 8582,
-      "challenge": false,
-      "prices": 3,
-      "currencies": {
-        "usd": 3,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "grammarly",
-    "kind": "pricing",
-    "url": "https://www.grammarly.com/plans",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.grammarly.com/plans",
-      "textLength": 8284,
-      "challenge": false,
-      "prices": 8
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.grammarly.com/plans",
-      "title": "Grammarly Prices and Plans | Grammarly",
-      "textLength": 4495,
-      "challenge": false,
-      "prices": 5,
-      "currencies": {
-        "usd": 5,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.grammarly.com/plans",
-      "title": "Grammarly Prices and Plans | Grammarly",
-      "textLength": 4495,
-      "challenge": false,
-      "prices": 5,
-      "currencies": {
-        "usd": 5,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "superhuman",
-    "kind": "pricing",
-    "url": "https://superhuman.com/plans",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://superhuman.com/plans",
-      "textLength": 8390,
-      "challenge": false,
-      "prices": 8
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://superhuman.com/plans",
-      "title": "Superhuman Suite | Pricing & Plans",
-      "textLength": 8570,
-      "challenge": false,
-      "prices": 8,
-      "currencies": {
-        "usd": 8,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://superhuman.com/plans",
-      "title": "Superhuman Suite | Pricing & Plans",
-      "textLength": 8570,
-      "challenge": false,
-      "prices": 8,
-      "currencies": {
-        "usd": 8,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "notion",
-    "kind": "pricing",
-    "url": "https://www.notion.com/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://www.notion.com/pricing",
-      "textLength": 22485,
-      "challenge": false,
-      "prices": 10
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.notion.com/pricing",
-      "title": "Notion Pricing Plans: Free, Plus, Business, & Enterprise.",
-      "textLength": 5585,
-      "challenge": false,
-      "prices": 7,
-      "currencies": {
-        "usd": 7,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://www.notion.com/pricing",
-      "title": "Notion Pricing Plans: Free, Plus, Business, & Enterprise.",
-      "textLength": 5652,
-      "challenge": false,
-      "prices": 7,
-      "currencies": {
-        "usd": 7,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "obsidian",
-    "kind": "pricing",
-    "url": "https://obsidian.md/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://obsidian.md/pricing",
-      "textLength": 3991,
-      "challenge": false,
-      "prices": 6
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://obsidian.md/pricing",
-      "title": "Pricing - Obsidian",
-      "textLength": 3399,
-      "challenge": false,
-      "prices": 4,
-      "currencies": {
-        "usd": 4,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://obsidian.md/pricing",
-      "title": "Pricing - Obsidian",
-      "textLength": 3399,
-      "challenge": false,
-      "prices": 4,
-      "currencies": {
-        "usd": 4,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "zapier",
-    "kind": "pricing",
-    "url": "https://zapier.com/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://zapier.com/pricing",
-      "textLength": 26414,
-      "challenge": false,
-      "prices": 9
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://zapier.com/pricing",
-      "title": "Plans & Pricing | Zapier",
-      "textLength": 5513,
-      "challenge": false,
-      "prices": 3,
-      "currencies": {
-        "usd": 3,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://zapier.com/pricing",
-      "title": "Plans & Pricing | Zapier",
-      "textLength": 5513,
-      "challenge": false,
-      "prices": 3,
-      "currencies": {
-        "usd": 3,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
-  },
-  {
-    "tool": "make",
-    "kind": "pricing",
-    "url": "https://www.make.com/en/pricing",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 403,
-      "finalUrl": "https://www.make.com/en/pricing",
-      "textLength": 58,
-      "challenge": true,
-      "prices": 0
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://www.make.com/en/pricing",
-      "title": "Pricing & Subscription Packages | Make",
-      "textLength": 13337,
-      "challenge": false,
-      "prices": 4,
-      "currencies": {
-        "usd": 4,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 403,
-      "finalUrl": "https://www.make.com/en/pricing",
-      "title": "Just a moment...",
-      "textLength": 260,
-      "challenge": false,
-      "prices": 0,
-      "currencies": {
-        "usd": 0,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-browser-only"
-  },
-  {
-    "tool": "dovetail",
-    "kind": "pricing",
-    "url": "https://dovetail.com/pricing/",
-    "pilot": false,
-    "robotsAllowed": true,
-    "plain": {
-      "status": 200,
-      "finalUrl": "https://dovetail.com/pricing/",
-      "textLength": 11909,
-      "challenge": false,
-      "prices": 2
-    },
-    "browserUS": {
-      "status": 200,
-      "finalUrl": "https://dovetail.com/pricing/",
-      "title": "Pricing | Dovetail",
-      "textLength": 9803,
-      "challenge": false,
-      "prices": 1,
-      "currencies": {
-        "usd": 1,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "browserGB": {
-      "status": 200,
-      "finalUrl": "https://dovetail.com/pricing/",
-      "title": "Pricing | Dovetail",
-      "textLength": 10011,
-      "challenge": false,
-      "prices": 1,
-      "currencies": {
-        "usd": 1,
-        "gbp": 0,
-        "eur": 0
-      }
-    },
-    "errors": [],
-    "outcome": "ok-static"
+    "outcome": "ok"
   }
 ]

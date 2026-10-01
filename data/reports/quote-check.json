@@ -1,8 +1,8 @@
 {
   "summary": {
-    "checkedAt": "2026-10-01T19:02:34.245Z",
-    "found": 102,
-    "missing": 23,
+    "checkedAt": "2026-10-01T19:25:18.402Z",
+    "found": 103,
+    "missing": 22,
     "unreachable": 41
   },
   "checks": [
@@ -65,7 +65,7 @@
       "source": "chatgpt-pricing",
       "url": "https://chatgpt.com/pricing/",
       "verify": "auto",
-      "status": "missing",
+      "status": "found",
       "quote": "$0",
       "where": "Free.price"
     },
@@ -508,7 +508,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "By default, we will not use your inputs or outputs from our commercial products to train our models.",
-      "where": "Team.trainingDefault"
+      "where": "Team.trainingDefault",
+      "nearest": "accounts from those plans use claude code, see here. by default, we will not use your inputs or outputs from our commercial products (e.g."
     },
     {
       "tool": "claude",
@@ -589,7 +590,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "By default, we will not use your inputs or outputs from our commercial products to train our models.",
-      "where": "Enterprise.trainingDefault"
+      "where": "Enterprise.trainingDefault",
+      "nearest": "accounts from those plans use claude code, see here. by default, we will not use your inputs or outputs from our commercial products (e.g."
     },
     {
       "tool": "claude",
@@ -634,7 +636,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "US$20/seat/month, billed annually",
-      "where": "Enterprise.price"
+      "where": "Enterprise.price",
+      "nearest": "discount ($200 billed up front). $20 if billed monthly."
     },
     {
       "tool": "claude",
@@ -652,7 +655,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Data is allowed to be used to train AI models.",
-      "where": "Free.trainingDefault"
+      "where": "Free.trainingDefault",
+      "nearest": "setting: individuals (free, plus, pro, and ultra): data is allowed to be used to train ai"
     },
     {
       "tool": "gamma",
@@ -706,7 +710,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Data is allowed to be used to train AI models.",
-      "where": "Plus.trainingDefault"
+      "where": "Plus.trainingDefault",
+      "nearest": "setting: individuals (free, plus, pro, and ultra): data is allowed to be used to train ai"
     },
     {
       "tool": "gamma",
@@ -760,7 +765,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Data is allowed to be used to train AI models.",
-      "where": "Pro.trainingDefault"
+      "where": "Pro.trainingDefault",
+      "nearest": "setting: individuals (free, plus, pro, and ultra): data is allowed to be used to train ai"
     },
     {
       "tool": "gamma",
@@ -814,7 +820,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Data is allowed to be used to train AI models.",
-      "where": "Ultra.trainingDefault"
+      "where": "Ultra.trainingDefault",
+      "nearest": "setting: individuals (free, plus, pro, and ultra): data is allowed to be used to train ai"
     },
     {
       "tool": "gamma",
@@ -922,7 +929,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Your future chats won't appear in your Activity, and won't be used to train our AI models, unless you choose to send Google feedback.",
-      "where": "Google AI Pro (personal Google Account).trainingDefault"
+      "where": "Google AI Pro (personal Google Account).trainingDefault",
+      "nearest": "images, videos, and audio download your gemini apps data report google ai policy violations that involve your likeness how ask google help uses and protects your data ©2026 google privacy"
     },
     {
       "tool": "gemini",
@@ -931,7 +939,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Your future chats won't appear in your Activity, and won't be used to train our AI models, unless you choose to send Google feedback.",
-      "where": "Google AI Pro (personal Google Account).trainingControl"
+      "where": "Google AI Pro (personal Google Account).trainingControl",
+      "nearest": "images, videos, and audio download your gemini apps data report google ai policy violations that involve your likeness how ask google help uses and protects your data ©2026 google privacy"
     },
     {
       "tool": "gemini",
@@ -940,7 +949,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Human reviewers (including trained reviewers from our service providers) review some of the data we collect for these purposes.",
-      "where": "Google AI Pro (personal Google Account).subprocessorTraining"
+      "where": "Google AI Pro (personal Google Account).subprocessorTraining",
+      "nearest": "to the processing of my data or ask for inaccurate data in gemini apps' responses to be corrected? what are google's legal bases of processing"
     },
     {
       "tool": "gemini",
@@ -949,7 +959,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "If you have a work or school Google Account, your use of Gemini Apps may be subject to different data handling terms.",
-      "where": "Google AI Pro (personal Google Account).dpa"
+      "where": "Google AI Pro (personal Google Account).dpa",
+      "nearest": "provide gemini apps information we collect as you use gemini apps how your data is used how gemini apps get help from google services how gemini apps work"
     },
     {
       "tool": "gemini",
@@ -958,7 +969,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "If you have a work or school Google Account, your use of Gemini Apps may be subject to different data handling terms.",
-      "where": "Google AI Pro (personal Google Account).adminEnforcement"
+      "where": "Google AI Pro (personal Google Account).adminEnforcement",
+      "nearest": "provide gemini apps information we collect as you use gemini apps how your data is used how gemini apps get help from google services how gemini apps work"
     },
     {
       "tool": "gemini",
@@ -976,7 +988,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Human reviewers (including trained reviewers from our service providers) review some of the data we collect for these purposes.",
-      "where": "Google AI Pro (personal Google Account).caveat"
+      "where": "Google AI Pro (personal Google Account).caveat",
+      "nearest": "to the processing of my data or ask for inaccurate data in gemini apps' responses to be corrected? what are google's legal bases of processing"
     },
     {
       "tool": "gemini",
@@ -985,7 +998,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Temporary chats are not used to train Google's AI models.",
-      "where": "Google AI Pro (personal Google Account).caveat"
+      "where": "Google AI Pro (personal Google Account).caveat",
+      "nearest": "ai platforms what happens to my data when i import memory or chats from other ai"
     },
     {
       "tool": "gemini",
@@ -994,7 +1008,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction.",
-      "where": "Gemini in Google Workspace (Business).trainingDefault"
+      "where": "Gemini in Google Workspace (Business).trainingDefault",
+      "nearest": "data use ✖ use your prompt, workspace content, webpage context, or generated responses to train generative ai models without your permission"
     },
     {
       "tool": "gemini",
@@ -1003,7 +1018,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction.",
-      "where": "Gemini in Google Workspace (Business).subprocessorTraining"
+      "where": "Gemini in Google Workspace (Business).subprocessorTraining",
+      "nearest": "data use ✖ use your prompt, workspace content, webpage context, or generated responses to train generative ai models without your permission"
     },
     {
       "tool": "gemini",
@@ -1021,7 +1037,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Admins have control over conversation history for their organization.",
-      "where": "Gemini in Google Workspace (Business).adminEnforcement"
+      "where": "Gemini in Google Workspace (Business).adminEnforcement",
+      "nearest": "as determined by admins admins can control whether conversations with gemini are saved and for"
     },
     {
       "tool": "gemini",
@@ -1039,7 +1056,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction.",
-      "where": "Gemini in Google Workspace (Enterprise).trainingDefault"
+      "where": "Gemini in Google Workspace (Enterprise).trainingDefault",
+      "nearest": "data use ✖ use your prompt, workspace content, webpage context, or generated responses to train generative ai models without your permission"
     },
     {
       "tool": "gemini",
@@ -1048,7 +1066,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction.",
-      "where": "Gemini in Google Workspace (Enterprise).subprocessorTraining"
+      "where": "Gemini in Google Workspace (Enterprise).subprocessorTraining",
+      "nearest": "data use ✖ use your prompt, workspace content, webpage context, or generated responses to train generative ai models without your permission"
     },
     {
       "tool": "gemini",
@@ -1066,7 +1085,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "Admins have control over conversation history for their organization.",
-      "where": "Gemini in Google Workspace (Enterprise).adminEnforcement"
+      "where": "Gemini in Google Workspace (Enterprise).adminEnforcement",
+      "nearest": "as determined by admins admins can control whether conversations with gemini are saved and for"
     },
     {
       "tool": "gemini",
@@ -1408,7 +1428,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "now starting from $18.00 user/month, paid yearly",
-      "where": "Microsoft 365 Copilot Business.price"
+      "where": "Microsoft 365 Copilot Business.price",
+      "nearest": "originally starting from $21.00 now starting from $18.00 $21.00 $18.00 user/month, paid yearly"
     },
     {
       "tool": "m365-copilot",
@@ -1417,7 +1438,8 @@
       "verify": "auto",
       "status": "missing",
       "quote": "$25.20 user/month",
-      "where": "Microsoft 365 Copilot Business.price"
+      "where": "Microsoft 365 Copilot Business.price",
+      "nearest": "skip to main content copilot products and features"
     },
     {
       "tool": "m365-copilot",

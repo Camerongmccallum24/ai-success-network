@@ -341,7 +341,7 @@
         "trainingDefault": [
           {
             "source": "claude-commercial-training",
-            "quote": "By default, we will not use your inputs or outputs from our commercial products to train our models."
+            "quote": "By default, we will not use your inputs or outputs from our commercial products"
           }
         ],
         "subprocessorTraining": [
@@ -383,21 +383,8 @@
       "name": "Enterprise",
       "audience": "enterprise",
       "price": {
-        "status": "listed",
-        "currency": "USD",
-        "per": "user-month",
-        "amounts": [
-          {
-            "amount": 20,
-            "billing": "annual"
-          }
-        ],
-        "evidence": [
-          {
-            "source": "claude-pricing",
-            "quote": "US$20/seat/month, billed annually"
-          }
-        ]
+        "status": "unverified",
+        "reason": "The pricing page describes Enterprise as a seat price plus usage at API rates; the seat amount is not confirmed in the rendered page text."
       },
       "facts": {
         "trainingDefault": "off",
@@ -410,7 +397,7 @@
         "trainingDefault": [
           {
             "source": "claude-commercial-training",
-            "quote": "By default, we will not use your inputs or outputs from our commercial products to train our models."
+            "quote": "By default, we will not use your inputs or outputs from our commercial products"
           }
         ],
         "subprocessorTraining": [

@@ -76,9 +76,14 @@ async function textOf(url: string): Promise<string | null> {
   for (let attempt = 0; attempt < 2 && text === null; attempt++) {
     const page = await context.newPage();
     try {
-      await page.goto(url, { waitUntil: 'networkidle', timeout: 45_000 });
-      await page.waitForTimeout(1500);
-      const body = await page.evaluate(() => document.body.innerText);
+      await page.goto(url, { waitUntil: 'load', timeout: 30_000 });
+      await page.waitForTimeout(3000);
+      // innerText = what is visible; textContent adds collapsed accordions and tabs.
+      const body = await page.evaluate(() => {
+        const clone = document.body.cloneNode(true) as HTMLElement;
+        clone.querySelectorAll('script, style, noscript').forEach((n) => n.remove());
+        return `${document.body.innerText} ${clone.textContent ?? ''}`;
+      });
       if (!CHALLENGE.test(body.slice(0, 3000)) && body.length > 200) text = fold(body);
     } catch {
       /* retry once, then unreachable */

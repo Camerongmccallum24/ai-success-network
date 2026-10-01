@@ -147,13 +147,13 @@
         "trainingDefault": [
           {
             "source": "workspace-gemini-privacy-hub",
-            "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction."
+            "quote": "Use your prompt, Workspace content, webpage context, or generated responses to train generative AI models without your permission"
           }
         ],
         "subprocessorTraining": [
           {
             "source": "workspace-gemini-privacy-hub",
-            "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction."
+            "quote": "Use your prompt, Workspace content, webpage context, or generated responses to train generative AI models without your permission"
           }
         ],
         "dpa": [
@@ -165,7 +165,7 @@
         "adminEnforcement": [
           {
             "source": "workspace-gemini-privacy-hub",
-            "quote": "Admins have control over conversation history for their organization."
+            "quote": "Admins can control whether conversations with Gemini are saved"
           }
         ]
       },
@@ -199,13 +199,13 @@
         "trainingDefault": [
           {
             "source": "workspace-gemini-privacy-hub",
-            "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction."
+            "quote": "Use your prompt, Workspace content, webpage context, or generated responses to train generative AI models without your permission"
           }
         ],
         "subprocessorTraining": [
           {
             "source": "workspace-gemini-privacy-hub",
-            "quote": "Workspace does not use customer data for training models without customer's prior permission or instruction."
+            "quote": "Use your prompt, Workspace content, webpage context, or generated responses to train generative AI models without your permission"
           }
         ],
         "dpa": [
@@ -217,7 +217,7 @@
         "adminEnforcement": [
           {
             "source": "workspace-gemini-privacy-hub",
-            "quote": "Admins have control over conversation history for their organization."
+            "quote": "Admins can control whether conversations with Gemini are saved"
           }
         ]
       },

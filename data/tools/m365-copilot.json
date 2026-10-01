@@ -143,20 +143,12 @@
           {
             "amount": 18,
             "billing": "annual"
-          },
-          {
-            "amount": 25.2,
-            "billing": "monthly"
           }
         ],
         "evidence": [
           {
             "source": "m365-copilot-pricing",
-            "quote": "now starting from $18.00 user/month, paid yearly"
-          },
-          {
-            "source": "m365-copilot-pricing",
-            "quote": "$25.20 user/month"
+            "quote": "$18.00 user/month, paid yearly"
           }
         ]
       },
@@ -217,6 +209,15 @@
             {
               "source": "copilot-enterprise-data-protection",
               "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments."
+            }
+          ]
+        },
+        {
+          "text": "$18 is an introductory price; Microsoft lists it as originally $21 per user per month.",
+          "evidence": [
+            {
+              "source": "m365-copilot-pricing",
+              "quote": "originally starting from $21.00"
             }
           ]
         }

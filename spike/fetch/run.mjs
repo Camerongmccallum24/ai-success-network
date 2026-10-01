@@ -127,36 +127,55 @@ const urls = JSON.parse(await readFile(new URL('./urls.json', import.meta.url)))
 const browser = await chromium.launch();
 const results = [];
 
+// Run 2: one persistent context per domain (keeps cookies, as a normal browser
+// would), same-domain requests spaced 5 s apart, domains interleaved.
+const byHost = new Map();
 for (const u of urls) {
-  const row = { ...u, robotsAllowed: true, plain: null, browserUS: null, browserGB: null, errors: [] };
+  const h = new URL(u.url).hostname.split('.').slice(-2).join('.');
+  if (!byHost.has(h)) byHost.set(h, []);
+  byHost.get(h).push(u);
+}
+const contexts = new Map();
+const lastHit = new Map();
+const queue = [];
+for (let i = 0; byHost.size && [...byHost.values()].some((l) => l.length > i); i++)
+  for (const list of byHost.values()) if (list[i]) queue.push(list[i]);
+
+async function domainFetch(u) {
+  const h = new URL(u.url).hostname.split('.').slice(-2).join('.');
+  if (!contexts.has(h))
+    contexts.set(h, await browser.newContext({
+      userAgent: UA, locale: 'en-US', timezoneId: 'America/New_York',
+      extraHTTPHeaders: { 'accept-language': 'en-US,en;q=0.9' },
+    }));
+  const wait = 5000 - (Date.now() - (lastHit.get(h) ?? 0));
+  if (wait > 0) await sleep(wait);
+  lastHit.set(h, Date.now());
+  const page = await contexts.get(h).newPage();
   try {
-    row.robotsAllowed = await robotsAllows(u.url);
-  } catch (e) {
-    row.errors.push(`robots: ${e.message}`);
+    const resp = await page.goto(u.url, { waitUntil: 'domcontentloaded', timeout: TIMEOUT });
+    await page.waitForLoadState('networkidle', { timeout: 10_000 }).catch(() => {});
+    const text = await page.evaluate(() => document.body?.innerText ?? '');
+    return {
+      status: resp?.status() ?? null, finalUrl: page.url(), title: (await page.title()).slice(0, 120),
+      textLength: text.length, challenge: CHALLENGE.test(text.slice(0, 5000)),
+      prices: count(text, PRICE), currencies: currencies(text),
+    };
+  } finally {
+    await page.close();
   }
+}
+
+for (const u of queue) {
+  const row = { ...u, robotsAllowed: true, plain: null, browserUS: null, browserGB: null, errors: [] };
+  try { row.robotsAllowed = await robotsAllows(u.url); } catch (e) { row.errors.push(`robots: ${e.message}`); }
   if (row.robotsAllowed) {
-    try {
-      row.plain = await plainFetch(u.url);
-    } catch (e) {
-      row.errors.push(`plain: ${e.message}`);
-    }
-    try {
-      row.browserUS = await browserFetch(browser, u.url, { locale: 'en-US', timezoneId: 'America/New_York' });
-    } catch (e) {
-      row.errors.push(`browser: ${e.message}`);
-    }
-    if (u.kind === 'pricing') {
-      try {
-        row.browserGB = await browserFetch(browser, u.url, { locale: 'en-GB', timezoneId: 'Europe/London' });
-      } catch (e) {
-        row.errors.push(`browserGB: ${e.message}`);
-      }
-    }
+    try { row.browserUS = await withRetry(() => domainFetch(u)); } catch (e) { row.errors.push(`browser: ${e.message}`); }
   }
   row.outcome = classify(row);
+  if (row.outcome === 'ok-browser-only') row.outcome = 'ok';
   results.push(row);
   console.log(`${row.outcome.padEnd(18)} ${u.url}`);
-  await sleep(1000);
 }
 await browser.close();
 

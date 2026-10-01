@@ -21,7 +21,7 @@
   { "tool": "gemini", "kind": "pricing", "url": "https://gemini.google/subscriptions/", "pilot": false },
   { "tool": "claude", "kind": "pricing", "url": "https://claude.com/pricing", "pilot": false },
   { "tool": "fathom", "kind": "pricing", "url": "https://www.fathom.ai/pricing", "pilot": false },
-  { "tool": "tldv", "kind": "pricing", "url": "https://tldv.io/pricing/", "pilot": false },
+  { "tool": "tldv", "kind": "pricing", "url": "https://tldv.io/app-pricing/", "pilot": false },
   { "tool": "otter", "kind": "pricing", "url": "https://otter.ai/pricing", "pilot": false },
   { "tool": "fireflies", "kind": "pricing", "url": "https://fireflies.ai/pricing", "pilot": false },
   { "tool": "read-ai", "kind": "pricing", "url": "https://www.read.ai/plans-pricing", "pilot": false },

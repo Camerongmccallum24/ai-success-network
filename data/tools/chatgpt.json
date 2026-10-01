@@ -64,21 +64,8 @@
       "name": "Free",
       "audience": "personal",
       "price": {
-        "status": "listed",
-        "currency": "USD",
-        "per": "month",
-        "amounts": [
-          {
-            "amount": 0,
-            "billing": "monthly"
-          }
-        ],
-        "evidence": [
-          {
-            "source": "chatgpt-pricing",
-            "quote": "$0"
-          }
-        ]
+        "status": "unverified",
+        "reason": "chatgpt.com/pricing renders no amounts in page text and the OpenAI help pages cannot be read automatically; confirm the free price by hand."
       },
       "facts": {
         "trainingDefault": "on",

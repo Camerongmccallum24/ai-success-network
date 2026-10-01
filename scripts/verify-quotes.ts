@@ -35,6 +35,26 @@ interface Check {
   status: 'found' | 'missing' | 'unreachable';
   quote: string;
   where: string;
+  /** For a missing quote: the closest passage actually on the page, so the quote can be fixed. */
+  nearest?: string;
+}
+
+/** The page passage sharing the most words with the quote (for fixing a missing quote). */
+function nearestPassage(text: string, quote: string): string {
+  const want = new Set(fold(quote).split(' '));
+  const words = text.split(' ');
+  const size = Math.max(8, fold(quote).split(' ').length + 6);
+  let best = 0;
+  let bestAt = 0;
+  for (let i = 0; i + size <= words.length; i += 2) {
+    let score = 0;
+    for (const w of words.slice(i, i + size)) if (want.has(w)) score++;
+    if (score > best) {
+      best = score;
+      bestAt = i;
+    }
+  }
+  return words.slice(bestAt, bestAt + size).join(' ');
 }
 
 const only = process.argv[2];
@@ -95,6 +115,9 @@ for (const tool of tools) {
       status: text === null ? 'unreachable' : text.includes(fold(c.quote)) ? 'found' : 'missing',
       quote: c.quote,
       where: c.where,
+      ...(text !== null && !text.includes(fold(c.quote))
+        ? { nearest: nearestPassage(text, c.quote) }
+        : {}),
     });
   }
 }

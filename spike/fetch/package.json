@@ -1,0 +1,10 @@
+{
+  "name": "spike-fetch-feasibility",
+  "private": true,
+  "type": "module",
+  "description": "Throwaway spike: can a GitHub-hosted runner fetch vendor source pages? Not merged to main.",
+  "dependencies": {
+    "playwright": "1.63.0",
+    "robots-parser": "3.0.1"
+  }
+}

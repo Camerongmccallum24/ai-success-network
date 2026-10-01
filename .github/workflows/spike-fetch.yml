@@ -1,0 +1,33 @@
+name: spike-fetch-feasibility
+
+# Throwaway spike workflow. Lives only on spike/fetch-feasibility; never merged.
+on:
+  push:
+    branches: [spike/fetch-feasibility]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: spike/fetch
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install --with-deps chromium
+      - run: node run.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fetch-results
+          path: |
+            spike/fetch/results.json
+            spike/fetch/summary.md

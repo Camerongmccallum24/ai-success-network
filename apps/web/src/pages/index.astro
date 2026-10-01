@@ -32,7 +32,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         evidence behind every answer.
       </p>
       <p class="status">
-        <strong>Rebuild in progress.</strong>
+        <strong>Rebuild in progress.</strong>{' '}
         {tools.length === 0
           ? 'No tools are published yet: each one is verified against the vendor’s own pages before it appears here.'
           : `${tools.length} verified tools so far.`}
@@ -40,7 +40,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       <p>
         <a href="https://github.com/Camerongmccallum24/ai-success-network">
           Follow the build on GitHub
-        </a>
+        </a>{' '}
         ·{' '}
         <a href="https://github.com/Camerongmccallum24/ai-success-network/releases/tag/v0.1.0-2025-original">
           See the May 2025 prototype

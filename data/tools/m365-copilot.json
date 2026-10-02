@@ -1,0 +1,296 @@
+{
+  "slug": "m365-copilot",
+  "name": "Microsoft 365 Copilot",
+  "vendor": "Microsoft",
+  "website": "https://www.microsoft.com/en-us/microsoft-365-copilot",
+  "summary": "Microsoft's AI assistant across Teams, Outlook, Word, Excel and PowerPoint; work plans keep prompts out of model training.",
+  "baseline": true,
+  "workflows": [
+    "follow-up-email",
+    "call-notes",
+    "account-research",
+    "qbr-prep",
+    "reporting",
+    "knowledge-search"
+  ],
+  "worksWith": ["m365"],
+  "form": ["web", "desktop", "mobile", "integration"],
+  "sources": [
+    {
+      "id": "m365-copilot-pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "m365-copilot-pricing-enterprise",
+      "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/enterprise",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "m365-family-pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5dm",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "copilot-privacy-controls",
+      "url": "https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "m365-copilot-privacy",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "copilot-business-faq",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-business-faq",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Microsoft 365 Family with Copilot",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 12.99,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "m365-family-pricing",
+            "quote": "$12.99/month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "copilot.com: profile icon → profile name → Privacy → Training on conversation activity",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "copilot-privacy-controls",
+            "quote": "Opting out will exclude your future conversation activities from being used for training these AI models."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "copilot-privacy-controls",
+            "quote": "Opting out will exclude your future conversation activities from being used for training these AI models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "copilot-privacy-controls",
+            "quote": "Training on conversation activity"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "copilot-privacy-controls",
+            "quote": "It does not apply to the use of Microsoft 365 Copilot when signed in with a work or school account"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "m365-family-pricing",
+            "quote": "AI features only available to subscription owner and cannot be shared; usage limits apply."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "AI features are available only to the subscription owner, not other Family members.",
+          "evidence": [
+            {
+              "source": "m365-family-pricing",
+              "quote": "AI features only available to subscription owner and cannot be shared; usage limits apply."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Microsoft 365 Copilot Business",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 18,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "m365-copilot-pricing",
+            "quote": "$18.00 user/month, paid yearly"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "m365-copilot-privacy",
+            "quote": "Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs"
+          },
+          {
+            "source": "copilot-enterprise-data-protection",
+            "quote": "the prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation models"
+          },
+          {
+            "source": "copilot-business-faq",
+            "quote": "Copilot Business follows the same data policies that your organization sets for your Microsoft 365 for business tenants."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "copilot-enterprise-data-protection",
+            "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "copilot-enterprise-data-protection",
+            "quote": "is covered by the terms of the Microsoft Products and Services Data Protection Addendum (DPA) and Microsoft Product Terms, with Microsoft acting as a data processor"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "copilot-enterprise-data-protection",
+            "quote": "Copilot respects your identity model and permissions, inherits your sensitivity labels, applies your retention policies, supports audit of interactions, and follows your administrative settings."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Copilot Business supports up to 300 seats per tenant.",
+          "evidence": [
+            {
+              "source": "copilot-business-faq",
+              "quote": "Copilot Business supports up to 300 seats per tenant."
+            }
+          ]
+        },
+        {
+          "text": "Anthropic models used in Copilot sit outside the EU Data Boundary and in-country processing commitments.",
+          "evidence": [
+            {
+              "source": "copilot-enterprise-data-protection",
+              "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments."
+            }
+          ]
+        },
+        {
+          "text": "$18 is an introductory price; Microsoft lists it as originally $21 per user per month.",
+          "evidence": [
+            {
+              "source": "m365-copilot-pricing",
+              "quote": "originally starting from $21.00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Microsoft 365 Copilot",
+      "audience": "enterprise",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 30,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "m365-copilot-pricing-enterprise",
+            "quote": "$30.00 user/month, paid yearly"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "m365-copilot-privacy",
+            "quote": "Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs"
+          },
+          {
+            "source": "copilot-enterprise-data-protection",
+            "quote": "the prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation models"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "copilot-enterprise-data-protection",
+            "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "copilot-enterprise-data-protection",
+            "quote": "is covered by the terms of the Microsoft Products and Services Data Protection Addendum (DPA) and Microsoft Product Terms, with Microsoft acting as a data processor"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "copilot-enterprise-data-protection",
+            "quote": "Copilot respects your identity model and permissions, inherits your sensitivity labels, applies your retention policies, supports audit of interactions, and follows your administrative settings."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Anthropic models used in Copilot sit outside the EU Data Boundary and in-country processing commitments.",
+          "evidence": [
+            {
+              "source": "copilot-enterprise-data-protection",
+              "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

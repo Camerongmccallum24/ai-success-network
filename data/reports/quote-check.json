@@ -1,0 +1,1486 @@
+{
+  "summary": {
+    "checkedAt": "2026-10-01T19:37:15.331Z",
+    "found": 123,
+    "missing": 0,
+    "unreachable": 41
+  },
+  "checks": [
+    {
+      "tool": "chatgpt",
+      "source": "openai-consumer-data-faq",
+      "url": "https://help.openai.com/en/articles/7039943-data-usage-for-consumer-services-faq",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We may use content submitted to ChatGPT and our other services for individuals to improve model performance.",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-go-help",
+      "url": "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "OpenAI may use conversations to improve model performance and safety.",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-data-controls-faq",
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "When Improve the model for everyone is off, your new conversations won't be used to train OpenAI models.",
+      "where": "Free.trainingControl"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-data-controls-faq",
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "your new conversations won't be used to train OpenAI models",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-data",
+      "url": "https://openai.com/business-data/",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements.",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "Admin controls for managing users, roles, and access",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-data-controls-faq",
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "the entire conversation associated with that feedback may be used to train OpenAI models",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-consumer-data-faq",
+      "url": "https://help.openai.com/en/articles/7039943-data-usage-for-consumer-services-faq",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We may use content submitted to ChatGPT and our other services for individuals to improve model performance.",
+      "where": "Go.trainingDefault"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-go-help",
+      "url": "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "OpenAI may use conversations to improve model performance and safety.",
+      "where": "Go.trainingDefault"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-go-help",
+      "url": "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "You can opt out of having your data used for training at any time.",
+      "where": "Go.trainingControl"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-go-help",
+      "url": "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "OpenAI may use conversations to improve model performance and safety.",
+      "where": "Go.subprocessorTraining"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-data",
+      "url": "https://openai.com/business-data/",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements.",
+      "where": "Go.dpa"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "Admin controls for managing users, roles, and access",
+      "where": "Go.adminEnforcement"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-go-intro",
+      "url": "https://openai.com/index/introducing-chatgpt-go/",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "In the US, Go is available for $8 per month.",
+      "where": "Go.price"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-consumer-data-faq",
+      "url": "https://help.openai.com/en/articles/7039943-data-usage-for-consumer-services-faq",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We may use content submitted to ChatGPT and our other services for individuals to improve model performance.",
+      "where": "Plus.trainingDefault"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-go-help",
+      "url": "https://help.openai.com/en/articles/11989085-what-is-chatgpt-go",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "OpenAI may use conversations to improve model performance and safety.",
+      "where": "Plus.trainingDefault"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-data-controls-faq",
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "When Improve the model for everyone is off, your new conversations won't be used to train OpenAI models.",
+      "where": "Plus.trainingControl"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-data-controls-faq",
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "your new conversations won't be used to train OpenAI models",
+      "where": "Plus.subprocessorTraining"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-data",
+      "url": "https://openai.com/business-data/",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements.",
+      "where": "Plus.dpa"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "Admin controls for managing users, roles, and access",
+      "where": "Plus.adminEnforcement"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-plus-help",
+      "url": "https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "$20/month (billed monthly)",
+      "where": "Plus.price"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-data-controls-faq",
+      "url": "https://help.openai.com/en/articles/7730893-data-controls-faq",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "the entire conversation associated with that feedback may be used to train OpenAI models",
+      "where": "Plus.caveat"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "OpenAI won't train on your workspace's data.",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-data",
+      "url": "https://openai.com/business-data/",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "We do not use data from ChatGPT Enterprise, ChatGPT Business, ChatGPT Edu",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "OpenAI won't train on your workspace's data.",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-data",
+      "url": "https://openai.com/business-data/",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "We also support customers in signing a Data Processing Addendum to support enterprise data handling requirements.",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "Admin controls for managing users, roles, and access",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "Monthly plan: $25 per user per month",
+      "where": "Business.price"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "$20 per user per month, billed annually",
+      "where": "Business.price"
+    },
+    {
+      "tool": "chatgpt",
+      "source": "openai-business-help",
+      "url": "https://help.openai.com/en/articles/8792828-what-is-chatgpt-team",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "ChatGPT Business workspaces require 2 Standard or Premium ChatGPT seats",
+      "where": "Business.price"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-consumer-training",
+      "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You choose to allow us to use your chats and coding sessions to improve Claude",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-model-improvement-setting",
+      "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+      "verify": "auto",
+      "status": "found",
+      "quote": "click the button to toggle it off/on",
+      "where": "Free.trainingControl"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-consumer-training",
+      "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Claude Free, Pro, Max and when accounts from those plans use Claude Code",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-dpa",
+      "url": "https://www.anthropic.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-model-improvement-setting",
+      "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+      "verify": "auto",
+      "status": "found",
+      "quote": "click the button to toggle it off/on",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-pricing",
+      "url": "https://claude.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0",
+      "where": "Free.price"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-retention",
+      "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you allow us to use your chats or coding sessions to improve Claude, we may retain your data in a de-identified format for up to 5 years",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-retention",
+      "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Deleted from our back-end storage systems within 30 days",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-consumer-training",
+      "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You choose to allow us to use your chats and coding sessions to improve Claude",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-model-improvement-setting",
+      "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+      "verify": "auto",
+      "status": "found",
+      "quote": "click the button to toggle it off/on",
+      "where": "Pro.trainingControl"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-consumer-training",
+      "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Claude Free, Pro, Max and when accounts from those plans use Claude Code",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-dpa",
+      "url": "https://www.anthropic.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-model-improvement-setting",
+      "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+      "verify": "auto",
+      "status": "found",
+      "quote": "click the button to toggle it off/on",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-pricing",
+      "url": "https://claude.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$17 Per month with annual subscription discount ($200 billed up front). $20 if billed monthly.",
+      "where": "Pro.price"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-retention",
+      "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you allow us to use your chats or coding sessions to improve Claude, we may retain your data in a de-identified format for up to 5 years",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-retention",
+      "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Deleted from our back-end storage systems within 30 days",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-consumer-training",
+      "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You choose to allow us to use your chats and coding sessions to improve Claude",
+      "where": "Max.trainingDefault"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-model-improvement-setting",
+      "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+      "verify": "auto",
+      "status": "found",
+      "quote": "click the button to toggle it off/on",
+      "where": "Max.trainingControl"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-consumer-training",
+      "url": "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Claude Free, Pro, Max and when accounts from those plans use Claude Code",
+      "where": "Max.subprocessorTraining"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-dpa",
+      "url": "https://www.anthropic.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service",
+      "where": "Max.dpa"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-model-improvement-setting",
+      "url": "https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings",
+      "verify": "auto",
+      "status": "found",
+      "quote": "click the button to toggle it off/on",
+      "where": "Max.adminEnforcement"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-pricing",
+      "url": "https://claude.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "From $100 Per month",
+      "where": "Max.price"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-retention",
+      "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you allow us to use your chats or coding sessions to improve Claude, we may retain your data in a de-identified format for up to 5 years",
+      "where": "Max.caveat"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-retention",
+      "url": "https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Deleted from our back-end storage systems within 30 days",
+      "where": "Max.caveat"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-commercial-training",
+      "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "By default, we will not use your inputs or outputs from our commercial products",
+      "where": "Team.trainingDefault"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-dpa",
+      "url": "https://www.anthropic.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "enter into a contractual agreement with each Subprocessor imposing data protection obligations",
+      "where": "Team.subprocessorTraining"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-commercial-terms",
+      "url": "https://www.anthropic.com/legal/commercial-terms",
+      "verify": "auto",
+      "status": "found",
+      "quote": "which is incorporated into these Terms by reference",
+      "where": "Team.dpa"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-dpa",
+      "url": "https://www.anthropic.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service",
+      "where": "Team.dpa"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-team-help",
+      "url": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admin tools and billing management: Manage access and billing in a centralized place.",
+      "where": "Team.adminEnforcement"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-team-help",
+      "url": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$25 per member per month, billed monthly",
+      "where": "Team.price"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-team-help",
+      "url": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$20 per member per month, billed annually",
+      "where": "Team.price"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-team-help",
+      "url": "https://support.claude.com/en/articles/9266767-what-is-the-team-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Team plans require a minimum of two members.",
+      "where": "Team.price"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-commercial-training",
+      "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you explicitly report feedback or bugs to us (e.g. via our thumbs up/down feedback button)",
+      "where": "Team.caveat"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-commercial-training",
+      "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "By default, we will not use your inputs or outputs from our commercial products",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-dpa",
+      "url": "https://www.anthropic.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "enter into a contractual agreement with each Subprocessor imposing data protection obligations",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-commercial-terms",
+      "url": "https://www.anthropic.com/legal/commercial-terms",
+      "verify": "auto",
+      "status": "found",
+      "quote": "which is incorporated into these Terms by reference",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-dpa",
+      "url": "https://www.anthropic.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "incorporated into and forms part of the Anthropic Commercial Terms of Service",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-enterprise-help",
+      "url": "https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Custom data retention controls",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "claude",
+      "source": "claude-commercial-training",
+      "url": "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you explicitly report feedback or bugs to us (e.g. via our thumbs up/down feedback button)",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Individuals (Free, Plus, Pro, and Ultra): Data is allowed to be used to train AI",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out any time.",
+      "where": "Free.trainingControl"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "Service provider for hosting large language models and embeddings",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date.",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-business-help",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Locked training opt-out",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-pricing",
+      "url": "https://gamma.app/pricing",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "No credit card required",
+      "where": "Free.price"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Individuals (Free, Plus, Pro, and Ultra): Data is allowed to be used to train AI",
+      "where": "Plus.trainingDefault"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out any time.",
+      "where": "Plus.trainingControl"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "Service provider for hosting large language models and embeddings",
+      "where": "Plus.subprocessorTraining"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date.",
+      "where": "Plus.dpa"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-business-help",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Locked training opt-out",
+      "where": "Plus.adminEnforcement"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-privacy",
+      "url": "https://gamma.app/privacy",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "to train our artificial intelligence models",
+      "where": "Plus.caveat"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Individuals (Free, Plus, Pro, and Ultra): Data is allowed to be used to train AI",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out any time.",
+      "where": "Pro.trainingControl"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "Service provider for hosting large language models and embeddings",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date.",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-business-help",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Locked training opt-out",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-privacy",
+      "url": "https://gamma.app/privacy",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "to train our artificial intelligence models",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Individuals (Free, Plus, Pro, and Ultra): Data is allowed to be used to train AI",
+      "where": "Ultra.trainingDefault"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out any time.",
+      "where": "Ultra.trainingControl"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "Service provider for hosting large language models and embeddings",
+      "where": "Ultra.subprocessorTraining"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date.",
+      "where": "Ultra.dpa"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-business-help",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Locked training opt-out",
+      "where": "Ultra.adminEnforcement"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-privacy",
+      "url": "https://gamma.app/privacy",
+      "verify": "auto",
+      "status": "unreachable",
+      "quote": "to train our artificial intelligence models",
+      "where": "Ultra.caveat"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-training-help",
+      "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
+      "verify": "auto",
+      "status": "found",
+      "quote": "For all Business and Enterprise workspaces, data is automatically excluded from being used for training.",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-business-help",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Locked training opt-out",
+      "where": "Business.trainingControl"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "Service provider for hosting large language models and embeddings",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-dpa",
+      "url": "https://gamma.app/dpa",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "This DPA shall be incorporated into and form part of the Agreement with effect from the Addendum Effective Date.",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-business-help",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Locked training opt-out",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "gamma",
+      "source": "gamma-business-help",
+      "url": "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Business is $40 per member per month, billed annually",
+      "where": "Business.price"
+    },
+    {
+      "tool": "gemini",
+      "source": "gemini-apps-privacy",
+      "url": "https://support.google.com/gemini/answer/13594961",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Your future chats won't appear in your Activity, and won't be used to train our AI models, unless you choose to send Google feedback.",
+      "where": "Google AI Pro (personal Google Account).trainingDefault"
+    },
+    {
+      "tool": "gemini",
+      "source": "gemini-apps-privacy",
+      "url": "https://support.google.com/gemini/answer/13594961",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Your future chats won't appear in your Activity, and won't be used to train our AI models, unless you choose to send Google feedback.",
+      "where": "Google AI Pro (personal Google Account).trainingControl"
+    },
+    {
+      "tool": "gemini",
+      "source": "gemini-apps-privacy",
+      "url": "https://support.google.com/gemini/answer/13594961",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Human reviewers (including trained reviewers from our service providers) review some of the data we collect for these purposes.",
+      "where": "Google AI Pro (personal Google Account).subprocessorTraining"
+    },
+    {
+      "tool": "gemini",
+      "source": "gemini-apps-privacy",
+      "url": "https://support.google.com/gemini/answer/13594961",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you have a work or school Google Account, your use of Gemini Apps may be subject to different data handling terms.",
+      "where": "Google AI Pro (personal Google Account).dpa"
+    },
+    {
+      "tool": "gemini",
+      "source": "gemini-apps-privacy",
+      "url": "https://support.google.com/gemini/answer/13594961",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you have a work or school Google Account, your use of Gemini Apps may be subject to different data handling terms.",
+      "where": "Google AI Pro (personal Google Account).adminEnforcement"
+    },
+    {
+      "tool": "gemini",
+      "source": "gemini-subscriptions",
+      "url": "https://gemini.google/subscriptions/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$19.99",
+      "where": "Google AI Pro (personal Google Account).price"
+    },
+    {
+      "tool": "gemini",
+      "source": "gemini-apps-privacy",
+      "url": "https://support.google.com/gemini/answer/13594961",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Human reviewers (including trained reviewers from our service providers) review some of the data we collect for these purposes.",
+      "where": "Google AI Pro (personal Google Account).caveat"
+    },
+    {
+      "tool": "gemini",
+      "source": "gemini-apps-privacy",
+      "url": "https://support.google.com/gemini/answer/13594961",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Temporary chats are not used to train Google's AI models.",
+      "where": "Google AI Pro (personal Google Account).caveat"
+    },
+    {
+      "tool": "gemini",
+      "source": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Use your prompt, Workspace content, webpage context, or generated responses to train generative AI models without your permission",
+      "where": "Gemini in Google Workspace (Business).trainingDefault"
+    },
+    {
+      "tool": "gemini",
+      "source": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Use your prompt, Workspace content, webpage context, or generated responses to train generative AI models without your permission",
+      "where": "Gemini in Google Workspace (Business).subprocessorTraining"
+    },
+    {
+      "tool": "gemini",
+      "source": "google-cloud-dpa",
+      "url": "https://cloud.google.com/terms/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "This Cloud Data Processing Addendum (including its appendices, the \"Addendum\") is incorporated into the Agreement(s) (as defined below) between Google and Customer.",
+      "where": "Gemini in Google Workspace (Business).dpa"
+    },
+    {
+      "tool": "gemini",
+      "source": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admins can control whether conversations with Gemini are saved",
+      "where": "Gemini in Google Workspace (Business).adminEnforcement"
+    },
+    {
+      "tool": "gemini",
+      "source": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "verify": "auto",
+      "status": "found",
+      "quote": "For clarity this Privacy Hub only applies when you are using Gemini and Gemini Notebook with a qualifying edition of Google Workspace",
+      "where": "Gemini in Google Workspace (Business).caveat"
+    },
+    {
+      "tool": "gemini",
+      "source": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Use your prompt, Workspace content, webpage context, or generated responses to train generative AI models without your permission",
+      "where": "Gemini in Google Workspace (Enterprise).trainingDefault"
+    },
+    {
+      "tool": "gemini",
+      "source": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Use your prompt, Workspace content, webpage context, or generated responses to train generative AI models without your permission",
+      "where": "Gemini in Google Workspace (Enterprise).subprocessorTraining"
+    },
+    {
+      "tool": "gemini",
+      "source": "google-cloud-dpa",
+      "url": "https://cloud.google.com/terms/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "This Cloud Data Processing Addendum (including its appendices, the \"Addendum\") is incorporated into the Agreement(s) (as defined below) between Google and Customer.",
+      "where": "Gemini in Google Workspace (Enterprise).dpa"
+    },
+    {
+      "tool": "gemini",
+      "source": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admins can control whether conversations with Gemini are saved",
+      "where": "Gemini in Google Workspace (Enterprise).adminEnforcement"
+    },
+    {
+      "tool": "gemini",
+      "source": "workspace-gemini-privacy-hub",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub",
+      "verify": "auto",
+      "status": "found",
+      "quote": "For clarity this Privacy Hub only applies when you are using Gemini and Gemini Notebook with a qualifying edition of Google Workspace",
+      "where": "Gemini in Google Workspace (Enterprise).caveat"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Granola trains on your anonymized data so we can keep making Granola better.",
+      "where": "Basic.trainingDefault"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out of this in your Settings.",
+      "where": "Basic.trainingControl"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not allow third parties (like OpenAI or Anthropic) to use your data to train their AI models.",
+      "where": "Basic.subprocessorTraining"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-model-training",
+      "url": "https://docs.granola.ai/help-center/consent-security-privacy/model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we have enterprise agreements with all of our service providers that prevent your data from being used in their model training",
+      "where": "Basic.subprocessorTraining"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-pricing",
+      "url": "https://www.granola.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "DPA available",
+      "where": "Basic.dpa"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data Processing Agreement available upon request",
+      "where": "Basic.dpa"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-pricing",
+      "url": "https://www.granola.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admin controls for sharing & API access",
+      "where": "Basic.adminEnforcement"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-pricing",
+      "url": "https://www.granola.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0",
+      "where": "Basic.price"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Granola trains on your anonymized data so we can keep making Granola better.",
+      "where": "Basic.caveat"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-pricing",
+      "url": "https://www.granola.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Audio deleted after transcription",
+      "where": "Basic.caveat"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Granola trains on your anonymized data so we can keep making Granola better.",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out of this in your Settings.",
+      "where": "Business.trainingControl"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not allow third parties (like OpenAI or Anthropic) to use your data to train their AI models.",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data Processing Agreement available upon request",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-pricing",
+      "url": "https://www.granola.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admin controls for sharing & API access",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-pricing",
+      "url": "https://www.granola.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$14",
+      "where": "Business.price"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Granola trains on your anonymized data so we can keep making Granola better.",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Enterprise users have model training turned off by default.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-model-training",
+      "url": "https://docs.granola.ai/help-center/consent-security-privacy/model-training",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Use my workspace data to improve models for everyone",
+      "where": "Enterprise.trainingControl"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not allow third parties (like OpenAI or Anthropic) to use your data to train their AI models.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-security",
+      "url": "https://www.granola.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data Processing Agreement available upon request",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-pricing",
+      "url": "https://www.granola.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admin controls for sharing & API access",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "granola",
+      "source": "granola-pricing",
+      "url": "https://www.granola.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$35",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-privacy-controls",
+      "url": "https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Opting out will exclude your future conversation activities from being used for training these AI models.",
+      "where": "Microsoft 365 Family with Copilot.trainingDefault"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-privacy-controls",
+      "url": "https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Opting out will exclude your future conversation activities from being used for training these AI models.",
+      "where": "Microsoft 365 Family with Copilot.trainingControl"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-privacy-controls",
+      "url": "https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Training on conversation activity",
+      "where": "Microsoft 365 Family with Copilot.subprocessorTraining"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-privacy-controls",
+      "url": "https://support.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-privacy-controls",
+      "verify": "auto",
+      "status": "found",
+      "quote": "It does not apply to the use of Microsoft 365 Copilot when signed in with a work or school account",
+      "where": "Microsoft 365 Family with Copilot.dpa"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "m365-family-pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5dm",
+      "verify": "auto",
+      "status": "found",
+      "quote": "AI features only available to subscription owner and cannot be shared; usage limits apply.",
+      "where": "Microsoft 365 Family with Copilot.adminEnforcement"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "m365-family-pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5dm",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$12.99/month",
+      "where": "Microsoft 365 Family with Copilot.price"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "m365-family-pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/p/microsoft-365-personal/cfq7ttc0k5dm",
+      "verify": "auto",
+      "status": "found",
+      "quote": "AI features only available to subscription owner and cannot be shared; usage limits apply.",
+      "where": "Microsoft 365 Family with Copilot.caveat"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "m365-copilot-privacy",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs",
+      "where": "Microsoft 365 Copilot Business.trainingDefault"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "the prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation models",
+      "where": "Microsoft 365 Copilot Business.trainingDefault"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-business-faq",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-business-faq",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Copilot Business follows the same data policies that your organization sets for your Microsoft 365 for business tenants.",
+      "where": "Microsoft 365 Copilot Business.trainingDefault"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments.",
+      "where": "Microsoft 365 Copilot Business.subprocessorTraining"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "is covered by the terms of the Microsoft Products and Services Data Protection Addendum (DPA) and Microsoft Product Terms, with Microsoft acting as a data processor",
+      "where": "Microsoft 365 Copilot Business.dpa"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Copilot respects your identity model and permissions, inherits your sensitivity labels, applies your retention policies, supports audit of interactions, and follows your administrative settings.",
+      "where": "Microsoft 365 Copilot Business.adminEnforcement"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "m365-copilot-pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$18.00 user/month, paid yearly",
+      "where": "Microsoft 365 Copilot Business.price"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-business-faq",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-business-faq",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Copilot Business supports up to 300 seats per tenant.",
+      "where": "Microsoft 365 Copilot Business.caveat"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments.",
+      "where": "Microsoft 365 Copilot Business.caveat"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "m365-copilot-pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "originally starting from $21.00",
+      "where": "Microsoft 365 Copilot Business.caveat"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "m365-copilot-privacy",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs",
+      "where": "Microsoft 365 Copilot.trainingDefault"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "the prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation models",
+      "where": "Microsoft 365 Copilot.trainingDefault"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments.",
+      "where": "Microsoft 365 Copilot.subprocessorTraining"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "is covered by the terms of the Microsoft Products and Services Data Protection Addendum (DPA) and Microsoft Product Terms, with Microsoft acting as a data processor",
+      "where": "Microsoft 365 Copilot.dpa"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Copilot respects your identity model and permissions, inherits your sensitivity labels, applies your retention policies, supports audit of interactions, and follows your administrative settings.",
+      "where": "Microsoft 365 Copilot.adminEnforcement"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "m365-copilot-pricing-enterprise",
+      "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/enterprise",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$30.00 user/month, paid yearly",
+      "where": "Microsoft 365 Copilot.price"
+    },
+    {
+      "tool": "m365-copilot",
+      "source": "copilot-enterprise-data-protection",
+      "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments.",
+      "where": "Microsoft 365 Copilot.caveat"
+    }
+  ]
+}

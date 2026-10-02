@@ -99,12 +99,17 @@ const ToolShape = z.object({
   form: z
     .array(z.enum(['web', 'desktop', 'mobile', 'browser-extension', 'meeting-bot', 'integration']))
     .min(1),
-  /** Cameron's judgement, shown as such and never edited by AI triage. */
-  assessment: z.object({
-    bestFor: z.string().min(1),
-    watchOut: z.string().min(1),
-    take: z.string().min(1).max(280),
-  }),
+  /**
+   * Cameron's judgement, shown as such and never written or edited by AI. Absent until he
+   * has written it; the site shows "assessment pending" rather than a placeholder.
+   */
+  assessment: z
+    .object({
+      bestFor: z.string().min(1),
+      watchOut: z.string().min(1),
+      take: z.string().min(1).max(280),
+    })
+    .optional(),
   plans: z.array(Plan).min(1),
   sources: z.array(Source).min(2),
 });

@@ -1,9 +1,9 @@
 {
   "summary": {
-    "checkedAt": "2026-10-02T04:24:12.095Z",
+    "checkedAt": "2026-10-02T04:33:31.071Z",
     "found": 499,
-    "missing": 24,
-    "unreachable": 81
+    "missing": 0,
+    "unreachable": 105
   },
   "checks": [
     {
@@ -4358,40 +4358,36 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "AI Data Retention is enabled by default",
-      "where": "Free.trainingDefault",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to"
+      "where": "Free.trainingDefault"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Free.trainingDefault",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Free.trainingDefault"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Toggle off to opt out of AI training data collection",
-      "where": "Free.trainingControl",
-      "nearest": "occurred. please contact support to get help.perplexity help centerwhere knowledge beginsvisit our blogcareersprivacy policyterms of servicesecuritygive"
+      "where": "Free.trainingControl"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Free.subprocessorTraining",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Free.subprocessorTraining"
     },
     {
       "tool": "perplexity",
@@ -4407,10 +4403,9 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Free.adminEnforcement",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Free.adminEnforcement"
     },
     {
       "tool": "perplexity",
@@ -4426,50 +4421,45 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Opt-outs only apply to data collected after the opt-out date",
-      "where": "Free.caveat",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
+      "where": "Free.caveat"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "AI Data Retention is enabled by default",
-      "where": "Pro.trainingDefault",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to"
+      "where": "Pro.trainingDefault"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Pro.trainingDefault",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Pro.trainingDefault"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Toggle off to opt out of AI training data collection",
-      "where": "Pro.trainingControl",
-      "nearest": "occurred. please contact support to get help.perplexity help centerwhere knowledge beginsvisit our blogcareersprivacy policyterms of servicesecuritygive"
+      "where": "Pro.trainingControl"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Pro.subprocessorTraining",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Pro.subprocessorTraining"
     },
     {
       "tool": "perplexity",
@@ -4485,10 +4475,9 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Pro.adminEnforcement",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Pro.adminEnforcement"
     },
     {
       "tool": "perplexity",
@@ -4504,50 +4493,45 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Opt-outs only apply to data collected after the opt-out date",
-      "where": "Pro.caveat",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
+      "where": "Pro.caveat"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "AI Data Retention is enabled by default",
-      "where": "Max.trainingDefault",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to"
+      "where": "Max.trainingDefault"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Max.trainingDefault",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Max.trainingDefault"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Toggle off to opt out of AI training data collection",
-      "where": "Max.trainingControl",
-      "nearest": "occurred. please contact support to get help.perplexity help centerwhere knowledge beginsvisit our blogcareersprivacy policyterms of servicesecuritygive"
+      "where": "Max.trainingControl"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Max.subprocessorTraining",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Max.subprocessorTraining"
     },
     {
       "tool": "perplexity",
@@ -4563,10 +4547,9 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
-      "where": "Max.adminEnforcement",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
+      "where": "Max.adminEnforcement"
     },
     {
       "tool": "perplexity",
@@ -4582,30 +4565,27 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Opt-outs only apply to data collected after the opt-out date",
-      "where": "Max.caveat",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
+      "where": "Max.caveat"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Perplexity Enterprise data is never used for AI training purposes",
-      "where": "Enterprise Pro.trainingDefault",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
+      "where": "Enterprise Pro.trainingDefault"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Strict Zero Data Retention and Zero Data Training agreements with AI providers",
-      "where": "Enterprise Pro.subprocessorTraining",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center"
+      "where": "Enterprise Pro.subprocessorTraining"
     },
     {
       "tool": "perplexity",
@@ -4639,30 +4619,27 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Uploaded files are retained for only 7 days",
-      "where": "Enterprise Pro.caveat",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get"
+      "where": "Enterprise Pro.caveat"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Perplexity Enterprise data is never used for AI training purposes",
-      "where": "Enterprise Max.trainingDefault",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
+      "where": "Enterprise Max.trainingDefault"
     },
     {
       "tool": "perplexity",
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Strict Zero Data Retention and Zero Data Training agreements with AI providers",
-      "where": "Enterprise Max.subprocessorTraining",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center"
+      "where": "Enterprise Max.subprocessorTraining"
     },
     {
       "tool": "perplexity",
@@ -4696,10 +4673,9 @@
       "source": "pplx-data-collection",
       "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Uploaded files are retained for only 7 days",
-      "where": "Enterprise Max.caveat",
-      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get"
+      "where": "Enterprise Max.caveat"
     },
     {
       "tool": "read-ai",

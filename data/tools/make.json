@@ -1,0 +1,413 @@
+{
+  "slug": "make",
+  "name": "Make",
+  "vendor": "Make (Celonis)",
+  "website": "https://www.make.com",
+  "summary": "Visual automation platform with AI Agents and an AI Toolkit; says your data is not used to train the AI when using Make's AI provider.",
+  "workflows": ["automation"],
+  "worksWith": ["standalone"],
+  "form": ["web", "integration"],
+  "sources": [
+    {
+      "id": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "make-terms",
+      "url": "https://www.make.com/en/terms-and-conditions",
+      "kind": "terms",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "make-dpa",
+      "url": "https://www.make.com/data-processing-agreement.pdf",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "make-pricing",
+            "quote": "$0/mo"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "Make does not store your data and your data is not used to train the AI."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "make-dpa",
+            "quote": "forms part of and is integrated into the Agreement"
+          },
+          {
+            "source": "make-terms",
+            "quote": "Your use of the Services is subject to the terms of the Data processing agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "make-pricing",
+            "quote": "Company single sign-on (SSO)"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Free plan includes 1,000 credits per month.",
+          "evidence": [
+            {
+              "source": "make-pricing",
+              "quote": "1,000 credits/month"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Core",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 12,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "make-pricing",
+            "quote": "$12/mo"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "Make does not store your data and your data is not used to train the AI."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "make-dpa",
+            "quote": "forms part of and is integrated into the Agreement"
+          },
+          {
+            "source": "make-terms",
+            "quote": "Your use of the Services is subject to the terms of the Data processing agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "make-pricing",
+            "quote": "Company single sign-on (SSO)"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Priced per month by credit tier (usage-based), not per user; the listed price is for 10k credits.",
+          "evidence": [
+            {
+              "source": "make-pricing",
+              "quote": "for 10k credits"
+            }
+          ]
+        },
+        {
+          "text": "Paid plans can connect your own AI provider (e.g. OpenAI, Anthropic); that provider's terms are not covered here.",
+          "evidence": [
+            {
+              "source": "make-ai-toolkit",
+              "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 21,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "make-pricing",
+            "quote": "$21/mo"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "Make does not store your data and your data is not used to train the AI."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "make-dpa",
+            "quote": "forms part of and is integrated into the Agreement"
+          },
+          {
+            "source": "make-terms",
+            "quote": "Your use of the Services is subject to the terms of the Data processing agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "make-pricing",
+            "quote": "Company single sign-on (SSO)"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Priced per month by credit tier (usage-based), not per user; the listed price is for 10k credits.",
+          "evidence": [
+            {
+              "source": "make-pricing",
+              "quote": "for 10k credits"
+            }
+          ]
+        },
+        {
+          "text": "Paid plans can connect your own AI provider (e.g. OpenAI, Anthropic); that provider's terms are not covered here.",
+          "evidence": [
+            {
+              "source": "make-ai-toolkit",
+              "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Teams",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 38,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "make-pricing",
+            "quote": "$38/mo"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "Make does not store your data and your data is not used to train the AI."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "make-dpa",
+            "quote": "forms part of and is integrated into the Agreement"
+          },
+          {
+            "source": "make-terms",
+            "quote": "Your use of the Services is subject to the terms of the Data processing agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "make-pricing",
+            "quote": "Teams and team roles"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Priced per month by credit tier (usage-based), not per user; the listed price is for 10k credits.",
+          "evidence": [
+            {
+              "source": "make-pricing",
+              "quote": "for 10k credits"
+            }
+          ]
+        },
+        {
+          "text": "Paid plans can connect your own AI provider (e.g. OpenAI, Anthropic); that provider's terms are not covered here.",
+          "evidence": [
+            {
+              "source": "make-ai-toolkit",
+              "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "make-pricing",
+            "quote": "Custom pricing"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "Make does not store your data and your data is not used to train the AI."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "make-ai-toolkit",
+            "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "make-dpa",
+            "quote": "forms part of and is integrated into the Agreement"
+          },
+          {
+            "source": "make-terms",
+            "quote": "Your use of the Services is subject to the terms of the Data processing agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "make-pricing",
+            "quote": "Advanced security features"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Priced per month by credit tier (usage-based), not per user; the listed price is for 10k credits.",
+          "evidence": [
+            {
+              "source": "make-pricing",
+              "quote": "for 10k credits"
+            }
+          ]
+        },
+        {
+          "text": "Paid plans can connect your own AI provider (e.g. OpenAI, Anthropic); that provider's terms are not covered here.",
+          "evidence": [
+            {
+              "source": "make-ai-toolkit",
+              "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

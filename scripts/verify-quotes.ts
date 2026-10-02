@@ -14,7 +14,7 @@ import { Tool } from '../packages/schema/src/index.ts';
 const dataDir = new URL('../data/tools/', import.meta.url);
 const reportUrl = new URL('../data/reports/quote-check.json', import.meta.url);
 const CHALLENGE =
-  /just a moment|verify you are human|checking your browser|attention required|access denied|are you a robot|captcha|enable javascript and cookies/i;
+  /just a moment|verify you are human|checking your browser|attention required|access denied|are you a robot|captcha|enable javascript and cookies|security verification|malicious bots|waiting for [a-z.]+ to respond|ray id|error loading page/i;
 
 /** Quotes are compared after folding typographic variants and whitespace. */
 const fold = (s: string): string =>
@@ -139,4 +139,19 @@ writeFileSync(reportUrl, JSON.stringify({ summary, checks }, null, 2) + '\n');
 console.log(summary);
 for (const c of checks.filter((x) => x.status !== 'found'))
   console.log(`${c.status.toUpperCase()} ${c.tool}/${c.where} [${c.source}] "${c.quote}"`);
+
+// A human checklist for sources the runner cannot read.
+const byPage = new Map<string, Check[]>();
+for (const c of checks.filter((x) => x.status === 'unreachable'))
+  byPage.set(`${c.tool} — ${c.url}`, [...(byPage.get(`${c.tool} — ${c.url}`) ?? []), c]);
+const lines = [
+  '# Manual quote checks',
+  '',
+  "These pages block the verifier's browser (and it never tries to evade). Open each in your browser, Ctrl+F each quote, and tick it if it appears. Tell Claude about any that don't.",
+];
+for (const [page, list] of byPage) {
+  lines.push('', `## ${page}`, '');
+  for (const q of new Set(list.map((c) => `- [ ] (${c.where}) ${c.quote}`))) lines.push(q);
+}
+writeFileSync(new URL('../data/reports/manual-check.md', import.meta.url), lines.join('\n') + '\n');
 process.exit(summary.missing === 0 ? 0 : 1);

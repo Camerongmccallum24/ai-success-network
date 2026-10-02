@@ -1,0 +1,324 @@
+{
+  "slug": "grammarly",
+  "name": "Grammarly",
+  "vendor": "Grammarly (Superhuman)",
+  "website": "https://www.grammarly.com",
+  "summary": "AI writing assistant for email and docs; training on content is on by default for individual accounts and off by default for Enterprise.",
+  "workflows": ["follow-up-email"],
+  "worksWith": ["standalone"],
+  "form": ["browser-extension", "desktop", "web"],
+  "sources": [
+    {
+      "id": "grammarly-pricing",
+      "url": "https://www.grammarly.com/plans",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "grammarly-business-pricing",
+      "url": "https://www.grammarly.com/business/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "grammarly-trust",
+      "url": "https://www.grammarly.com/trust",
+      "kind": "trust",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "grammarly-privacy",
+      "url": "https://www.grammarly.com/privacy-policy",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "grammarly-business-agreement",
+      "url": "https://www.grammarly.com/terms/customer-business-agreement-2024",
+      "kind": "terms",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "grammarly-pricing",
+            "quote": "$0 USD / month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "user-setting",
+        "optOutPath": "account.grammarly.com/security/privacy → Product Improvement and Training toggle",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "individual users by default"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "Individuals can update these preferences at any time."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "grammarly-trust",
+            "quote": "You can opt out of allowing Grammarly to use your content to train its models and improve its product for everyone."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "grammarly-trust",
+            "quote": "Only those authorized to access data critical to their work may do so."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "Individuals can update these preferences at any time."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Training on your content is on by default for individual accounts; turn it off in privacy settings.",
+          "evidence": [
+            {
+              "source": "grammarly-training-control",
+              "quote": "individual users by default"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 12,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "grammarly-pricing",
+            "quote": "$12 USD"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "user-setting",
+        "optOutPath": "account.grammarly.com/security/privacy → Product Improvement and Training toggle",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "individual users by default"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "Individuals can update these preferences at any time."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "grammarly-trust",
+            "quote": "You can opt out of allowing Grammarly to use your content to train its models and improve its product for everyone."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "grammarly-trust",
+            "quote": "Only those authorized to access data critical to their work may do so."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "Individuals can update these preferences at any time."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Training on your content is on by default for individual accounts; turn it off in privacy settings.",
+          "evidence": [
+            {
+              "source": "grammarly-training-control",
+              "quote": "individual users by default"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "unverified",
+        "reason": "Grammarly's plans and business pricing pages list only Free, Pro and Enterprise; no separate Business price was readable."
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "admin-enforced",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "grammarly-business-agreement",
+            "quote": "you hereby grant us the right to use, during and after the Subscription Term, anonymized Customer Data"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "only the account's administrator(s) can modify the Product Improvement and Training control"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "grammarly-business-agreement",
+            "quote": "We may use subcontractors in order to provide the Services under this Agreement."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "grammarly-business-agreement",
+            "quote": "Data Privacy Addendum located at https://www.grammarly.com/online-dpa are incorporated by reference"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "grammarly-privacy",
+            "quote": "Your Organization can access and control your account."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Grammarly says content may be used to train its models unless training is switched off; the business agreement refers to anonymized customer data.",
+          "evidence": [
+            {
+              "source": "grammarly-business-agreement",
+              "quote": "anonymized Customer Data to improve our products and services"
+            }
+          ]
+        },
+        {
+          "text": "Opt-out wording in the help article names multi-user Pro accounts; the vendor page does not name a \"Business\" plan separately.",
+          "evidence": [
+            {
+              "source": "grammarly-training-control",
+              "quote": "only the account's administrator(s) can modify the Product Improvement and Training control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "grammarly-pricing",
+            "quote": "Contact Sales"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "Product Improvement and Training is off by default, meaning we are not using these organizations' content to train our models"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "grammarly-training-control",
+            "quote": "Product Improvement and Training is off by default, meaning we are not using these organizations' content to train our models"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "grammarly-business-agreement",
+            "quote": "We may use subcontractors in order to provide the Services under this Agreement."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "grammarly-business-agreement",
+            "quote": "Data Privacy Addendum located at https://www.grammarly.com/online-dpa are incorporated by reference"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "grammarly-business-pricing",
+            "quote": "Custom roles and permissions"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Off by default for sales-purchased organisations; the vendor does not state that its AI subprocessors are barred from training.",
+          "evidence": [
+            {
+              "source": "grammarly-training-control",
+              "quote": "Product Improvement and Training is off by default, meaning we are not using these organizations' content to train our models"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

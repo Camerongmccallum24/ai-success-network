@@ -1,0 +1,341 @@
+{
+  "slug": "zapier",
+  "name": "Zapier",
+  "vendor": "Zapier",
+  "website": "https://zapier.com",
+  "summary": "No-code automation across apps with AI steps, Copilot and Zapier Agents; Enterprise content is opted out of model training.",
+  "workflows": ["automation"],
+  "worksWith": ["standalone"],
+  "form": ["web", "integration"],
+  "sources": [
+    {
+      "id": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "kind": "trust",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "zapier-dpa",
+      "url": "https://zapier.com/legal/data-processing-addendum",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "zapier-pricing",
+            "quote": "$0/month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "Submit Zapier's model-training opt-out form (linked from the Automation Platform Information page)",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "subprocessorTraining": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "Zapier subprocessors are prohibited from using customer content for their own model training."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "zapier-dpa",
+            "quote": "Zapier's Terms of Service already incorporate Zapier's Data Processing Addendum"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "zapier-pricing",
+            "quote": "SAML SSO"
+          }
+        ],
+        "trainingDefault": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "All other customers may"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "at any time."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Priced per month by task volume (usage-based), not per user. Copilot is listed on Free.",
+          "evidence": [
+            {
+              "source": "zapier-pricing",
+              "quote": "Zapier Copilot"
+            }
+          ]
+        },
+        {
+          "text": "Zapier Agents is priced separately from the Zap plans.",
+          "evidence": [
+            {
+              "source": "zapier-pricing",
+              "quote": "Agents Free"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Professional",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 19.99,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "zapier-pricing",
+            "quote": "$19.99/month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "Submit Zapier's model-training opt-out form (linked from the Automation Platform Information page)",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "subprocessorTraining": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "Zapier subprocessors are prohibited from using customer content for their own model training."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "zapier-dpa",
+            "quote": "Zapier's Terms of Service already incorporate Zapier's Data Processing Addendum"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "zapier-pricing",
+            "quote": "SAML SSO"
+          }
+        ],
+        "trainingDefault": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "All other customers may"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "at any time."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Starting price per month; rises with task tier (usage-based). AI by Zapier is included.",
+          "evidence": [
+            {
+              "source": "zapier-pricing",
+              "quote": "AI by Zapier"
+            }
+          ]
+        },
+        {
+          "text": "Zapier Agents is priced separately from the Zap plans.",
+          "evidence": [
+            {
+              "source": "zapier-pricing",
+              "quote": "Agents Free"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "month",
+        "amounts": [
+          {
+            "amount": 69,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "zapier-pricing",
+            "quote": "$69/month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "Submit Zapier's model-training opt-out form (linked from the Automation Platform Information page)",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "subprocessorTraining": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "Zapier subprocessors are prohibited from using customer content for their own model training."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "zapier-dpa",
+            "quote": "Zapier's Terms of Service already incorporate Zapier's Data Processing Addendum"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "zapier-pricing",
+            "quote": "SAML SSO"
+          }
+        ],
+        "trainingDefault": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "All other customers may"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "at any time."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Starting price per month for up to 25 users; usage-based by task tier.",
+          "evidence": [
+            {
+              "source": "zapier-pricing",
+              "quote": "25 users"
+            }
+          ]
+        },
+        {
+          "text": "Zapier Agents is priced separately from the Zap plans.",
+          "evidence": [
+            {
+              "source": "zapier-pricing",
+              "quote": "Agents Free"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "zapier-pricing",
+            "quote": "Contact for pricing"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "subprocessorTraining": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "Zapier subprocessors are prohibited from using customer content for their own model training."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "zapier-dpa",
+            "quote": "Zapier's Terms of Service already incorporate Zapier's Data Processing Addendum"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "zapier-pricing",
+            "quote": "Advanced admin permissions and app controls"
+          }
+        ],
+        "trainingDefault": [
+          {
+            "source": "zapier-ai-training",
+            "quote": "Enterprise customers are automatically opted out of Zapier using their content for model training and improvement purposes."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Enterprise lists admin permissions and app controls; the page does not say admins can enforce training settings.",
+          "evidence": [
+            {
+              "source": "zapier-pricing",
+              "quote": "Advanced admin permissions and app controls"
+            }
+          ]
+        },
+        {
+          "text": "If you use your own OpenAI key, your OpenAI agreement governs that data.",
+          "evidence": [
+            {
+              "source": "zapier-ai-training",
+              "quote": "Zero Day Retention"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

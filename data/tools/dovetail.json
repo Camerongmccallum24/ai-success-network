@@ -1,0 +1,168 @@
+{
+  "slug": "dovetail",
+  "name": "Dovetail",
+  "vendor": "Dovetail",
+  "website": "https://dovetail.com",
+  "summary": "Customer research and feedback synthesis platform; says customer data is never used to train models.",
+  "workflows": ["feedback-synthesis", "knowledge-search"],
+  "worksWith": ["standalone"],
+  "form": ["web", "integration"],
+  "sources": [
+    {
+      "id": "dovetail-pricing",
+      "url": "https://dovetail.com/pricing/",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "dovetail-ai-terms",
+      "url": "https://dovetail.com/legal/ai-features/",
+      "kind": "terms",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "dovetail-ai-help",
+      "url": "https://docs.dovetail.com/help/dovetail-ai",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "dovetail-gdpr",
+      "url": "https://dovetail.com/help/dovetails-gdpr-commitment/",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "dovetail-pricing",
+            "quote": "$0, no card required"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "dovetail-ai-terms",
+            "quote": "Customer Data is never used to train large language models or third party models."
+          },
+          {
+            "source": "dovetail-ai-help",
+            "quote": "No customer data is used to improve or train our model"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "dovetail-ai-terms",
+            "quote": "Customer Data is never used to train large language models or third party models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "dovetail-gdpr",
+            "quote": "Data Processing Agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "dovetail-ai-help",
+            "quote": "deactivating it for specific workspaces is not possible at this time"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Dovetail AI features use third-party sub-processors; AI cannot be switched off per workspace.",
+          "evidence": [
+            {
+              "source": "dovetail-ai-terms",
+              "quote": "AI Features may use technology designed and developed by third party Sub-processors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "dovetail-pricing",
+            "quote": "Custom pricing available"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "dovetail-ai-terms",
+            "quote": "Customer Data is never used to train large language models or third party models."
+          },
+          {
+            "source": "dovetail-ai-help",
+            "quote": "No customer data is used to improve or train our model"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "dovetail-ai-terms",
+            "quote": "Customer Data is never used to train large language models or third party models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "dovetail-gdpr",
+            "quote": "Data Processing Agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "dovetail-ai-help",
+            "quote": "deactivating it for specific workspaces is not possible at this time"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Dovetail AI features use third-party sub-processors; AI cannot be switched off per workspace.",
+          "evidence": [
+            {
+              "source": "dovetail-ai-terms",
+              "quote": "AI Features may use technology designed and developed by third party Sub-processors"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

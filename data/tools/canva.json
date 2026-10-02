@@ -1,0 +1,338 @@
+{
+  "slug": "canva",
+  "name": "Canva",
+  "vendor": "Canva",
+  "website": "https://www.canva.com",
+  "summary": "Design and presentation tool with Magic Studio AI; Business and Enterprise content is not used to improve AI features, personal plans follow a privacy setting.",
+  "workflows": ["qbr-prep", "onboarding"],
+  "worksWith": ["standalone"],
+  "form": ["web", "desktop", "mobile"],
+  "sources": [
+    {
+      "id": "canva-pricing",
+      "url": "https://www.canva.com/pricing/",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "kind": "trust",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "canva-privacy-policy",
+      "url": "https://www.canva.com/policies/privacy-policy/",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "canva-ai-terms",
+      "url": "https://www.canva.com/policies/ai-product-terms/",
+      "kind": "terms",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "canva-dpa",
+      "url": "https://www.canva.com/policies/data-processing-addendum/",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "canva-magic-admin",
+      "url": "https://www.canva.com/help/magic-features-admin-controls/",
+      "kind": "help",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "canva-teams-help",
+      "url": "https://www.canva.com/help/about-canva-teams/",
+      "kind": "help",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "canva-pricing",
+            "quote": "US$0/year for one person"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "Privacy settings → privacy controls page",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "canva-privacy-policy",
+            "quote": "to train our algorithms, models and AI products"
+          },
+          {
+            "source": "canva-trust-privacy",
+            "quote": "Canva won't use your user content to improve AI-powered features unless this is consistent with your Privacy Settings."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "canva-privacy-policy",
+            "quote": "You can manage the use of your data for training AI to improve our Service"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "canva-ai-terms",
+            "quote": "control whether Canva and our Technology Partners, may use your data to improve our AI services for everyone"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "canva-dpa",
+            "quote": "applies where and to the extent that Canva is acting as a Processor or Service Provider"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "canva-magic-admin",
+            "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Canva says it may use account content to train its AI; whether that happens depends on your Privacy Settings, and the default is not stated.",
+          "evidence": [
+            {
+              "source": "canva-privacy-policy",
+              "quote": "to train our algorithms, models and AI products"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 12,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "canva-pricing",
+            "quote": "US$144/year for one person"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "Privacy settings → privacy controls page",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "canva-privacy-policy",
+            "quote": "to train our algorithms, models and AI products"
+          },
+          {
+            "source": "canva-trust-privacy",
+            "quote": "Canva won't use your user content to improve AI-powered features unless this is consistent with your Privacy Settings."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "canva-privacy-policy",
+            "quote": "You can manage the use of your data for training AI to improve our Service"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "canva-ai-terms",
+            "quote": "control whether Canva and our Technology Partners, may use your data to improve our AI services for everyone"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "canva-dpa",
+            "quote": "applies where and to the extent that Canva is acting as a Processor or Service Provider"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "canva-magic-admin",
+            "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Canva says it may use account content to train its AI; whether that happens depends on your Privacy Settings, and the default is not stated.",
+          "evidence": [
+            {
+              "source": "canva-privacy-policy",
+              "quote": "to train our algorithms, models and AI products"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 20.83,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "canva-pricing",
+            "quote": "US$250/year per person"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "canva-trust-privacy",
+            "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "canva-trust-privacy",
+            "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "canva-trust-privacy",
+            "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "canva-dpa",
+            "quote": "supplementary to, and forms part of the"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "canva-magic-admin",
+            "quote": "Admins on Canva Teams and Canva Business have control over access to AI features for their members."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Canva Teams is closed to new sign-ups; Canva Business replaces it. AI features are enabled for all members by default; admins can restrict them.",
+          "evidence": [
+            {
+              "source": "canva-teams-help",
+              "quote": "The Canva Teams plan is no longer available for new sign-ups or upgrades."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "canva-pricing",
+            "quote": "Let's talk"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "canva-trust-privacy",
+            "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "canva-trust-privacy",
+            "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "canva-trust-privacy",
+            "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "canva-dpa",
+            "quote": "supplementary to, and forms part of the"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "canva-magic-admin",
+            "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins."
+          }
+        ]
+      }
+    }
+  ]
+}

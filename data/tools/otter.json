@@ -1,0 +1,397 @@
+{
+  "slug": "otter",
+  "name": "Otter.ai",
+  "vendor": "Otter.ai",
+  "website": "https://otter.ai",
+  "summary": "AI meeting assistant and transcriber; trains on de-identified data by default except Enterprise workspaces, which are opted out.",
+  "workflows": ["call-notes", "follow-up-email"],
+  "worksWith": ["standalone"],
+  "form": ["meeting-bot", "web", "mobile", "integration"],
+  "sources": [
+    {
+      "id": "otter-pricing",
+      "url": "https://otter.ai/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "kind": "trust",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "otter-privacy-policy",
+      "url": "https://otter.ai/privacy-policy",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "otter-terms",
+      "url": "https://otter.ai/terms-of-service",
+      "kind": "terms",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "otter-subprocessors",
+      "url": "https://otter.ai/subprocessors",
+      "kind": "trust",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "otter-admin-help",
+      "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Basic",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "otter-pricing",
+            "quote": "Free"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "unclear",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "otter-privacy-policy",
+            "quote": "training our proprietary AI technology on de-identified audio recordings and on transcriptions"
+          },
+          {
+            "source": "otter-terms",
+            "quote": "including for machine learning and training"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "otter-privacy-policy",
+            "quote": "You have the right to opt out of the \"sale\" of your Personal Information"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "otter-privacy-security",
+            "quote": "No customer data will be used to train or improve our AI Service Provider(s)"
+          },
+          {
+            "source": "otter-subprocessors",
+            "quote": "No Customer Data will be used to train or improve Anthropic"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "otter-terms",
+            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "otter-admin-help",
+            "quote": "Once enforced by Enterprise admins, 2FA will be required for all workspace members"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Training uses de-identified audio and transcripts; Otter says this is automatic with no manual human review.",
+          "evidence": [
+            {
+              "source": "otter-privacy-security",
+              "quote": "audio recordings and transcripts are not manually reviewed by a human"
+            }
+          ]
+        },
+        {
+          "text": "Deleted conversations are removed from the trash after 30 days.",
+          "evidence": [
+            {
+              "source": "otter-privacy-security",
+              "quote": "Otter automatically deletes conversations from the trash after 30 days."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 16.99,
+            "billing": "monthly"
+          },
+          {
+            "amount": 8.33,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "otter-pricing",
+            "quote": "$16.99"
+          },
+          {
+            "source": "otter-pricing",
+            "quote": "$8.33"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "unclear",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "otter-privacy-policy",
+            "quote": "training our proprietary AI technology on de-identified audio recordings and on transcriptions"
+          },
+          {
+            "source": "otter-terms",
+            "quote": "including for machine learning and training"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "otter-privacy-policy",
+            "quote": "You have the right to opt out of the \"sale\" of your Personal Information"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "otter-privacy-security",
+            "quote": "No customer data will be used to train or improve our AI Service Provider(s)"
+          },
+          {
+            "source": "otter-subprocessors",
+            "quote": "No Customer Data will be used to train or improve Anthropic"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "otter-terms",
+            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "otter-admin-help",
+            "quote": "Once enforced by Enterprise admins, 2FA will be required for all workspace members"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Training uses de-identified audio and transcripts; Otter says this is automatic with no manual human review.",
+          "evidence": [
+            {
+              "source": "otter-privacy-security",
+              "quote": "audio recordings and transcripts are not manually reviewed by a human"
+            }
+          ]
+        },
+        {
+          "text": "Deleted conversations are removed from the trash after 30 days.",
+          "evidence": [
+            {
+              "source": "otter-privacy-security",
+              "quote": "Otter automatically deletes conversations from the trash after 30 days."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 30,
+            "billing": "monthly"
+          },
+          {
+            "amount": 19.99,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "otter-pricing",
+            "quote": "$30"
+          },
+          {
+            "source": "otter-pricing",
+            "quote": "$19.99"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "unclear",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "otter-privacy-policy",
+            "quote": "training our proprietary AI technology on de-identified audio recordings and on transcriptions"
+          },
+          {
+            "source": "otter-terms",
+            "quote": "including for machine learning and training"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "otter-privacy-policy",
+            "quote": "You have the right to opt out of the \"sale\" of your Personal Information"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "otter-privacy-security",
+            "quote": "No customer data will be used to train or improve our AI Service Provider(s)"
+          },
+          {
+            "source": "otter-subprocessors",
+            "quote": "No Customer Data will be used to train or improve Anthropic"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "otter-terms",
+            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "otter-admin-help",
+            "quote": "Once enforced by Enterprise admins, 2FA will be required for all workspace members"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Training uses de-identified audio and transcripts; Otter says this is automatic with no manual human review.",
+          "evidence": [
+            {
+              "source": "otter-privacy-security",
+              "quote": "audio recordings and transcripts are not manually reviewed by a human"
+            }
+          ]
+        },
+        {
+          "text": "Deleted conversations are removed from the trash after 30 days.",
+          "evidence": [
+            {
+              "source": "otter-privacy-security",
+              "quote": "Otter automatically deletes conversations from the trash after 30 days."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "otter-pricing",
+            "quote": "Schedule a demo"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "admin-enforced",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "otter-admin-help",
+            "quote": "By default, Enterprise workspaces are opted out of AI model training"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "otter-admin-help",
+            "quote": "Workspace-wide settings override each user's individual Account Settings"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "otter-privacy-security",
+            "quote": "No customer data will be used to train or improve our AI Service Provider(s)"
+          },
+          {
+            "source": "otter-subprocessors",
+            "quote": "No Customer Data will be used to train or improve Anthropic"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "otter-terms",
+            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "otter-admin-help",
+            "quote": "Workspace-wide settings override each user"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Enterprise admins can set a custom data retention policy.",
+          "evidence": [
+            {
+              "source": "otter-admin-help",
+              "quote": "A Custom Data Retention policy lets Enterprise admins control how long Otter keeps meeting data"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

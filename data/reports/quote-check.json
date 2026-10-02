@@ -1,9 +1,9 @@
 {
   "summary": {
-    "checkedAt": "2026-10-02T04:14:38.804Z",
-    "found": 489,
-    "missing": 69,
-    "unreachable": 46
+    "checkedAt": "2026-10-02T04:24:12.095Z",
+    "found": 499,
+    "missing": 24,
+    "unreachable": 81
   },
   "checks": [
     {
@@ -208,7 +208,7 @@
       "tool": "canva",
       "source": "canva-privacy-policy",
       "url": "https://www.canva.com/policies/privacy-policy/",
-      "verify": "auto",
+      "verify": "manual",
       "status": "found",
       "quote": "to train our algorithms, models and AI products",
       "where": "Free.trainingDefault"
@@ -217,17 +217,16 @@
       "tool": "canva",
       "source": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "Canva won't use your user content to improve AI-powered features unless this is consistent with your Privacy Settings.",
-      "where": "Free.trainingDefault",
-      "nearest": "soon verification successful. waiting for www.canva.com to respond if you can't get past this page, visit the help centre to see why this is"
+      "where": "Free.trainingDefault"
     },
     {
       "tool": "canva",
       "source": "canva-privacy-policy",
       "url": "https://www.canva.com/policies/privacy-policy/",
-      "verify": "auto",
+      "verify": "manual",
       "status": "found",
       "quote": "You can manage the use of your data for training AI to improve our Service",
       "where": "Free.trainingControl"
@@ -236,47 +235,43 @@
       "tool": "canva",
       "source": "canva-ai-terms",
       "url": "https://www.canva.com/policies/ai-product-terms/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "control whether Canva and our Technology Partners, may use your data to improve our AI services for everyone",
-      "where": "Free.subprocessorTraining",
-      "nearest": "the help centre to see why this is happening. rayid: a440d7e62b312fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+      "where": "Free.subprocessorTraining"
     },
     {
       "tool": "canva",
       "source": "canva-dpa",
       "url": "https://www.canva.com/policies/data-processing-addendum/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "applies where and to the extent that Canva is acting as a Processor or Service Provider",
-      "where": "Free.dpa",
-      "nearest": "successful. waiting for www.canva.com to respond if you can't get past this page, visit the help centre to see why this is"
+      "where": "Free.dpa"
     },
     {
       "tool": "canva",
       "source": "canva-magic-admin",
       "url": "https://www.canva.com/help/magic-features-admin-controls/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins.",
-      "where": "Free.adminEnforcement",
-      "nearest": "the help centre to see why this is happening. rayid: a440d82519852fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+      "where": "Free.adminEnforcement"
     },
     {
       "tool": "canva",
       "source": "canva-pricing",
       "url": "https://www.canva.com/pricing/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "US$0/year for one person",
-      "where": "Free.price",
-      "nearest": "have you designing again soon verification successful. waiting for www.canva.com"
+      "where": "Free.price"
     },
     {
       "tool": "canva",
       "source": "canva-privacy-policy",
       "url": "https://www.canva.com/policies/privacy-policy/",
-      "verify": "auto",
+      "verify": "manual",
       "status": "found",
       "quote": "to train our algorithms, models and AI products",
       "where": "Free.caveat"
@@ -285,7 +280,7 @@
       "tool": "canva",
       "source": "canva-privacy-policy",
       "url": "https://www.canva.com/policies/privacy-policy/",
-      "verify": "auto",
+      "verify": "manual",
       "status": "found",
       "quote": "to train our algorithms, models and AI products",
       "where": "Pro.trainingDefault"
@@ -294,17 +289,16 @@
       "tool": "canva",
       "source": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "Canva won't use your user content to improve AI-powered features unless this is consistent with your Privacy Settings.",
-      "where": "Pro.trainingDefault",
-      "nearest": "soon verification successful. waiting for www.canva.com to respond if you can't get past this page, visit the help centre to see why this is"
+      "where": "Pro.trainingDefault"
     },
     {
       "tool": "canva",
       "source": "canva-privacy-policy",
       "url": "https://www.canva.com/policies/privacy-policy/",
-      "verify": "auto",
+      "verify": "manual",
       "status": "found",
       "quote": "You can manage the use of your data for training AI to improve our Service",
       "where": "Pro.trainingControl"
@@ -313,47 +307,43 @@
       "tool": "canva",
       "source": "canva-ai-terms",
       "url": "https://www.canva.com/policies/ai-product-terms/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "control whether Canva and our Technology Partners, may use your data to improve our AI services for everyone",
-      "where": "Pro.subprocessorTraining",
-      "nearest": "the help centre to see why this is happening. rayid: a440d7e62b312fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+      "where": "Pro.subprocessorTraining"
     },
     {
       "tool": "canva",
       "source": "canva-dpa",
       "url": "https://www.canva.com/policies/data-processing-addendum/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "applies where and to the extent that Canva is acting as a Processor or Service Provider",
-      "where": "Pro.dpa",
-      "nearest": "successful. waiting for www.canva.com to respond if you can't get past this page, visit the help centre to see why this is"
+      "where": "Pro.dpa"
     },
     {
       "tool": "canva",
       "source": "canva-magic-admin",
       "url": "https://www.canva.com/help/magic-features-admin-controls/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins.",
-      "where": "Pro.adminEnforcement",
-      "nearest": "the help centre to see why this is happening. rayid: a440d82519852fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+      "where": "Pro.adminEnforcement"
     },
     {
       "tool": "canva",
       "source": "canva-pricing",
       "url": "https://www.canva.com/pricing/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "US$144/year for one person",
-      "where": "Pro.price",
-      "nearest": "have you designing again soon verification successful. waiting for www.canva.com"
+      "where": "Pro.price"
     },
     {
       "tool": "canva",
       "source": "canva-privacy-policy",
       "url": "https://www.canva.com/policies/privacy-policy/",
-      "verify": "auto",
+      "verify": "manual",
       "status": "found",
       "quote": "to train our algorithms, models and AI products",
       "where": "Pro.caveat"
@@ -362,131 +352,118 @@
       "tool": "canva",
       "source": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
-      "where": "Business.trainingDefault",
-      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+      "where": "Business.trainingDefault"
     },
     {
       "tool": "canva",
       "source": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
-      "where": "Business.trainingControl",
-      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+      "where": "Business.trainingControl"
     },
     {
       "tool": "canva",
       "source": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
-      "where": "Business.subprocessorTraining",
-      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+      "where": "Business.subprocessorTraining"
     },
     {
       "tool": "canva",
       "source": "canva-dpa",
       "url": "https://www.canva.com/policies/data-processing-addendum/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "supplementary to, and forms part of the",
-      "where": "Business.dpa",
-      "nearest": "you designing again soon if you can't get past this page, visit the"
+      "where": "Business.dpa"
     },
     {
       "tool": "canva",
       "source": "canva-magic-admin",
       "url": "https://www.canva.com/help/magic-features-admin-controls/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "Admins on Canva Teams and Canva Business have control over access to AI features for their members.",
-      "where": "Business.adminEnforcement",
-      "nearest": "the help centre to see why this is happening. rayid: a440d82519852fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+      "where": "Business.adminEnforcement"
     },
     {
       "tool": "canva",
       "source": "canva-pricing",
       "url": "https://www.canva.com/pricing/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "US$250/year per person",
-      "where": "Business.price",
-      "nearest": "we'll have you designing again soon if you can't"
+      "where": "Business.price"
     },
     {
       "tool": "canva",
       "source": "canva-teams-help",
       "url": "https://www.canva.com/help/about-canva-teams/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "The Canva Teams plan is no longer available for new sign-ups or upgrades.",
-      "where": "Business.caveat",
-      "nearest": "again soon if you can't get past this page, visit the help centre to see why this is happening."
+      "where": "Business.caveat"
     },
     {
       "tool": "canva",
       "source": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
-      "where": "Enterprise.trainingDefault",
-      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+      "where": "Enterprise.trainingDefault"
     },
     {
       "tool": "canva",
       "source": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
-      "where": "Enterprise.trainingControl",
-      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+      "where": "Enterprise.trainingControl"
     },
     {
       "tool": "canva",
       "source": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
-      "where": "Enterprise.subprocessorTraining",
-      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+      "where": "Enterprise.subprocessorTraining"
     },
     {
       "tool": "canva",
       "source": "canva-dpa",
       "url": "https://www.canva.com/policies/data-processing-addendum/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "supplementary to, and forms part of the",
-      "where": "Enterprise.dpa",
-      "nearest": "you designing again soon if you can't get past this page, visit the"
+      "where": "Enterprise.dpa"
     },
     {
       "tool": "canva",
       "source": "canva-magic-admin",
       "url": "https://www.canva.com/help/magic-features-admin-controls/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins.",
-      "where": "Enterprise.adminEnforcement",
-      "nearest": "the help centre to see why this is happening. rayid: a440d82519852fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+      "where": "Enterprise.adminEnforcement"
     },
     {
       "tool": "canva",
       "source": "canva-pricing",
       "url": "https://www.canva.com/pricing/",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "unreachable",
       "quote": "Let's talk",
-      "where": "Enterprise.price",
-      "nearest": "we'll have you designing again soon if you"
+      "where": "Enterprise.price"
     },
     {
       "tool": "chatgpt",
@@ -2356,10 +2333,9 @@
       "source": "grammarly-training-control",
       "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
       "verify": "auto",
-      "status": "missing",
-      "quote": "Product Improvement and Training is on on individual users by default.",
-      "where": "Free.trainingDefault",
-      "nearest": "improve.✕ product improvement and training control product improvement and training control grammarly's product improvement and training control"
+      "status": "found",
+      "quote": "individual users by default",
+      "where": "Free.trainingDefault"
     },
     {
       "tool": "grammarly",
@@ -2411,20 +2387,18 @@
       "source": "grammarly-training-control",
       "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
       "verify": "auto",
-      "status": "missing",
-      "quote": "Product Improvement and Training is on on individual users by default.",
-      "where": "Free.caveat",
-      "nearest": "improve.✕ product improvement and training control product improvement and training control grammarly's product improvement and training control"
+      "status": "found",
+      "quote": "individual users by default",
+      "where": "Free.caveat"
     },
     {
       "tool": "grammarly",
       "source": "grammarly-training-control",
       "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
       "verify": "auto",
-      "status": "missing",
-      "quote": "Product Improvement and Training is on on individual users by default.",
-      "where": "Pro.trainingDefault",
-      "nearest": "improve.✕ product improvement and training control product improvement and training control grammarly's product improvement and training control"
+      "status": "found",
+      "quote": "individual users by default",
+      "where": "Pro.trainingDefault"
     },
     {
       "tool": "grammarly",
@@ -2467,20 +2441,18 @@
       "source": "grammarly-pricing",
       "url": "https://www.grammarly.com/plans",
       "verify": "auto",
-      "status": "missing",
-      "quote": "$12 USD / month",
-      "where": "Pro.price",
-      "nearest": "prompts / month 2,000 prompts / member / month unlimited"
+      "status": "found",
+      "quote": "$12 USD",
+      "where": "Pro.price"
     },
     {
       "tool": "grammarly",
       "source": "grammarly-training-control",
       "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
       "verify": "auto",
-      "status": "missing",
-      "quote": "Product Improvement and Training is on on individual users by default.",
-      "where": "Pro.caveat",
-      "nearest": "improve.✕ product improvement and training control product improvement and training control grammarly's product improvement and training control"
+      "status": "found",
+      "quote": "individual users by default",
+      "where": "Pro.caveat"
     },
     {
       "tool": "grammarly",
@@ -3368,11 +3340,10 @@
       "tool": "make",
       "source": "make-terms",
       "url": "https://www.make.com/en/terms-and-conditions",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "found",
       "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
-      "where": "Free.dpa",
-      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+      "where": "Free.dpa"
     },
     {
       "tool": "make",
@@ -3432,11 +3403,10 @@
       "tool": "make",
       "source": "make-terms",
       "url": "https://www.make.com/en/terms-and-conditions",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "found",
       "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
-      "where": "Core.dpa",
-      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+      "where": "Core.dpa"
     },
     {
       "tool": "make",
@@ -3505,11 +3475,10 @@
       "tool": "make",
       "source": "make-terms",
       "url": "https://www.make.com/en/terms-and-conditions",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "found",
       "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
-      "where": "Pro.dpa",
-      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+      "where": "Pro.dpa"
     },
     {
       "tool": "make",
@@ -3578,11 +3547,10 @@
       "tool": "make",
       "source": "make-terms",
       "url": "https://www.make.com/en/terms-and-conditions",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "found",
       "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
-      "where": "Teams.dpa",
-      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+      "where": "Teams.dpa"
     },
     {
       "tool": "make",
@@ -3651,11 +3619,10 @@
       "tool": "make",
       "source": "make-terms",
       "url": "https://www.make.com/en/terms-and-conditions",
-      "verify": "auto",
-      "status": "missing",
+      "verify": "manual",
+      "status": "found",
       "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
-      "where": "Enterprise.dpa",
-      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+      "where": "Enterprise.dpa"
     },
     {
       "tool": "make",
@@ -4076,10 +4043,9 @@
       "source": "otter-terms",
       "url": "https://otter.ai/terms-of-service",
       "verify": "auto",
-      "status": "missing",
-      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply",
-      "where": "Basic.dpa",
-      "nearest": "regulation, the terms of the data processing attachment in appendix 1 of these terms (\"dpa\") apply to the processing of"
+      "status": "found",
+      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms",
+      "where": "Basic.dpa"
     },
     {
       "tool": "otter",
@@ -4167,10 +4133,9 @@
       "source": "otter-terms",
       "url": "https://otter.ai/terms-of-service",
       "verify": "auto",
-      "status": "missing",
-      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply",
-      "where": "Pro.dpa",
-      "nearest": "regulation, the terms of the data processing attachment in appendix 1 of these terms (\"dpa\") apply to the processing of"
+      "status": "found",
+      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms",
+      "where": "Pro.dpa"
     },
     {
       "tool": "otter",
@@ -4267,10 +4232,9 @@
       "source": "otter-terms",
       "url": "https://otter.ai/terms-of-service",
       "verify": "auto",
-      "status": "missing",
-      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply",
-      "where": "Business.dpa",
-      "nearest": "regulation, the terms of the data processing attachment in appendix 1 of these terms (\"dpa\") apply to the processing of"
+      "status": "found",
+      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms",
+      "where": "Business.dpa"
     },
     {
       "tool": "otter",
@@ -4331,10 +4295,9 @@
       "source": "otter-admin-help",
       "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
       "verify": "auto",
-      "status": "missing",
-      "quote": "Workspace-wide settings override each user's individual Account Settings preferences",
-      "where": "Enterprise.trainingControl",
-      "nearest": "and regulations. when this setting is enabled: workspace-wide settings override each user's individual account settings"
+      "status": "found",
+      "quote": "Workspace-wide settings override each user's individual Account Settings",
+      "where": "Enterprise.trainingControl"
     },
     {
       "tool": "otter",
@@ -4359,10 +4322,9 @@
       "source": "otter-terms",
       "url": "https://otter.ai/terms-of-service",
       "verify": "auto",
-      "status": "missing",
-      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply",
-      "where": "Enterprise.dpa",
-      "nearest": "regulation, the terms of the data processing attachment in appendix 1 of these terms (\"dpa\") apply to the processing of"
+      "status": "found",
+      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms",
+      "where": "Enterprise.dpa"
     },
     {
       "tool": "otter",
@@ -4399,7 +4361,7 @@
       "status": "missing",
       "quote": "AI Data Retention is enabled by default",
       "where": "Free.trainingDefault",
-      "nearest": "uses a security service to protect against malicious bots. this page is displayed"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to"
     },
     {
       "tool": "perplexity",
@@ -4409,7 +4371,7 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Free.trainingDefault",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
@@ -4419,7 +4381,7 @@
       "status": "missing",
       "quote": "Toggle off to opt out of AI training data collection",
       "where": "Free.trainingControl",
-      "nearest": "www.perplexity.ai performing security verification this website uses a security service to protect against malicious bots. this"
+      "nearest": "occurred. please contact support to get help.perplexity help centerwhere knowledge beginsvisit our blogcareersprivacy policyterms of servicesecuritygive"
     },
     {
       "tool": "perplexity",
@@ -4429,14 +4391,14 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Free.subprocessorTraining",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
       "source": "pplx-dpa",
       "url": "https://www.perplexity.ai/hub/legal/dpa",
       "verify": "manual",
-      "status": "found",
+      "status": "unreachable",
       "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
       "where": "Free.dpa"
     },
@@ -4448,17 +4410,16 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Free.adminEnforcement",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
       "source": "pplx-pricing",
       "url": "https://www.perplexity.ai/hub/pricing",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "$0/month",
-      "where": "Free.price",
-      "nearest": "www.perplexity.ai performing security verification this website uses a"
+      "where": "Free.price"
     },
     {
       "tool": "perplexity",
@@ -4468,7 +4429,7 @@
       "status": "missing",
       "quote": "Opt-outs only apply to data collected after the opt-out date",
       "where": "Free.caveat",
-      "nearest": "uses a security service to protect against malicious bots. this page is displayed while the website"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
     },
     {
       "tool": "perplexity",
@@ -4478,7 +4439,7 @@
       "status": "missing",
       "quote": "AI Data Retention is enabled by default",
       "where": "Pro.trainingDefault",
-      "nearest": "uses a security service to protect against malicious bots. this page is displayed"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to"
     },
     {
       "tool": "perplexity",
@@ -4488,7 +4449,7 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Pro.trainingDefault",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
@@ -4498,7 +4459,7 @@
       "status": "missing",
       "quote": "Toggle off to opt out of AI training data collection",
       "where": "Pro.trainingControl",
-      "nearest": "www.perplexity.ai performing security verification this website uses a security service to protect against malicious bots. this"
+      "nearest": "occurred. please contact support to get help.perplexity help centerwhere knowledge beginsvisit our blogcareersprivacy policyterms of servicesecuritygive"
     },
     {
       "tool": "perplexity",
@@ -4508,14 +4469,14 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Pro.subprocessorTraining",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
       "source": "pplx-dpa",
       "url": "https://www.perplexity.ai/hub/legal/dpa",
       "verify": "manual",
-      "status": "found",
+      "status": "unreachable",
       "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
       "where": "Pro.dpa"
     },
@@ -4527,17 +4488,16 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Pro.adminEnforcement",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
       "source": "pplx-pricing",
       "url": "https://www.perplexity.ai/hub/pricing",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "$20/month",
-      "where": "Pro.price",
-      "nearest": "www.perplexity.ai performing security verification this website uses a"
+      "where": "Pro.price"
     },
     {
       "tool": "perplexity",
@@ -4547,7 +4507,7 @@
       "status": "missing",
       "quote": "Opt-outs only apply to data collected after the opt-out date",
       "where": "Pro.caveat",
-      "nearest": "uses a security service to protect against malicious bots. this page is displayed while the website"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
     },
     {
       "tool": "perplexity",
@@ -4557,7 +4517,7 @@
       "status": "missing",
       "quote": "AI Data Retention is enabled by default",
       "where": "Max.trainingDefault",
-      "nearest": "uses a security service to protect against malicious bots. this page is displayed"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to"
     },
     {
       "tool": "perplexity",
@@ -4567,7 +4527,7 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Max.trainingDefault",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
@@ -4577,7 +4537,7 @@
       "status": "missing",
       "quote": "Toggle off to opt out of AI training data collection",
       "where": "Max.trainingControl",
-      "nearest": "www.perplexity.ai performing security verification this website uses a security service to protect against malicious bots. this"
+      "nearest": "occurred. please contact support to get help.perplexity help centerwhere knowledge beginsvisit our blogcareersprivacy policyterms of servicesecuritygive"
     },
     {
       "tool": "perplexity",
@@ -4587,14 +4547,14 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Max.subprocessorTraining",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
       "source": "pplx-dpa",
       "url": "https://www.perplexity.ai/hub/legal/dpa",
       "verify": "manual",
-      "status": "found",
+      "status": "unreachable",
       "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
       "where": "Max.dpa"
     },
@@ -4606,17 +4566,16 @@
       "status": "missing",
       "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
       "where": "Max.adminEnforcement",
-      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center where knowledge begins visit our blog careers privacy"
     },
     {
       "tool": "perplexity",
       "source": "pplx-pricing",
       "url": "https://www.perplexity.ai/hub/pricing",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "$200/month",
-      "where": "Max.price",
-      "nearest": "www.perplexity.ai performing security verification this website uses a"
+      "where": "Max.price"
     },
     {
       "tool": "perplexity",
@@ -4626,7 +4585,7 @@
       "status": "missing",
       "quote": "Opt-outs only apply to data collected after the opt-out date",
       "where": "Max.caveat",
-      "nearest": "uses a security service to protect against malicious bots. this page is displayed while the website"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
     },
     {
       "tool": "perplexity",
@@ -4636,7 +4595,7 @@
       "status": "missing",
       "quote": "Perplexity Enterprise data is never used for AI training purposes",
       "where": "Enterprise Pro.trainingDefault",
-      "nearest": "this page is displayed while the website verifies you are not a bot.verification successful. waiting for"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
     },
     {
       "tool": "perplexity",
@@ -4646,14 +4605,14 @@
       "status": "missing",
       "quote": "Strict Zero Data Retention and Zero Data Training agreements with AI providers",
       "where": "Enterprise Pro.subprocessorTraining",
-      "nearest": "page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center"
     },
     {
       "tool": "perplexity",
       "source": "pplx-dpa",
       "url": "https://www.perplexity.ai/hub/legal/dpa",
       "verify": "manual",
-      "status": "found",
+      "status": "unreachable",
       "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
       "where": "Enterprise Pro.dpa"
     },
@@ -4662,20 +4621,18 @@
       "source": "pplx-enterprise",
       "url": "https://www.perplexity.ai/enterprise",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Easily manage who can upload and download files and how answers are shared.",
-      "where": "Enterprise Pro.adminEnforcement",
-      "nearest": "bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0a18f4fc957 performance and"
+      "where": "Enterprise Pro.adminEnforcement"
     },
     {
       "tool": "perplexity",
       "source": "pplx-enterprise-billing",
       "url": "https://www.perplexity.ai/help-center/en/articles/10352986-enterprise-pricing-and-billing-frequently-asked-questions",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Each seat is $40 per month or $400 per year",
-      "where": "Enterprise Pro.price",
-      "nearest": "security verification this website uses a security service to protect against malicious bots. this page is"
+      "where": "Enterprise Pro.price"
     },
     {
       "tool": "perplexity",
@@ -4685,7 +4642,7 @@
       "status": "missing",
       "quote": "Uploaded files are retained for only 7 days",
       "where": "Enterprise Pro.caveat",
-      "nearest": "is displayed while the website verifies you are not a bot.verification successful. waiting for"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get"
     },
     {
       "tool": "perplexity",
@@ -4695,7 +4652,7 @@
       "status": "missing",
       "quote": "Perplexity Enterprise data is never used for AI training purposes",
       "where": "Enterprise Max.trainingDefault",
-      "nearest": "this page is displayed while the website verifies you are not a bot.verification successful. waiting for"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity"
     },
     {
       "tool": "perplexity",
@@ -4705,14 +4662,14 @@
       "status": "missing",
       "quote": "Strict Zero Data Retention and Zero Data Training agreements with AI providers",
       "where": "Enterprise Max.subprocessorTraining",
-      "nearest": "page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get help. perplexity help center"
     },
     {
       "tool": "perplexity",
       "source": "pplx-dpa",
       "url": "https://www.perplexity.ai/hub/legal/dpa",
       "verify": "manual",
-      "status": "found",
+      "status": "unreachable",
       "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
       "where": "Enterprise Max.dpa"
     },
@@ -4721,20 +4678,18 @@
       "source": "pplx-enterprise",
       "url": "https://www.perplexity.ai/enterprise",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Easily manage who can upload and download files and how answers are shared.",
-      "where": "Enterprise Max.adminEnforcement",
-      "nearest": "bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0a18f4fc957 performance and"
+      "where": "Enterprise Max.adminEnforcement"
     },
     {
       "tool": "perplexity",
       "source": "pplx-enterprise-billing",
       "url": "https://www.perplexity.ai/help-center/en/articles/10352986-enterprise-pricing-and-billing-frequently-asked-questions",
       "verify": "manual",
-      "status": "missing",
+      "status": "unreachable",
       "quote": "Each seat is $325 per month or $3,250 per year",
-      "where": "Enterprise Max.price",
-      "nearest": "security verification this website uses a security service to protect against malicious bots. this page is"
+      "where": "Enterprise Max.price"
     },
     {
       "tool": "perplexity",
@@ -4744,7 +4699,7 @@
       "status": "missing",
       "quote": "Uploaded files are retained for only 7 days",
       "where": "Enterprise Max.caveat",
-      "nearest": "is displayed while the website verifies you are not a bot.verification successful. waiting for"
+      "nearest": "error 500 error loading page an unexpected error occurred. please contact support to get"
     },
     {
       "tool": "read-ai",

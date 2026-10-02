@@ -1,11 +1,493 @@
 {
   "summary": {
-    "checkedAt": "2026-10-01T19:37:15.331Z",
-    "found": 123,
-    "missing": 0,
-    "unreachable": 41
+    "checkedAt": "2026-10-02T04:14:38.804Z",
+    "found": 489,
+    "missing": 69,
+    "unreachable": 46
   },
   "checks": [
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anything you input into Beautiful.ai is never used to train the AI models.",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anything you input into Beautiful.ai is never used to train the AI models.",
+      "where": "Pro.trainingControl"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-security",
+      "url": "https://www.beautiful.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data processed by our AI models will not be used to train public LLM models.",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-privacy",
+      "url": "https://www.beautiful.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you would like to request a data processing agreement from us, please contact us at privacy@beautiful.ai.",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-pricing",
+      "url": "https://www.beautiful.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Manage who can view & edit",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-pricing",
+      "url": "https://www.beautiful.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$14.50",
+      "where": "Pro.price"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We use Gemini by Google, Claude by Anthropic",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anything you input into Beautiful.ai is never used to train the AI models.",
+      "where": "Team.trainingDefault"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anything you input into Beautiful.ai is never used to train the AI models.",
+      "where": "Team.trainingControl"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-security",
+      "url": "https://www.beautiful.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data processed by our AI models will not be used to train public LLM models.",
+      "where": "Team.subprocessorTraining"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-privacy",
+      "url": "https://www.beautiful.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you would like to request a data processing agreement from us, please contact us at privacy@beautiful.ai.",
+      "where": "Team.dpa"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-pricing",
+      "url": "https://www.beautiful.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Manage who can view & edit",
+      "where": "Team.adminEnforcement"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-pricing",
+      "url": "https://www.beautiful.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$40",
+      "where": "Team.price"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-pricing",
+      "url": "https://www.beautiful.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$50",
+      "where": "Team.price"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We use Gemini by Google, Claude by Anthropic",
+      "where": "Team.caveat"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anything you input into Beautiful.ai is never used to train the AI models.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Anything you input into Beautiful.ai is never used to train the AI models.",
+      "where": "Enterprise.trainingControl"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-security",
+      "url": "https://www.beautiful.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data processed by our AI models will not be used to train public LLM models.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-privacy",
+      "url": "https://www.beautiful.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "If you would like to request a data processing agreement from us, please contact us at privacy@beautiful.ai.",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-security",
+      "url": "https://www.beautiful.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Enterprise customers can customize access to protect sensitive information.",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-pricing",
+      "url": "https://www.beautiful.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Contact sales",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "beautiful-ai",
+      "source": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We use Gemini by Google, Claude by Anthropic",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-privacy-policy",
+      "url": "https://www.canva.com/policies/privacy-policy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "to train our algorithms, models and AI products",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Canva won't use your user content to improve AI-powered features unless this is consistent with your Privacy Settings.",
+      "where": "Free.trainingDefault",
+      "nearest": "soon verification successful. waiting for www.canva.com to respond if you can't get past this page, visit the help centre to see why this is"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-privacy-policy",
+      "url": "https://www.canva.com/policies/privacy-policy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can manage the use of your data for training AI to improve our Service",
+      "where": "Free.trainingControl"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-ai-terms",
+      "url": "https://www.canva.com/policies/ai-product-terms/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "control whether Canva and our Technology Partners, may use your data to improve our AI services for everyone",
+      "where": "Free.subprocessorTraining",
+      "nearest": "the help centre to see why this is happening. rayid: a440d7e62b312fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-dpa",
+      "url": "https://www.canva.com/policies/data-processing-addendum/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "applies where and to the extent that Canva is acting as a Processor or Service Provider",
+      "where": "Free.dpa",
+      "nearest": "successful. waiting for www.canva.com to respond if you can't get past this page, visit the help centre to see why this is"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-magic-admin",
+      "url": "https://www.canva.com/help/magic-features-admin-controls/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins.",
+      "where": "Free.adminEnforcement",
+      "nearest": "the help centre to see why this is happening. rayid: a440d82519852fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-pricing",
+      "url": "https://www.canva.com/pricing/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "US$0/year for one person",
+      "where": "Free.price",
+      "nearest": "have you designing again soon verification successful. waiting for www.canva.com"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-privacy-policy",
+      "url": "https://www.canva.com/policies/privacy-policy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "to train our algorithms, models and AI products",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-privacy-policy",
+      "url": "https://www.canva.com/policies/privacy-policy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "to train our algorithms, models and AI products",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Canva won't use your user content to improve AI-powered features unless this is consistent with your Privacy Settings.",
+      "where": "Pro.trainingDefault",
+      "nearest": "soon verification successful. waiting for www.canva.com to respond if you can't get past this page, visit the help centre to see why this is"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-privacy-policy",
+      "url": "https://www.canva.com/policies/privacy-policy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can manage the use of your data for training AI to improve our Service",
+      "where": "Pro.trainingControl"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-ai-terms",
+      "url": "https://www.canva.com/policies/ai-product-terms/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "control whether Canva and our Technology Partners, may use your data to improve our AI services for everyone",
+      "where": "Pro.subprocessorTraining",
+      "nearest": "the help centre to see why this is happening. rayid: a440d7e62b312fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-dpa",
+      "url": "https://www.canva.com/policies/data-processing-addendum/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "applies where and to the extent that Canva is acting as a Processor or Service Provider",
+      "where": "Pro.dpa",
+      "nearest": "successful. waiting for www.canva.com to respond if you can't get past this page, visit the help centre to see why this is"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-magic-admin",
+      "url": "https://www.canva.com/help/magic-features-admin-controls/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins.",
+      "where": "Pro.adminEnforcement",
+      "nearest": "the help centre to see why this is happening. rayid: a440d82519852fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-pricing",
+      "url": "https://www.canva.com/pricing/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "US$144/year for one person",
+      "where": "Pro.price",
+      "nearest": "have you designing again soon verification successful. waiting for www.canva.com"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-privacy-policy",
+      "url": "https://www.canva.com/policies/privacy-policy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "to train our algorithms, models and AI products",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
+      "where": "Business.trainingDefault",
+      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
+      "where": "Business.trainingControl",
+      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
+      "where": "Business.subprocessorTraining",
+      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-dpa",
+      "url": "https://www.canva.com/policies/data-processing-addendum/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "supplementary to, and forms part of the",
+      "where": "Business.dpa",
+      "nearest": "you designing again soon if you can't get past this page, visit the"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-magic-admin",
+      "url": "https://www.canva.com/help/magic-features-admin-controls/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Admins on Canva Teams and Canva Business have control over access to AI features for their members.",
+      "where": "Business.adminEnforcement",
+      "nearest": "the help centre to see why this is happening. rayid: a440d82519852fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-pricing",
+      "url": "https://www.canva.com/pricing/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "US$250/year per person",
+      "where": "Business.price",
+      "nearest": "we'll have you designing again soon if you can't"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-teams-help",
+      "url": "https://www.canva.com/help/about-canva-teams/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "The Canva Teams plan is no longer available for new sign-ups or upgrades.",
+      "where": "Business.caveat",
+      "nearest": "again soon if you can't get past this page, visit the help centre to see why this is happening."
+    },
+    {
+      "tool": "canva",
+      "source": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
+      "where": "Enterprise.trainingDefault",
+      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
+      "where": "Enterprise.trainingControl",
+      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-trust-privacy",
+      "url": "https://www.canva.com/trust/privacy/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "we don't use your business, team or enterprise content to improve AI-powered features, and we don't allow third parties to do so either",
+      "where": "Enterprise.subprocessorTraining",
+      "nearest": "can't get past this page, visit the help centre to see why this is happening. rayid: a440d7c688ab2fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-dpa",
+      "url": "https://www.canva.com/policies/data-processing-addendum/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "supplementary to, and forms part of the",
+      "where": "Enterprise.dpa",
+      "nearest": "you designing again soon if you can't get past this page, visit the"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-magic-admin",
+      "url": "https://www.canva.com/help/magic-features-admin-controls/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Access controls are only available to Canva Teams, Canva Business, Canva Enterprise, and Canva Education owners and admins.",
+      "where": "Enterprise.adminEnforcement",
+      "nearest": "the help centre to see why this is happening. rayid: a440d82519852fe3 we'll have you designing again soon verification successful. waiting for www.canva.com to respond"
+    },
+    {
+      "tool": "canva",
+      "source": "canva-pricing",
+      "url": "https://www.canva.com/pricing/",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Let's talk",
+      "where": "Enterprise.price",
+      "nearest": "we'll have you designing again soon if you"
+    },
     {
       "tool": "chatgpt",
       "source": "openai-consumer-data-faq",
@@ -628,6 +1110,816 @@
       "where": "Enterprise.caveat"
     },
     {
+      "tool": "dovetail",
+      "source": "dovetail-ai-terms",
+      "url": "https://dovetail.com/legal/ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Customer Data is never used to train large language models or third party models.",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-help",
+      "url": "https://docs.dovetail.com/help/dovetail-ai",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No customer data is used to improve or train our model",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-terms",
+      "url": "https://dovetail.com/legal/ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Customer Data is never used to train large language models or third party models.",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-gdpr",
+      "url": "https://dovetail.com/help/dovetails-gdpr-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data Processing Agreement",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-help",
+      "url": "https://docs.dovetail.com/help/dovetail-ai",
+      "verify": "auto",
+      "status": "found",
+      "quote": "deactivating it for specific workspaces is not possible at this time",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-pricing",
+      "url": "https://dovetail.com/pricing/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0, no card required",
+      "where": "Free.price"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-terms",
+      "url": "https://dovetail.com/legal/ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "AI Features may use technology designed and developed by third party Sub-processors",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-terms",
+      "url": "https://dovetail.com/legal/ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Customer Data is never used to train large language models or third party models.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-help",
+      "url": "https://docs.dovetail.com/help/dovetail-ai",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No customer data is used to improve or train our model",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-terms",
+      "url": "https://dovetail.com/legal/ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Customer Data is never used to train large language models or third party models.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-gdpr",
+      "url": "https://dovetail.com/help/dovetails-gdpr-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data Processing Agreement",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-help",
+      "url": "https://docs.dovetail.com/help/dovetail-ai",
+      "verify": "auto",
+      "status": "found",
+      "quote": "deactivating it for specific workspaces is not possible at this time",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-pricing",
+      "url": "https://dovetail.com/pricing/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Custom pricing available",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "dovetail",
+      "source": "dovetail-ai-terms",
+      "url": "https://dovetail.com/legal/ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "AI Features may use technology designed and developed by third party Sub-processors",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out of this anytime in your My Settings",
+      "where": "Free.trainingControl"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "happy to sign a DPA",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out of this anytime in your My Settings",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0",
+      "where": "Free.price"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "After an additional 7 days, all data is also removed from our backups.",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Premium.trainingDefault"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out of this anytime in your My Settings",
+      "where": "Premium.trainingControl"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted",
+      "where": "Premium.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)",
+      "where": "Premium.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "happy to sign a DPA",
+      "where": "Premium.dpa"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out of this anytime in your My Settings",
+      "where": "Premium.adminEnforcement"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$20",
+      "where": "Premium.price"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$16",
+      "where": "Premium.price"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Premium.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "After an additional 7 days, all data is also removed from our backups.",
+      "where": "Premium.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Team.trainingDefault"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Organizations on Team Edition can opt out all users on their account by going to Organization Settings.",
+      "where": "Team.trainingControl"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted",
+      "where": "Team.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)",
+      "where": "Team.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-dpa",
+      "url": "https://fathom.ai/dpa",
+      "verify": "auto",
+      "status": "found",
+      "quote": "This DPA shall become legally binding upon Customer entering into the Agreement.",
+      "where": "Team.dpa"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-admin-help",
+      "url": "https://help.fathom.video/en/articles/3239681",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admins can enforce an automated consent chat message for bot-free meetings for all users on the team.",
+      "where": "Team.adminEnforcement"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$19",
+      "where": "Team.price"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$15",
+      "where": "Team.price"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Team.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "After an additional 7 days, all data is also removed from our backups.",
+      "where": "Team.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Organizations on Team Edition can opt out all users on their account by going to Organization Settings.",
+      "where": "Business.trainingControl"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-dpa",
+      "url": "https://fathom.ai/dpa",
+      "verify": "auto",
+      "status": "found",
+      "quote": "This DPA shall become legally binding upon Customer entering into the Agreement.",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-admin-help",
+      "url": "https://help.fathom.video/en/articles/3239681",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admins can enforce an automated consent chat message for bot-free meetings for all users on the team.",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$34",
+      "where": "Business.price"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$25",
+      "where": "Business.price"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "After an additional 7 days, all data is also removed from our backups.",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Organizations on Team Edition can opt out all users on their account by going to Organization Settings.",
+      "where": "Enterprise.trainingControl"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-dpa",
+      "url": "https://fathom.ai/dpa",
+      "verify": "auto",
+      "status": "found",
+      "quote": "This DPA shall become legally binding upon Customer entering into the Agreement.",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-admin-help",
+      "url": "https://help.fathom.video/en/articles/3239681",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Admins can enforce an automated consent chat message for bot-free meetings for all users on the team.",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Dedicated Success Manager & priority Support SLAs",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we may use and create de-identified data generated from Meeting Content Information",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "fathom",
+      "source": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "verify": "auto",
+      "status": "found",
+      "quote": "After an additional 7 days, all data is also removed from our backups.",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not use personal information for AI model training and we contractually prohibit our vendors from using this information for their own model training.",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Your data is never used for AI training or any purpose outside your direct business needs.",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we contractually prohibit our vendors from using this information for their own model training",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-dpa",
+      "url": "https://fireflies.ai/dpa",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we invite you to sign our Data Processing Agreement (DPA)",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-enterprise-guide",
+      "url": "https://guide.fireflies.ai/articles/4771323041-learn-about-fireflies-enterprise-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Automatically creates, updates, or removes user accounts through your identity provider.",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-pricing",
+      "url": "https://fireflies.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0",
+      "where": "Free.price"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "0-day data retention policy with all vendors and partners.",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not use personal information for AI model training and we contractually prohibit our vendors from using this information for their own model training.",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Your data is never used for AI training or any purpose outside your direct business needs.",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we contractually prohibit our vendors from using this information for their own model training",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-dpa",
+      "url": "https://fireflies.ai/dpa",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we invite you to sign our Data Processing Agreement (DPA)",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-enterprise-guide",
+      "url": "https://guide.fireflies.ai/articles/4771323041-learn-about-fireflies-enterprise-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Automatically creates, updates, or removes user accounts through your identity provider.",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-pricing",
+      "url": "https://fireflies.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$18",
+      "where": "Pro.price"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "0-day data retention policy with all vendors and partners.",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not use personal information for AI model training and we contractually prohibit our vendors from using this information for their own model training.",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Your data is never used for AI training or any purpose outside your direct business needs.",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we contractually prohibit our vendors from using this information for their own model training",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-dpa",
+      "url": "https://fireflies.ai/dpa",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we invite you to sign our Data Processing Agreement (DPA)",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-enterprise-guide",
+      "url": "https://guide.fireflies.ai/articles/4771323041-learn-about-fireflies-enterprise-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Automatically creates, updates, or removes user accounts through your identity provider.",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-pricing",
+      "url": "https://fireflies.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$29",
+      "where": "Business.price"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "0-day data retention policy with all vendors and partners.",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not use personal information for AI model training and we contractually prohibit our vendors from using this information for their own model training.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Your data is never used for AI training or any purpose outside your direct business needs.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we contractually prohibit our vendors from using this information for their own model training",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-dpa",
+      "url": "https://fireflies.ai/dpa",
+      "verify": "auto",
+      "status": "found",
+      "quote": "we invite you to sign our Data Processing Agreement (DPA)",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-enterprise-guide",
+      "url": "https://guide.fireflies.ai/articles/4771323041-learn-about-fireflies-enterprise-plan",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Automatically deletes meetings and files after a set period of time to help your team follow internal data policies.",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-pricing",
+      "url": "https://fireflies.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$39",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "fireflies",
+      "source": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "0-day data retention policy with all vendors and partners.",
+      "where": "Enterprise.caveat"
+    },
+    {
       "tool": "gamma",
       "source": "gamma-training-help",
       "url": "https://help.gamma.app/en/articles/12281928-does-gamma-use-my-content-to-train-its-ai-features",
@@ -1060,6 +2352,263 @@
       "where": "Gemini in Google Workspace (Enterprise).caveat"
     },
     {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Product Improvement and Training is on on individual users by default.",
+      "where": "Free.trainingDefault",
+      "nearest": "improve.✕ product improvement and training control product improvement and training control grammarly's product improvement and training control"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Individuals can update these preferences at any time.",
+      "where": "Free.trainingControl"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-trust",
+      "url": "https://www.grammarly.com/trust",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out of allowing Grammarly to use your content to train its models and improve its product for everyone.",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-trust",
+      "url": "https://www.grammarly.com/trust",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Only those authorized to access data critical to their work may do so.",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Individuals can update these preferences at any time.",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-pricing",
+      "url": "https://www.grammarly.com/plans",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0 USD / month",
+      "where": "Free.price"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Product Improvement and Training is on on individual users by default.",
+      "where": "Free.caveat",
+      "nearest": "improve.✕ product improvement and training control product improvement and training control grammarly's product improvement and training control"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Product Improvement and Training is on on individual users by default.",
+      "where": "Pro.trainingDefault",
+      "nearest": "improve.✕ product improvement and training control product improvement and training control grammarly's product improvement and training control"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Individuals can update these preferences at any time.",
+      "where": "Pro.trainingControl"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-trust",
+      "url": "https://www.grammarly.com/trust",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You can opt out of allowing Grammarly to use your content to train its models and improve its product for everyone.",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-trust",
+      "url": "https://www.grammarly.com/trust",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Only those authorized to access data critical to their work may do so.",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Individuals can update these preferences at any time.",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-pricing",
+      "url": "https://www.grammarly.com/plans",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "$12 USD / month",
+      "where": "Pro.price",
+      "nearest": "prompts / month 2,000 prompts / member / month unlimited"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Product Improvement and Training is on on individual users by default.",
+      "where": "Pro.caveat",
+      "nearest": "improve.✕ product improvement and training control product improvement and training control grammarly's product improvement and training control"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-business-agreement",
+      "url": "https://www.grammarly.com/terms/customer-business-agreement-2024",
+      "verify": "auto",
+      "status": "found",
+      "quote": "you hereby grant us the right to use, during and after the Subscription Term, anonymized Customer Data",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "only the account's administrator(s) can modify the Product Improvement and Training control",
+      "where": "Business.trainingControl"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-business-agreement",
+      "url": "https://www.grammarly.com/terms/customer-business-agreement-2024",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We may use subcontractors in order to provide the Services under this Agreement.",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-business-agreement",
+      "url": "https://www.grammarly.com/terms/customer-business-agreement-2024",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data Privacy Addendum located at https://www.grammarly.com/online-dpa are incorporated by reference",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-privacy",
+      "url": "https://www.grammarly.com/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Your Organization can access and control your account.",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-business-agreement",
+      "url": "https://www.grammarly.com/terms/customer-business-agreement-2024",
+      "verify": "auto",
+      "status": "found",
+      "quote": "anonymized Customer Data to improve our products and services",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "only the account's administrator(s) can modify the Product Improvement and Training control",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Product Improvement and Training is off by default, meaning we are not using these organizations' content to train our models",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Product Improvement and Training is off by default, meaning we are not using these organizations' content to train our models",
+      "where": "Enterprise.trainingControl"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-business-agreement",
+      "url": "https://www.grammarly.com/terms/customer-business-agreement-2024",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We may use subcontractors in order to provide the Services under this Agreement.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-business-agreement",
+      "url": "https://www.grammarly.com/terms/customer-business-agreement-2024",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Data Privacy Addendum located at https://www.grammarly.com/online-dpa are incorporated by reference",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-business-pricing",
+      "url": "https://www.grammarly.com/business/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Custom roles and permissions",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-pricing",
+      "url": "https://www.grammarly.com/plans",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Contact Sales",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "grammarly",
+      "source": "grammarly-training-control",
+      "url": "https://support.grammarly.com/hc/en-us/articles/25555503115277-Product-Improvement-and-Training-Control",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Product Improvement and Training is off by default, meaning we are not using these organizations' content to train our models",
+      "where": "Enterprise.caveat"
+    },
+    {
       "tool": "granola",
       "source": "granola-security",
       "url": "https://www.granola.ai/security",
@@ -1265,6 +2814,312 @@
       "status": "found",
       "quote": "$35",
       "where": "Enterprise.price"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure",
+      "where": "Starter.trainingDefault"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We currently only offer opt-out controls for AI features at the app level.",
+      "where": "Starter.trainingControl"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Neither OpenAI nor any other LLM provider retains your inputs and outputs.",
+      "where": "Starter.subprocessorTraining"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "The LLM providers we use do not use your inputs and outputs to improve their services.",
+      "where": "Starter.subprocessorTraining"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-dpa",
+      "url": "https://www.atlassian.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "supplements the Atlassian Customer Agreement",
+      "where": "Starter.dpa"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Most Loom AI features are included on Business + AI and Enterprise plans.",
+      "where": "Starter.adminEnforcement"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-pricing",
+      "url": "https://www.atlassian.com/software/loom/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "25 recordings",
+      "where": "Starter.price"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure",
+      "where": "Starter.caveat"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We currently only offer opt-out controls for AI features at the app level.",
+      "where": "Business.trainingControl"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Neither OpenAI nor any other LLM provider retains your inputs and outputs.",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "The LLM providers we use do not use your inputs and outputs to improve their services.",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-dpa",
+      "url": "https://www.atlassian.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "supplements the Atlassian Customer Agreement",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Most Loom AI features are included on Business + AI and Enterprise plans.",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-pricing",
+      "url": "https://www.atlassian.com/software/loom/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$18",
+      "where": "Business.price"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure",
+      "where": "Business + AI.trainingDefault"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We currently only offer opt-out controls for AI features at the app level.",
+      "where": "Business + AI.trainingControl"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Neither OpenAI nor any other LLM provider retains your inputs and outputs.",
+      "where": "Business + AI.subprocessorTraining"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "The LLM providers we use do not use your inputs and outputs to improve their services.",
+      "where": "Business + AI.subprocessorTraining"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-dpa",
+      "url": "https://www.atlassian.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "supplements the Atlassian Customer Agreement",
+      "where": "Business + AI.dpa"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "you can turn AI settings on or off for all workspace members",
+      "where": "Business + AI.adminEnforcement"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-pricing",
+      "url": "https://www.atlassian.com/software/loom/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$24",
+      "where": "Business + AI.price"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure",
+      "where": "Business + AI.caveat"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "OpenAI does not receive video or audio content.",
+      "where": "Business + AI.caveat"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We currently only offer opt-out controls for AI features at the app level.",
+      "where": "Enterprise.trainingControl"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Neither OpenAI nor any other LLM provider retains your inputs and outputs.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "The LLM providers we use do not use your inputs and outputs to improve their services.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-dpa",
+      "url": "https://www.atlassian.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "supplements the Atlassian Customer Agreement",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-enterprise",
+      "url": "https://www.atlassian.com/software/loom/enterprise",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Enterprise Loom admins control provisioning, access, and settings.",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "loom",
+      "source": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "OpenAI does not receive video or audio content.",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "loom",
+      "source": "loom-pricing",
+      "url": "https://www.atlassian.com/software/loom/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Custom data retention policies",
+      "where": "Enterprise.caveat"
     },
     {
       "tool": "m365-copilot",
@@ -1481,6 +3336,2180 @@
       "status": "found",
       "quote": "Anthropic models are currently excluded from the EU Data Boundary and when applicable, in-country processing commitments.",
       "where": "Microsoft 365 Copilot.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Make does not store your data and your data is not used to train the AI.",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "make",
+      "source": "make-dpa",
+      "url": "https://www.make.com/data-processing-agreement.pdf",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "forms part of and is integrated into the Agreement",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "make",
+      "source": "make-terms",
+      "url": "https://www.make.com/en/terms-and-conditions",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
+      "where": "Free.dpa",
+      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Company single sign-on (SSO)",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0/mo",
+      "where": "Free.price"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "1,000 credits/month",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Make does not store your data and your data is not used to train the AI.",
+      "where": "Core.trainingDefault"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Core.subprocessorTraining"
+    },
+    {
+      "tool": "make",
+      "source": "make-dpa",
+      "url": "https://www.make.com/data-processing-agreement.pdf",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "forms part of and is integrated into the Agreement",
+      "where": "Core.dpa"
+    },
+    {
+      "tool": "make",
+      "source": "make-terms",
+      "url": "https://www.make.com/en/terms-and-conditions",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
+      "where": "Core.dpa",
+      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Company single sign-on (SSO)",
+      "where": "Core.adminEnforcement"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$12/mo",
+      "where": "Core.price"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "for 10k credits",
+      "where": "Core.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Core.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Make does not store your data and your data is not used to train the AI.",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "make",
+      "source": "make-dpa",
+      "url": "https://www.make.com/data-processing-agreement.pdf",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "forms part of and is integrated into the Agreement",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "make",
+      "source": "make-terms",
+      "url": "https://www.make.com/en/terms-and-conditions",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
+      "where": "Pro.dpa",
+      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Company single sign-on (SSO)",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$21/mo",
+      "where": "Pro.price"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "for 10k credits",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Make does not store your data and your data is not used to train the AI.",
+      "where": "Teams.trainingDefault"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Teams.subprocessorTraining"
+    },
+    {
+      "tool": "make",
+      "source": "make-dpa",
+      "url": "https://www.make.com/data-processing-agreement.pdf",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "forms part of and is integrated into the Agreement",
+      "where": "Teams.dpa"
+    },
+    {
+      "tool": "make",
+      "source": "make-terms",
+      "url": "https://www.make.com/en/terms-and-conditions",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
+      "where": "Teams.dpa",
+      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Teams and team roles",
+      "where": "Teams.adminEnforcement"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$38/mo",
+      "where": "Teams.price"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "for 10k credits",
+      "where": "Teams.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Teams.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Make does not store your data and your data is not used to train the AI.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "make",
+      "source": "make-dpa",
+      "url": "https://www.make.com/data-processing-agreement.pdf",
+      "verify": "manual",
+      "status": "unreachable",
+      "quote": "forms part of and is integrated into the Agreement",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "make",
+      "source": "make-terms",
+      "url": "https://www.make.com/en/terms-and-conditions",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Your use of the Services is subject to the terms of the Data processing agreement",
+      "where": "Enterprise.dpa",
+      "nearest": "www.make.com performing security verification this website uses a security service to protect against malicious bots. this page is displayed while the"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Advanced security features",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Custom pricing",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "make",
+      "source": "make-pricing",
+      "url": "https://www.make.com/en/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "for 10k credits",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "make",
+      "source": "make-ai-toolkit",
+      "url": "https://apps.make.com/ai-tools",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All paid plans can additionally use custom AI provider connections like OpenAI or Anthropic.",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "verify": "manual",
+      "status": "found",
+      "quote": "Your data is protected, and is not used to train Gemini Notebook unless you provide feedback.",
+      "where": "Personal Google account.trainingDefault"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "verify": "manual",
+      "status": "found",
+      "quote": "Your data is protected, and is not used to train Gemini Notebook unless you provide feedback.",
+      "where": "Personal Google account.subprocessorTraining"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "verify": "manual",
+      "status": "found",
+      "quote": "Your data is protected, and is not used to train Gemini Notebook unless you provide feedback.",
+      "where": "Personal Google account.dpa"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "verify": "manual",
+      "status": "found",
+      "quote": "Your data is protected, and is not used to train Gemini Notebook unless you provide feedback.",
+      "where": "Personal Google account.adminEnforcement"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "verify": "manual",
+      "status": "found",
+      "quote": "the full context of that interaction, including your queries, uploads, and the model's responses",
+      "where": "Personal Google account.caveat"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "verify": "manual",
+      "status": "found",
+      "quote": "will not be reviewed by human reviewers, and will not be used to train AI models.",
+      "where": "Google Workspace.trainingDefault"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "verify": "manual",
+      "status": "found",
+      "quote": "will not be reviewed by human reviewers, and will not be used to train AI models.",
+      "where": "Google Workspace.subprocessorTraining"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "verify": "manual",
+      "status": "found",
+      "quote": "will not be reviewed by human reviewers, and will not be used to train AI models.",
+      "where": "Google Workspace.dpa"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-admin",
+      "url": "https://knowledge.workspace.google.com/admin/users/access/turn-notebooklm-on-or-off-for-users",
+      "verify": "manual",
+      "status": "found",
+      "quote": "As an administrator, you can control who uses Gemini Notebook in your organization.",
+      "where": "Google Workspace.adminEnforcement"
+    },
+    {
+      "tool": "notebooklm",
+      "source": "nlm-admin",
+      "url": "https://knowledge.workspace.google.com/admin/users/access/turn-notebooklm-on-or-off-for-users",
+      "verify": "manual",
+      "status": "found",
+      "quote": "As an administrator, you can control who uses Gemini Notebook in your organization.",
+      "where": "Google Workspace.caveat"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "By default, Notion and its AI Subprocessors do not use Customer Data to train any models.",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We specifically have contractual agreements in place with our AI Subprocessors that prohibit the use of Customer Data to train their models.",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-gdpr",
+      "url": "https://www.notion.com/help/gdpr-at-notion",
+      "verify": "auto",
+      "status": "found",
+      "quote": "are hereby incorporated by reference",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Workspace settings to enable administrators to turn on data-retaining LLMs",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-pricing",
+      "url": "https://www.notion.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0",
+      "where": "Free.price"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-pricing",
+      "url": "https://www.notion.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Trial of Notion AI",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "LLM providers only retain Customer Data for 30 days or fewer before deletion",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "By default, Notion and its AI Subprocessors do not use Customer Data to train any models.",
+      "where": "Plus.trainingDefault"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We specifically have contractual agreements in place with our AI Subprocessors that prohibit the use of Customer Data to train their models.",
+      "where": "Plus.subprocessorTraining"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-gdpr",
+      "url": "https://www.notion.com/help/gdpr-at-notion",
+      "verify": "auto",
+      "status": "found",
+      "quote": "are hereby incorporated by reference",
+      "where": "Plus.dpa"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Workspace settings to enable administrators to turn on data-retaining LLMs",
+      "where": "Plus.adminEnforcement"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-pricing",
+      "url": "https://www.notion.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$10",
+      "where": "Plus.price"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-pricing",
+      "url": "https://www.notion.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Trial of Notion AI",
+      "where": "Plus.caveat"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "LLM providers only retain Customer Data for 30 days or fewer before deletion",
+      "where": "Plus.caveat"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "By default, Notion and its AI Subprocessors do not use Customer Data to train any models.",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We specifically have contractual agreements in place with our AI Subprocessors that prohibit the use of Customer Data to train their models.",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-gdpr",
+      "url": "https://www.notion.com/help/gdpr-at-notion",
+      "verify": "auto",
+      "status": "found",
+      "quote": "are hereby incorporated by reference",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Workspace settings to enable administrators to turn on data-retaining LLMs",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-pricing",
+      "url": "https://www.notion.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$20",
+      "where": "Business.price"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-pricing",
+      "url": "https://www.notion.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Notion Agent (chat, generate, autofill, translate)",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "LLM providers only retain Customer Data for 30 days or fewer before deletion",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "By default, Notion and its AI Subprocessors do not use Customer Data to train any models.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We specifically have contractual agreements in place with our AI Subprocessors that prohibit the use of Customer Data to train their models.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-gdpr",
+      "url": "https://www.notion.com/help/gdpr-at-notion",
+      "verify": "auto",
+      "status": "found",
+      "quote": "are hereby incorporated by reference",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Workspace settings to enable administrators to turn on data-retaining LLMs",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-pricing",
+      "url": "https://www.notion.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Custom pricing",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "notion-ai",
+      "source": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "verify": "auto",
+      "status": "found",
+      "quote": "zero data retention for Enterprise plan workspaces",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-policy",
+      "url": "https://otter.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "training our proprietary AI technology on de-identified audio recordings and on transcriptions",
+      "where": "Basic.trainingDefault"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-terms",
+      "url": "https://otter.ai/terms-of-service",
+      "verify": "auto",
+      "status": "found",
+      "quote": "including for machine learning and training",
+      "where": "Basic.trainingDefault"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-policy",
+      "url": "https://otter.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You have the right to opt out of the \"sale\" of your Personal Information",
+      "where": "Basic.trainingControl"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No customer data will be used to train or improve our AI Service Provider(s)",
+      "where": "Basic.subprocessorTraining"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-subprocessors",
+      "url": "https://otter.ai/subprocessors",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No Customer Data will be used to train or improve Anthropic",
+      "where": "Basic.subprocessorTraining"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-terms",
+      "url": "https://otter.ai/terms-of-service",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply",
+      "where": "Basic.dpa",
+      "nearest": "regulation, the terms of the data processing attachment in appendix 1 of these terms (\"dpa\") apply to the processing of"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-admin-help",
+      "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Once enforced by Enterprise admins, 2FA will be required for all workspace members",
+      "where": "Basic.adminEnforcement"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-pricing",
+      "url": "https://otter.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Free",
+      "where": "Basic.price"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "audio recordings and transcripts are not manually reviewed by a human",
+      "where": "Basic.caveat"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Otter automatically deletes conversations from the trash after 30 days.",
+      "where": "Basic.caveat"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-policy",
+      "url": "https://otter.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "training our proprietary AI technology on de-identified audio recordings and on transcriptions",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-terms",
+      "url": "https://otter.ai/terms-of-service",
+      "verify": "auto",
+      "status": "found",
+      "quote": "including for machine learning and training",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-policy",
+      "url": "https://otter.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You have the right to opt out of the \"sale\" of your Personal Information",
+      "where": "Pro.trainingControl"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No customer data will be used to train or improve our AI Service Provider(s)",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-subprocessors",
+      "url": "https://otter.ai/subprocessors",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No Customer Data will be used to train or improve Anthropic",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-terms",
+      "url": "https://otter.ai/terms-of-service",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply",
+      "where": "Pro.dpa",
+      "nearest": "regulation, the terms of the data processing attachment in appendix 1 of these terms (\"dpa\") apply to the processing of"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-admin-help",
+      "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Once enforced by Enterprise admins, 2FA will be required for all workspace members",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-pricing",
+      "url": "https://otter.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$16.99",
+      "where": "Pro.price"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-pricing",
+      "url": "https://otter.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$8.33",
+      "where": "Pro.price"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "audio recordings and transcripts are not manually reviewed by a human",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Otter automatically deletes conversations from the trash after 30 days.",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-policy",
+      "url": "https://otter.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "training our proprietary AI technology on de-identified audio recordings and on transcriptions",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-terms",
+      "url": "https://otter.ai/terms-of-service",
+      "verify": "auto",
+      "status": "found",
+      "quote": "including for machine learning and training",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-policy",
+      "url": "https://otter.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You have the right to opt out of the \"sale\" of your Personal Information",
+      "where": "Business.trainingControl"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No customer data will be used to train or improve our AI Service Provider(s)",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-subprocessors",
+      "url": "https://otter.ai/subprocessors",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No Customer Data will be used to train or improve Anthropic",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-terms",
+      "url": "https://otter.ai/terms-of-service",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply",
+      "where": "Business.dpa",
+      "nearest": "regulation, the terms of the data processing attachment in appendix 1 of these terms (\"dpa\") apply to the processing of"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-admin-help",
+      "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Once enforced by Enterprise admins, 2FA will be required for all workspace members",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-pricing",
+      "url": "https://otter.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$30",
+      "where": "Business.price"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-pricing",
+      "url": "https://otter.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$19.99",
+      "where": "Business.price"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "audio recordings and transcripts are not manually reviewed by a human",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Otter automatically deletes conversations from the trash after 30 days.",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-admin-help",
+      "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
+      "verify": "auto",
+      "status": "found",
+      "quote": "By default, Enterprise workspaces are opted out of AI model training",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-admin-help",
+      "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "Workspace-wide settings override each user's individual Account Settings preferences",
+      "where": "Enterprise.trainingControl",
+      "nearest": "and regulations. when this setting is enabled: workspace-wide settings override each user's individual account settings"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-privacy-security",
+      "url": "https://otter.ai/privacy-security",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No customer data will be used to train or improve our AI Service Provider(s)",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-subprocessors",
+      "url": "https://otter.ai/subprocessors",
+      "verify": "auto",
+      "status": "found",
+      "quote": "No Customer Data will be used to train or improve Anthropic",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-terms",
+      "url": "https://otter.ai/terms-of-service",
+      "verify": "auto",
+      "status": "missing",
+      "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply",
+      "where": "Enterprise.dpa",
+      "nearest": "regulation, the terms of the data processing attachment in appendix 1 of these terms (\"dpa\") apply to the processing of"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-admin-help",
+      "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Workspace-wide settings override each user",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-pricing",
+      "url": "https://otter.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Schedule a demo",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "otter",
+      "source": "otter-admin-help",
+      "url": "https://help.otter.ai/hc/en-us/articles/13352505516695-Enterprise-Admin-Controls-Overview",
+      "verify": "auto",
+      "status": "found",
+      "quote": "A Custom Data Retention policy lets Enterprise admins control how long Otter keeps meeting data",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "AI Data Retention is enabled by default",
+      "where": "Free.trainingDefault",
+      "nearest": "uses a security service to protect against malicious bots. this page is displayed"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Free.trainingDefault",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Toggle off to opt out of AI training data collection",
+      "where": "Free.trainingControl",
+      "nearest": "www.perplexity.ai performing security verification this website uses a security service to protect against malicious bots. this"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Free.subprocessorTraining",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-dpa",
+      "url": "https://www.perplexity.ai/hub/legal/dpa",
+      "verify": "manual",
+      "status": "found",
+      "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Free.adminEnforcement",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-pricing",
+      "url": "https://www.perplexity.ai/hub/pricing",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "$0/month",
+      "where": "Free.price",
+      "nearest": "www.perplexity.ai performing security verification this website uses a"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Opt-outs only apply to data collected after the opt-out date",
+      "where": "Free.caveat",
+      "nearest": "uses a security service to protect against malicious bots. this page is displayed while the website"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "AI Data Retention is enabled by default",
+      "where": "Pro.trainingDefault",
+      "nearest": "uses a security service to protect against malicious bots. this page is displayed"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Pro.trainingDefault",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Toggle off to opt out of AI training data collection",
+      "where": "Pro.trainingControl",
+      "nearest": "www.perplexity.ai performing security verification this website uses a security service to protect against malicious bots. this"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Pro.subprocessorTraining",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-dpa",
+      "url": "https://www.perplexity.ai/hub/legal/dpa",
+      "verify": "manual",
+      "status": "found",
+      "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Pro.adminEnforcement",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-pricing",
+      "url": "https://www.perplexity.ai/hub/pricing",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "$20/month",
+      "where": "Pro.price",
+      "nearest": "www.perplexity.ai performing security verification this website uses a"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Opt-outs only apply to data collected after the opt-out date",
+      "where": "Pro.caveat",
+      "nearest": "uses a security service to protect against malicious bots. this page is displayed while the website"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "AI Data Retention is enabled by default",
+      "where": "Max.trainingDefault",
+      "nearest": "uses a security service to protect against malicious bots. this page is displayed"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Max.trainingDefault",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Toggle off to opt out of AI training data collection",
+      "where": "Max.trainingControl",
+      "nearest": "www.perplexity.ai performing security verification this website uses a security service to protect against malicious bots. this"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Max.subprocessorTraining",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-dpa",
+      "url": "https://www.perplexity.ai/hub/legal/dpa",
+      "verify": "manual",
+      "status": "found",
+      "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
+      "where": "Max.dpa"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings",
+      "where": "Max.adminEnforcement",
+      "nearest": "security service to protect against malicious bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-pricing",
+      "url": "https://www.perplexity.ai/hub/pricing",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "$200/month",
+      "where": "Max.price",
+      "nearest": "www.perplexity.ai performing security verification this website uses a"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Opt-outs only apply to data collected after the opt-out date",
+      "where": "Max.caveat",
+      "nearest": "uses a security service to protect against malicious bots. this page is displayed while the website"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Perplexity Enterprise data is never used for AI training purposes",
+      "where": "Enterprise Pro.trainingDefault",
+      "nearest": "this page is displayed while the website verifies you are not a bot.verification successful. waiting for"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Strict Zero Data Retention and Zero Data Training agreements with AI providers",
+      "where": "Enterprise Pro.subprocessorTraining",
+      "nearest": "page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-dpa",
+      "url": "https://www.perplexity.ai/hub/legal/dpa",
+      "verify": "manual",
+      "status": "found",
+      "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
+      "where": "Enterprise Pro.dpa"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-enterprise",
+      "url": "https://www.perplexity.ai/enterprise",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Easily manage who can upload and download files and how answers are shared.",
+      "where": "Enterprise Pro.adminEnforcement",
+      "nearest": "bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0a18f4fc957 performance and"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-enterprise-billing",
+      "url": "https://www.perplexity.ai/help-center/en/articles/10352986-enterprise-pricing-and-billing-frequently-asked-questions",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Each seat is $40 per month or $400 per year",
+      "where": "Enterprise Pro.price",
+      "nearest": "security verification this website uses a security service to protect against malicious bots. this page is"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Uploaded files are retained for only 7 days",
+      "where": "Enterprise Pro.caveat",
+      "nearest": "is displayed while the website verifies you are not a bot.verification successful. waiting for"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Perplexity Enterprise data is never used for AI training purposes",
+      "where": "Enterprise Max.trainingDefault",
+      "nearest": "this page is displayed while the website verifies you are not a bot.verification successful. waiting for"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Strict Zero Data Retention and Zero Data Training agreements with AI providers",
+      "where": "Enterprise Max.subprocessorTraining",
+      "nearest": "page is displayed while the website verifies you are not a bot. ray id: a440e0605f5828a6 performance and security"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-dpa",
+      "url": "https://www.perplexity.ai/hub/legal/dpa",
+      "verify": "manual",
+      "status": "found",
+      "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc.",
+      "where": "Enterprise Max.dpa"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-enterprise",
+      "url": "https://www.perplexity.ai/enterprise",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Easily manage who can upload and download files and how answers are shared.",
+      "where": "Enterprise Max.adminEnforcement",
+      "nearest": "bots. this page is displayed while the website verifies you are not a bot. ray id: a440e0a18f4fc957 performance and"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-enterprise-billing",
+      "url": "https://www.perplexity.ai/help-center/en/articles/10352986-enterprise-pricing-and-billing-frequently-asked-questions",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Each seat is $325 per month or $3,250 per year",
+      "where": "Enterprise Max.price",
+      "nearest": "security verification this website uses a security service to protect against malicious bots. this page is"
+    },
+    {
+      "tool": "perplexity",
+      "source": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "verify": "manual",
+      "status": "missing",
+      "quote": "Uploaded files are retained for only 7 days",
+      "where": "Enterprise Max.caveat",
+      "nearest": "is displayed while the website verifies you are not a bot.verification successful. waiting for"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-article",
+      "url": "https://www.read.ai/articles/avoid-these-security-and-compliance-traps-when-implementing-a-notetaker",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Read AI does not train on customer data by default. This is the default state for every user.",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You may choose to opt-in or opt-out at any time, via your account settings.",
+      "where": "Free.trainingControl"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Third-party AI tools are not permitted to use any user data collected via Google Workspace APIs",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We have appointed Adam Brogden of GDPRLocal Ltd. as our EU and UK representative under Article 27, GDPR.",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not offer admin-only licenses",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Always free, no credit card required.",
+      "where": "Free.price"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "using information to train and improve our models within our Services",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "in no case for longer than 2 years",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-article",
+      "url": "https://www.read.ai/articles/avoid-these-security-and-compliance-traps-when-implementing-a-notetaker",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Read AI does not train on customer data by default. This is the default state for every user.",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You may choose to opt-in or opt-out at any time, via your account settings.",
+      "where": "Pro.trainingControl"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Third-party AI tools are not permitted to use any user data collected via Google Workspace APIs",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We have appointed Adam Brogden of GDPRLocal Ltd. as our EU and UK representative under Article 27, GDPR.",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not offer admin-only licenses",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$19.75",
+      "where": "Pro.price"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "using information to train and improve our models within our Services",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "in no case for longer than 2 years",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-article",
+      "url": "https://www.read.ai/articles/avoid-these-security-and-compliance-traps-when-implementing-a-notetaker",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Read AI does not train on customer data by default. This is the default state for every user.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You may choose to opt-in or opt-out at any time, via your account settings.",
+      "where": "Enterprise.trainingControl"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Third-party AI tools are not permitted to use any user data collected via Google Workspace APIs",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We have appointed Adam Brogden of GDPRLocal Ltd. as our EU and UK representative under Article 27, GDPR.",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not offer admin-only licenses",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$29.75",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "using information to train and improve our models within our Services",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "in no case for longer than 2 years",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-article",
+      "url": "https://www.read.ai/articles/avoid-these-security-and-compliance-traps-when-implementing-a-notetaker",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Read AI does not train on customer data by default. This is the default state for every user.",
+      "where": "Enterprise+.trainingDefault"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "You may choose to opt-in or opt-out at any time, via your account settings.",
+      "where": "Enterprise+.trainingControl"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Third-party AI tools are not permitted to use any user data collected via Google Workspace APIs",
+      "where": "Enterprise+.subprocessorTraining"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We have appointed Adam Brogden of GDPRLocal Ltd. as our EU and UK representative under Article 27, GDPR.",
+      "where": "Enterprise+.dpa"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We do not offer admin-only licenses",
+      "where": "Enterprise+.adminEnforcement"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$39.75",
+      "where": "Enterprise+.price"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "using information to train and improve our models within our Services",
+      "where": "Enterprise+.caveat"
+    },
+    {
+      "tool": "read-ai",
+      "source": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "verify": "auto",
+      "status": "found",
+      "quote": "in no case for longer than 2 years",
+      "where": "Enterprise+.caveat"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "to train, fine-tune, or improve foundation models, large language models",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "or such providers to train or improve their general-purpose AI models",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "tl;dv is GDPR-compliant for all users.",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Single Sign-On (SSO) is available to all users",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-home",
+      "url": "https://tldv.io/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Free Forever plan",
+      "where": "Free.price"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Free user: 3 months",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We are anonymizing any metadata we share with Anthropic.",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "to train, fine-tune, or improve foundation models, large language models",
+      "where": "Pro.trainingDefault"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "or such providers to train or improve their general-purpose AI models",
+      "where": "Pro.subprocessorTraining"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "tl;dv is GDPR-compliant for all users.",
+      "where": "Pro.dpa"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Single Sign-On (SSO) is available to all users",
+      "where": "Pro.adminEnforcement"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We are anonymizing any metadata we share with Anthropic.",
+      "where": "Pro.caveat"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "to train, fine-tune, or improve foundation models, large language models",
+      "where": "Business.trainingDefault"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "or such providers to train or improve their general-purpose AI models",
+      "where": "Business.subprocessorTraining"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "tl;dv is GDPR-compliant for all users.",
+      "where": "Business.dpa"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Single Sign-On (SSO) is available to all users",
+      "where": "Business.adminEnforcement"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We are anonymizing any metadata we share with Anthropic.",
+      "where": "Business.caveat"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "to train, fine-tune, or improve foundation models, large language models",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "or such providers to train or improve their general-purpose AI models",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "tl;dv is GDPR-compliant for all users.",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Single Sign-On (SSO) is available to all users",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "tldv",
+      "source": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "verify": "auto",
+      "status": "found",
+      "quote": "We are anonymizing any metadata we share with Anthropic.",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier subprocessors are prohibited from using customer content for their own model training.",
+      "where": "Free.subprocessorTraining"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-dpa",
+      "url": "https://zapier.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier's Terms of Service already incorporate Zapier's Data Processing Addendum",
+      "where": "Free.dpa"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "SAML SSO",
+      "where": "Free.adminEnforcement"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All other customers may",
+      "where": "Free.trainingDefault"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "at any time.",
+      "where": "Free.trainingControl"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$0/month",
+      "where": "Free.price"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier Copilot",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Agents Free",
+      "where": "Free.caveat"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier subprocessors are prohibited from using customer content for their own model training.",
+      "where": "Professional.subprocessorTraining"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-dpa",
+      "url": "https://zapier.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier's Terms of Service already incorporate Zapier's Data Processing Addendum",
+      "where": "Professional.dpa"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "SAML SSO",
+      "where": "Professional.adminEnforcement"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All other customers may",
+      "where": "Professional.trainingDefault"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "at any time.",
+      "where": "Professional.trainingControl"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$19.99/month",
+      "where": "Professional.price"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "AI by Zapier",
+      "where": "Professional.caveat"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Agents Free",
+      "where": "Professional.caveat"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier subprocessors are prohibited from using customer content for their own model training.",
+      "where": "Team.subprocessorTraining"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-dpa",
+      "url": "https://zapier.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier's Terms of Service already incorporate Zapier's Data Processing Addendum",
+      "where": "Team.dpa"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "SAML SSO",
+      "where": "Team.adminEnforcement"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "All other customers may",
+      "where": "Team.trainingDefault"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "at any time.",
+      "where": "Team.trainingControl"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "$69/month",
+      "where": "Team.price"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "25 users",
+      "where": "Team.caveat"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Agents Free",
+      "where": "Team.caveat"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier subprocessors are prohibited from using customer content for their own model training.",
+      "where": "Enterprise.subprocessorTraining"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-dpa",
+      "url": "https://zapier.com/legal/data-processing-addendum",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zapier's Terms of Service already incorporate Zapier's Data Processing Addendum",
+      "where": "Enterprise.dpa"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Advanced admin permissions and app controls",
+      "where": "Enterprise.adminEnforcement"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Enterprise customers are automatically opted out of Zapier using their content for model training and improvement purposes.",
+      "where": "Enterprise.trainingDefault"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Contact for pricing",
+      "where": "Enterprise.price"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-pricing",
+      "url": "https://zapier.com/pricing",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Advanced admin permissions and app controls",
+      "where": "Enterprise.caveat"
+    },
+    {
+      "tool": "zapier",
+      "source": "zapier-ai-training",
+      "url": "https://zapier.com/legal/automation-platform-information",
+      "verify": "auto",
+      "status": "found",
+      "quote": "Zero Day Retention",
+      "where": "Enterprise.caveat"
     }
   ]
 }

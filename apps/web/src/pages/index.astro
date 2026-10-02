@@ -9,6 +9,7 @@ import {
 } from '../lib/tools';
 
 const tools = await getRatedTools();
+const oldestCheck = tools.map((t) => t.lastVerified).sort()[0];
 const workflows = [...new Set(tools.flatMap((t) => t.tool.workflows))].sort();
 const envs = [...new Set(tools.flatMap((t) => t.tool.worksWith))].sort();
 ---
@@ -66,6 +67,7 @@ const envs = [...new Set(tools.flatMap((t) => t.tool.worksWith))].sort();
       <p id="count" class="count" role="status" aria-live="polite">
         {tools.length} tools
       </p>
+      <p class="count">Every source was checked on or after {oldestCheck}.</p>
 
       <ul class="grid" id="grid">
         {tools.map((t) => (

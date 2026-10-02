@@ -1,0 +1,252 @@
+{
+  "slug": "beautiful-ai",
+  "name": "Beautiful.ai",
+  "vendor": "Beautiful.ai",
+  "website": "https://www.beautiful.ai",
+  "summary": "AI presentation maker with Smart Slide layouts; vendor says content entered is not used to train its AI models.",
+  "workflows": ["qbr-prep", "renewal-prep", "onboarding"],
+  "worksWith": ["standalone"],
+  "form": ["web"],
+  "sources": [
+    {
+      "id": "beautiful-ai-pricing",
+      "url": "https://www.beautiful.ai/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "beautiful-ai-security",
+      "url": "https://www.beautiful.ai/security",
+      "kind": "trust",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "beautiful-ai-privacy",
+      "url": "https://www.beautiful.ai/privacy-policy",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "beautiful-ai-ai-help",
+      "url": "https://support.beautiful.ai/hc/en-us/articles/37567933064973-What-Powers-Beautiful-ai-s-Generative-AI",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 14.5,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "beautiful-ai-pricing",
+            "quote": "$14.50"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "beautiful-ai-ai-help",
+            "quote": "Anything you input into Beautiful.ai is never used to train the AI models."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "beautiful-ai-ai-help",
+            "quote": "Anything you input into Beautiful.ai is never used to train the AI models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "beautiful-ai-security",
+            "quote": "Data processed by our AI models will not be used to train public LLM models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "beautiful-ai-privacy",
+            "quote": "If you would like to request a data processing agreement from us, please contact us at privacy@beautiful.ai."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "beautiful-ai-pricing",
+            "quote": "Manage who can view & edit"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Generative features use third-party models (Gemini, Claude, Imagen, DALL·E), so prompts and content are processed by those providers.",
+          "evidence": [
+            {
+              "source": "beautiful-ai-ai-help",
+              "quote": "We use Gemini by Google, Claude by Anthropic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 40,
+            "billing": "annual"
+          },
+          {
+            "amount": 50,
+            "billing": "monthly"
+          }
+        ],
+        "minSeats": 2,
+        "evidence": [
+          {
+            "source": "beautiful-ai-pricing",
+            "quote": "$40"
+          },
+          {
+            "source": "beautiful-ai-pricing",
+            "quote": "$50"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "beautiful-ai-ai-help",
+            "quote": "Anything you input into Beautiful.ai is never used to train the AI models."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "beautiful-ai-ai-help",
+            "quote": "Anything you input into Beautiful.ai is never used to train the AI models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "beautiful-ai-security",
+            "quote": "Data processed by our AI models will not be used to train public LLM models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "beautiful-ai-privacy",
+            "quote": "If you would like to request a data processing agreement from us, please contact us at privacy@beautiful.ai."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "beautiful-ai-pricing",
+            "quote": "Manage who can view & edit"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Generative features use third-party models (Gemini, Claude, Imagen, DALL·E), so prompts and content are processed by those providers.",
+          "evidence": [
+            {
+              "source": "beautiful-ai-ai-help",
+              "quote": "We use Gemini by Google, Claude by Anthropic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "beautiful-ai-pricing",
+            "quote": "Contact sales"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "beautiful-ai-ai-help",
+            "quote": "Anything you input into Beautiful.ai is never used to train the AI models."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "beautiful-ai-ai-help",
+            "quote": "Anything you input into Beautiful.ai is never used to train the AI models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "beautiful-ai-security",
+            "quote": "Data processed by our AI models will not be used to train public LLM models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "beautiful-ai-privacy",
+            "quote": "If you would like to request a data processing agreement from us, please contact us at privacy@beautiful.ai."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "beautiful-ai-security",
+            "quote": "Enterprise customers can customize access to protect sensitive information."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Generative features use third-party models (Gemini, Claude, Imagen, DALL·E), so prompts and content are processed by those providers.",
+          "evidence": [
+            {
+              "source": "beautiful-ai-ai-help",
+              "quote": "We use Gemini by Google, Claude by Anthropic"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

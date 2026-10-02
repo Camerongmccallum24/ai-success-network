@@ -1,0 +1,146 @@
+{
+  "slug": "notebooklm",
+  "name": "Google NotebookLM",
+  "vendor": "Google",
+  "website": "https://notebooklm.google",
+  "summary": "Google's source-grounded notebook assistant (now named Gemini Notebook); not used for training, with feedback and Workspace review caveats.",
+  "workflows": ["knowledge-search", "onboarding", "account-research"],
+  "worksWith": ["google-workspace"],
+  "form": ["web", "mobile"],
+  "sources": [
+    {
+      "id": "nlm-help",
+      "url": "https://support.google.com/notebooklm/answer/16164461",
+      "kind": "help",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "nlm-admin",
+      "url": "https://knowledge.workspace.google.com/admin/users/access/turn-notebooklm-on-or-off-for-users",
+      "kind": "help",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "nlm-product",
+      "url": "https://workspace.google.com/products/notebooklm/",
+      "kind": "trust",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "nlm-pricing",
+      "url": "https://workspace.google.com/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Personal Google account",
+      "audience": "personal",
+      "price": {
+        "status": "unverified",
+        "reason": "Personal-account price not stated on the pages read; Workspace pricing page not readable by fetch tool."
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "nlm-help",
+            "quote": "Your data is protected, and is not used to train Gemini Notebook unless you provide feedback."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "nlm-help",
+            "quote": "Your data is protected, and is not used to train Gemini Notebook unless you provide feedback."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "nlm-help",
+            "quote": "Your data is protected, and is not used to train Gemini Notebook unless you provide feedback."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "nlm-help",
+            "quote": "Your data is protected, and is not used to train Gemini Notebook unless you provide feedback."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "If you give feedback, Google may review the full interaction including queries, uploads and responses.",
+          "evidence": [
+            {
+              "source": "nlm-help",
+              "quote": "the full context of that interaction, including your queries, uploads, and the model's responses"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Google Workspace",
+      "audience": "business",
+      "price": {
+        "status": "unverified",
+        "reason": "Per-edition Workspace prices not read; page says it is included in Workspace plans without costs."
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "nlm-help",
+            "quote": "will not be reviewed by human reviewers, and will not be used to train AI models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "nlm-help",
+            "quote": "will not be reviewed by human reviewers, and will not be used to train AI models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "nlm-help",
+            "quote": "will not be reviewed by human reviewers, and will not be used to train AI models."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "nlm-admin",
+            "quote": "As an administrator, you can control who uses Gemini Notebook in your organization."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Admin control read is service on/off access, not a data-setting enforcement.",
+          "evidence": [
+            {
+              "source": "nlm-admin",
+              "quote": "As an administrator, you can control who uses Gemini Notebook in your organization."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

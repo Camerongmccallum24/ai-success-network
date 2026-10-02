@@ -1,0 +1,328 @@
+{
+  "slug": "fireflies",
+  "name": "Fireflies.ai",
+  "vendor": "Fireflies.ai",
+  "website": "https://fireflies.ai",
+  "summary": "AI meeting assistant that joins calls as a bot to record, transcribe, summarise and search conversations.",
+  "workflows": ["call-notes", "follow-up-email", "knowledge-search", "feedback-synthesis"],
+  "worksWith": ["standalone"],
+  "form": ["meeting-bot", "web", "mobile", "browser-extension", "integration"],
+  "sources": [
+    {
+      "id": "fireflies-pricing",
+      "url": "https://fireflies.ai/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "fireflies-security",
+      "url": "https://fireflies.ai/security",
+      "kind": "trust",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "fireflies-privacy",
+      "url": "https://fireflies.ai/privacy-policy",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "fireflies-dpa",
+      "url": "https://fireflies.ai/dpa",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "fireflies-enterprise-guide",
+      "url": "https://guide.fireflies.ai/articles/4771323041-learn-about-fireflies-enterprise-plan",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "fireflies-pricing",
+            "quote": "$0"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fireflies-privacy",
+            "quote": "We do not use personal information for AI model training and we contractually prohibit our vendors from using this information for their own model training."
+          },
+          {
+            "source": "fireflies-security",
+            "quote": "Your data is never used for AI training or any purpose outside your direct business needs."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fireflies-privacy",
+            "quote": "we contractually prohibit our vendors from using this information for their own model training"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fireflies-dpa",
+            "quote": "we invite you to sign our Data Processing Agreement (DPA)"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fireflies-enterprise-guide",
+            "quote": "Automatically creates, updates, or removes user accounts through your identity provider."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fireflies says vendors and partners keep meeting data for 0 days; Fireflies itself stores transcripts until you delete them.",
+          "evidence": [
+            {
+              "source": "fireflies-security",
+              "quote": "0-day data retention policy with all vendors and partners."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 18,
+            "billing": "monthly"
+          },
+          {
+            "amount": 10,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "fireflies-pricing",
+            "quote": "$18"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fireflies-privacy",
+            "quote": "We do not use personal information for AI model training and we contractually prohibit our vendors from using this information for their own model training."
+          },
+          {
+            "source": "fireflies-security",
+            "quote": "Your data is never used for AI training or any purpose outside your direct business needs."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fireflies-privacy",
+            "quote": "we contractually prohibit our vendors from using this information for their own model training"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fireflies-dpa",
+            "quote": "we invite you to sign our Data Processing Agreement (DPA)"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fireflies-enterprise-guide",
+            "quote": "Automatically creates, updates, or removes user accounts through your identity provider."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fireflies says vendors and partners keep meeting data for 0 days; Fireflies itself stores transcripts until you delete them.",
+          "evidence": [
+            {
+              "source": "fireflies-security",
+              "quote": "0-day data retention policy with all vendors and partners."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 29,
+            "billing": "monthly"
+          },
+          {
+            "amount": 19,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "fireflies-pricing",
+            "quote": "$29"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fireflies-privacy",
+            "quote": "We do not use personal information for AI model training and we contractually prohibit our vendors from using this information for their own model training."
+          },
+          {
+            "source": "fireflies-security",
+            "quote": "Your data is never used for AI training or any purpose outside your direct business needs."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fireflies-privacy",
+            "quote": "we contractually prohibit our vendors from using this information for their own model training"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fireflies-dpa",
+            "quote": "we invite you to sign our Data Processing Agreement (DPA)"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fireflies-enterprise-guide",
+            "quote": "Automatically creates, updates, or removes user accounts through your identity provider."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fireflies says vendors and partners keep meeting data for 0 days; Fireflies itself stores transcripts until you delete them.",
+          "evidence": [
+            {
+              "source": "fireflies-security",
+              "quote": "0-day data retention policy with all vendors and partners."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 39,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "fireflies-pricing",
+            "quote": "$39"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fireflies-privacy",
+            "quote": "We do not use personal information for AI model training and we contractually prohibit our vendors from using this information for their own model training."
+          },
+          {
+            "source": "fireflies-security",
+            "quote": "Your data is never used for AI training or any purpose outside your direct business needs."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fireflies-privacy",
+            "quote": "we contractually prohibit our vendors from using this information for their own model training"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fireflies-dpa",
+            "quote": "we invite you to sign our Data Processing Agreement (DPA)"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fireflies-enterprise-guide",
+            "quote": "Automatically deletes meetings and files after a set period of time to help your team follow internal data policies."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fireflies says vendors and partners keep meeting data for 0 days; Fireflies itself stores transcripts until you delete them.",
+          "evidence": [
+            {
+              "source": "fireflies-security",
+              "quote": "0-day data retention policy with all vendors and partners."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

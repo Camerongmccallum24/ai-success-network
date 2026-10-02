@@ -1,0 +1,311 @@
+{
+  "slug": "notion-ai",
+  "name": "Notion AI",
+  "vendor": "Notion Labs",
+  "website": "https://www.notion.com/product/ai",
+  "summary": "AI search, Q&A and agents inside Notion workspaces; model training is off by default and AI subprocessors are contractually barred from training.",
+  "workflows": ["knowledge-search", "account-research"],
+  "worksWith": ["standalone"],
+  "form": ["web", "desktop", "mobile"],
+  "sources": [
+    {
+      "id": "notion-pricing",
+      "url": "https://www.notion.com/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "notion-ai-security",
+      "url": "https://www.notion.com/help/notion-ai-security-practices",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "notion-gdpr",
+      "url": "https://www.notion.com/help/gdpr-at-notion",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "notion-pricing",
+            "quote": "$0"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "notion-ai-security",
+            "quote": "By default, Notion and its AI Subprocessors do not use Customer Data to train any models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "notion-ai-security",
+            "quote": "We specifically have contractual agreements in place with our AI Subprocessors that prohibit the use of Customer Data to train their models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "notion-gdpr",
+            "quote": "are hereby incorporated by reference"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "notion-ai-security",
+            "quote": "Workspace settings to enable administrators to turn on data-retaining LLMs"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Free includes only a trial of Notion AI.",
+          "evidence": [
+            {
+              "source": "notion-pricing",
+              "quote": "Trial of Notion AI"
+            }
+          ]
+        },
+        {
+          "text": "Non-Enterprise LLM providers may retain data for up to 30 days.",
+          "evidence": [
+            {
+              "source": "notion-ai-security",
+              "quote": "LLM providers only retain Customer Data for 30 days or fewer before deletion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Plus",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 10,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "notion-pricing",
+            "quote": "$10"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "notion-ai-security",
+            "quote": "By default, Notion and its AI Subprocessors do not use Customer Data to train any models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "notion-ai-security",
+            "quote": "We specifically have contractual agreements in place with our AI Subprocessors that prohibit the use of Customer Data to train their models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "notion-gdpr",
+            "quote": "are hereby incorporated by reference"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "notion-ai-security",
+            "quote": "Workspace settings to enable administrators to turn on data-retaining LLMs"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Plus includes only a trial of Notion AI.",
+          "evidence": [
+            {
+              "source": "notion-pricing",
+              "quote": "Trial of Notion AI"
+            }
+          ]
+        },
+        {
+          "text": "Non-Enterprise LLM providers may retain data for up to 30 days.",
+          "evidence": [
+            {
+              "source": "notion-ai-security",
+              "quote": "LLM providers only retain Customer Data for 30 days or fewer before deletion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 20,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "notion-pricing",
+            "quote": "$20"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "notion-ai-security",
+            "quote": "By default, Notion and its AI Subprocessors do not use Customer Data to train any models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "notion-ai-security",
+            "quote": "We specifically have contractual agreements in place with our AI Subprocessors that prohibit the use of Customer Data to train their models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "notion-gdpr",
+            "quote": "are hereby incorporated by reference"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "notion-ai-security",
+            "quote": "Workspace settings to enable administrators to turn on data-retaining LLMs"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Business lists Notion Agent (chat, generate, autofill, translate) as included.",
+          "evidence": [
+            {
+              "source": "notion-pricing",
+              "quote": "Notion Agent (chat, generate, autofill, translate)"
+            }
+          ]
+        },
+        {
+          "text": "Non-Enterprise LLM providers may retain data for up to 30 days.",
+          "evidence": [
+            {
+              "source": "notion-ai-security",
+              "quote": "LLM providers only retain Customer Data for 30 days or fewer before deletion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "notion-pricing",
+            "quote": "Custom pricing"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "notion-ai-security",
+            "quote": "By default, Notion and its AI Subprocessors do not use Customer Data to train any models."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "notion-ai-security",
+            "quote": "We specifically have contractual agreements in place with our AI Subprocessors that prohibit the use of Customer Data to train their models."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "notion-gdpr",
+            "quote": "are hereby incorporated by reference"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "notion-ai-security",
+            "quote": "Workspace settings to enable administrators to turn on data-retaining LLMs"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Enterprise LLM providers use zero data retention by default.",
+          "evidence": [
+            {
+              "source": "notion-ai-security",
+              "quote": "zero data retention for Enterprise plan workspaces"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

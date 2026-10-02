@@ -1,0 +1,407 @@
+{
+  "slug": "perplexity",
+  "name": "Perplexity",
+  "vendor": "Perplexity AI",
+  "website": "https://www.perplexity.ai",
+  "summary": "AI answer engine with cited web search; consumer plans train by default unless you opt out, Enterprise plans never train on data.",
+  "workflows": ["account-research", "knowledge-search"],
+  "worksWith": ["standalone"],
+  "form": ["web", "mobile", "browser-extension"],
+  "sources": [
+    {
+      "id": "pplx-pricing",
+      "url": "https://www.perplexity.ai/hub/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "pplx-data-collection",
+      "url": "https://www.perplexity.ai/help-center/en/articles/11564572-data-collection-at-perplexity",
+      "kind": "help",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "pplx-dpa",
+      "url": "https://www.perplexity.ai/hub/legal/dpa",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "pplx-enterprise",
+      "url": "https://www.perplexity.ai/enterprise",
+      "kind": "trust",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    },
+    {
+      "id": "pplx-enterprise-billing",
+      "url": "https://www.perplexity.ai/help-center/en/articles/10352986-enterprise-pricing-and-billing-frequently-asked-questions",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "pplx-pricing",
+            "quote": "$0/month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account Settings → Preferences → AI data retention",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "AI Data Retention is enabled by default"
+          },
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Toggle off to opt out of AI training data collection"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "pplx-dpa",
+            "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Opt-outs only apply to data collected after the opt-out date.",
+          "evidence": [
+            {
+              "source": "pplx-data-collection",
+              "quote": "Opt-outs only apply to data collected after the opt-out date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 20,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "pplx-pricing",
+            "quote": "$20/month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account Settings → Preferences → AI data retention",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "AI Data Retention is enabled by default"
+          },
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Toggle off to opt out of AI training data collection"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "pplx-dpa",
+            "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Opt-outs only apply to data collected after the opt-out date.",
+          "evidence": [
+            {
+              "source": "pplx-data-collection",
+              "quote": "Opt-outs only apply to data collected after the opt-out date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Max",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 200,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "pplx-pricing",
+            "quote": "$200/month"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "on",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account Settings → Preferences → AI data retention",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "AI Data Retention is enabled by default"
+          },
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Toggle off to opt out of AI training data collection"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "pplx-dpa",
+            "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Some data may be used to train AI models and improve search quality, unless you opt out through Account Settings"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Opt-outs only apply to data collected after the opt-out date.",
+          "evidence": [
+            {
+              "source": "pplx-data-collection",
+              "quote": "Opt-outs only apply to data collected after the opt-out date"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise Pro",
+      "audience": "enterprise",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 40,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "pplx-enterprise-billing",
+            "quote": "Each seat is $40 per month or $400 per year"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Perplexity Enterprise data is never used for AI training purposes"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Strict Zero Data Retention and Zero Data Training agreements with AI providers"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "pplx-dpa",
+            "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "pplx-enterprise",
+            "quote": "Easily manage who can upload and download files and how answers are shared."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Uploaded files are retained for 7 days (limited retention).",
+          "evidence": [
+            {
+              "source": "pplx-data-collection",
+              "quote": "Uploaded files are retained for only 7 days"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise Max",
+      "audience": "enterprise",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 325,
+            "billing": "monthly"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "pplx-enterprise-billing",
+            "quote": "Each seat is $325 per month or $3,250 per year"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Perplexity Enterprise data is never used for AI training purposes"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "pplx-data-collection",
+            "quote": "Strict Zero Data Retention and Zero Data Training agreements with AI providers"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "pplx-dpa",
+            "quote": "forms part of and is incorporated into any terms of service or other agreement between Perplexity AI, Inc."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "pplx-enterprise",
+            "quote": "Easily manage who can upload and download files and how answers are shared."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Uploaded files are retained for 7 days (limited retention).",
+          "evidence": [
+            {
+              "source": "pplx-data-collection",
+              "quote": "Uploaded files are retained for only 7 days"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

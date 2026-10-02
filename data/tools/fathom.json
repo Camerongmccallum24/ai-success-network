@@ -1,0 +1,487 @@
+{
+  "slug": "fathom",
+  "name": "Fathom",
+  "vendor": "Fathom",
+  "website": "https://fathom.ai",
+  "summary": "AI note taker for video calls with a free tier; team plans let an admin opt the whole organisation out of data use.",
+  "workflows": ["call-notes", "follow-up-email"],
+  "worksWith": ["standalone"],
+  "form": ["meeting-bot", "desktop"],
+  "sources": [
+    {
+      "id": "fathom-pricing",
+      "url": "https://fathom.ai/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "fathom-privacy",
+      "url": "https://fathom.ai/privacy",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "fathom-security-help",
+      "url": "https://help.fathom.video/en/articles/296512",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "fathom-admin-help",
+      "url": "https://help.fathom.video/en/articles/3239681",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "fathom-dpa",
+      "url": "https://fathom.ai/dpa",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "fathom-pricing",
+            "quote": "$0"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "My Settings",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fathom-privacy",
+            "quote": "we may use and create de-identified data generated from Meeting Content Information"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "fathom-security-help",
+            "quote": "You can opt out of this anytime in your My Settings"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fathom-security-help",
+            "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted"
+          },
+          {
+            "source": "fathom-privacy",
+            "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fathom-security-help",
+            "quote": "happy to sign a DPA"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fathom-security-help",
+            "quote": "You can opt out of this anytime in your My Settings"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fathom may train its in-house models on de-identified meeting content, depending on account settings.",
+          "evidence": [
+            {
+              "source": "fathom-privacy",
+              "quote": "we may use and create de-identified data generated from Meeting Content Information"
+            }
+          ]
+        },
+        {
+          "text": "After account deletion, backups are cleared after a further 7 days.",
+          "evidence": [
+            {
+              "source": "fathom-security-help",
+              "quote": "After an additional 7 days, all data is also removed from our backups."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Premium",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 20,
+            "billing": "monthly"
+          },
+          {
+            "amount": 16,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "fathom-pricing",
+            "quote": "$20"
+          },
+          {
+            "source": "fathom-pricing",
+            "quote": "$16"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "user-setting",
+        "optOutPath": "My Settings",
+        "subprocessorTraining": "excluded",
+        "dpa": "on-request",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fathom-privacy",
+            "quote": "we may use and create de-identified data generated from Meeting Content Information"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "fathom-security-help",
+            "quote": "You can opt out of this anytime in your My Settings"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fathom-security-help",
+            "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted"
+          },
+          {
+            "source": "fathom-privacy",
+            "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fathom-security-help",
+            "quote": "happy to sign a DPA"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fathom-security-help",
+            "quote": "You can opt out of this anytime in your My Settings"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fathom may train its in-house models on de-identified meeting content, depending on account settings.",
+          "evidence": [
+            {
+              "source": "fathom-privacy",
+              "quote": "we may use and create de-identified data generated from Meeting Content Information"
+            }
+          ]
+        },
+        {
+          "text": "After account deletion, backups are cleared after a further 7 days.",
+          "evidence": [
+            {
+              "source": "fathom-security-help",
+              "quote": "After an additional 7 days, all data is also removed from our backups."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Team",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 19,
+            "billing": "monthly"
+          },
+          {
+            "amount": 15,
+            "billing": "annual"
+          }
+        ],
+        "minSeats": 2,
+        "evidence": [
+          {
+            "source": "fathom-pricing",
+            "quote": "$19"
+          },
+          {
+            "source": "fathom-pricing",
+            "quote": "$15"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "admin-enforced",
+        "optOutPath": "My Settings (users) or Organization Settings (admins)",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fathom-privacy",
+            "quote": "we may use and create de-identified data generated from Meeting Content Information"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "fathom-security-help",
+            "quote": "Organizations on Team Edition can opt out all users on their account by going to Organization Settings."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fathom-security-help",
+            "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted"
+          },
+          {
+            "source": "fathom-privacy",
+            "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fathom-dpa",
+            "quote": "This DPA shall become legally binding upon Customer entering into the Agreement."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fathom-admin-help",
+            "quote": "Admins can enforce an automated consent chat message for bot-free meetings for all users on the team."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fathom may train its in-house models on de-identified meeting content, depending on account settings.",
+          "evidence": [
+            {
+              "source": "fathom-privacy",
+              "quote": "we may use and create de-identified data generated from Meeting Content Information"
+            }
+          ]
+        },
+        {
+          "text": "After account deletion, backups are cleared after a further 7 days.",
+          "evidence": [
+            {
+              "source": "fathom-security-help",
+              "quote": "After an additional 7 days, all data is also removed from our backups."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 34,
+            "billing": "monthly"
+          },
+          {
+            "amount": 25,
+            "billing": "annual"
+          }
+        ],
+        "minSeats": 2,
+        "evidence": [
+          {
+            "source": "fathom-pricing",
+            "quote": "$34"
+          },
+          {
+            "source": "fathom-pricing",
+            "quote": "$25"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "admin-enforced",
+        "optOutPath": "My Settings (users) or Organization Settings (admins)",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fathom-privacy",
+            "quote": "we may use and create de-identified data generated from Meeting Content Information"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "fathom-security-help",
+            "quote": "Organizations on Team Edition can opt out all users on their account by going to Organization Settings."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fathom-security-help",
+            "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted"
+          },
+          {
+            "source": "fathom-privacy",
+            "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fathom-dpa",
+            "quote": "This DPA shall become legally binding upon Customer entering into the Agreement."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fathom-admin-help",
+            "quote": "Admins can enforce an automated consent chat message for bot-free meetings for all users on the team."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fathom may train its in-house models on de-identified meeting content, depending on account settings.",
+          "evidence": [
+            {
+              "source": "fathom-privacy",
+              "quote": "we may use and create de-identified data generated from Meeting Content Information"
+            }
+          ]
+        },
+        {
+          "text": "After account deletion, backups are cleared after a further 7 days.",
+          "evidence": [
+            {
+              "source": "fathom-security-help",
+              "quote": "After an additional 7 days, all data is also removed from our backups."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "contact-sales",
+        "evidence": [
+          {
+            "source": "fathom-pricing",
+            "quote": "Dedicated Success Manager & priority Support SLAs"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "admin-enforced",
+        "optOutPath": "My Settings (users) or Organization Settings (admins)",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "fathom-privacy",
+            "quote": "we may use and create de-identified data generated from Meeting Content Information"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "fathom-security-help",
+            "quote": "Organizations on Team Edition can opt out all users on their account by going to Organization Settings."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "fathom-security-help",
+            "quote": "None of our AI sub-processors (Anthropic, OpenAI, or Google) are contractually permitted"
+          },
+          {
+            "source": "fathom-privacy",
+            "quote": "We do not authorize third parties (e.g., OpenAI, Anthropic, Google, etc)"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "fathom-dpa",
+            "quote": "This DPA shall become legally binding upon Customer entering into the Agreement."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "fathom-admin-help",
+            "quote": "Admins can enforce an automated consent chat message for bot-free meetings for all users on the team."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Fathom may train its in-house models on de-identified meeting content, depending on account settings.",
+          "evidence": [
+            {
+              "source": "fathom-privacy",
+              "quote": "we may use and create de-identified data generated from Meeting Content Information"
+            }
+          ]
+        },
+        {
+          "text": "After account deletion, backups are cleared after a further 7 days.",
+          "evidence": [
+            {
+              "source": "fathom-security-help",
+              "quote": "After an additional 7 days, all data is also removed from our backups."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

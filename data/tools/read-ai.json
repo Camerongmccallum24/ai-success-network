@@ -1,0 +1,369 @@
+{
+  "slug": "read-ai",
+  "name": "Read AI",
+  "vendor": "Read AI",
+  "website": "https://www.read.ai",
+  "summary": "Meeting notetaker that joins calls as a bot for summaries, action items and coaching metrics, with search across email and chat.",
+  "workflows": ["call-notes", "follow-up-email", "knowledge-search", "feedback-synthesis"],
+  "worksWith": ["standalone"],
+  "form": ["meeting-bot", "web", "mobile", "browser-extension", "integration"],
+  "sources": [
+    {
+      "id": "read-pricing",
+      "url": "https://www.read.ai/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "read-privacy",
+      "url": "https://www.read.ai/privacy-policy",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "read-article",
+      "url": "https://www.read.ai/articles/avoid-these-security-and-compliance-traps-when-implementing-a-notetaker",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "read-pricing",
+            "quote": "Always free, no credit card required."
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account settings",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "read-article",
+            "quote": "Read AI does not train on customer data by default. This is the default state for every user."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "read-privacy",
+            "quote": "You may choose to opt-in or opt-out at any time, via your account settings."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "read-privacy",
+            "quote": "Third-party AI tools are not permitted to use any user data collected via Google Workspace APIs"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "read-privacy",
+            "quote": "We have appointed Adam Brogden of GDPRLocal Ltd. as our EU and UK representative under Article 27, GDPR."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "read-pricing",
+            "quote": "We do not offer admin-only licenses"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Privacy policy says Read may use information to train and improve its models within its services, consistent with account settings.",
+          "evidence": [
+            {
+              "source": "read-privacy",
+              "quote": "using information to train and improve our models within our Services"
+            }
+          ]
+        },
+        {
+          "text": "Audio and video are stored per internal policy, for no longer than 2 years.",
+          "evidence": [
+            {
+              "source": "read-privacy",
+              "quote": "in no case for longer than 2 years"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 19.75,
+            "billing": "monthly"
+          },
+          {
+            "amount": 15,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "read-pricing",
+            "quote": "$19.75"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account settings",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "read-article",
+            "quote": "Read AI does not train on customer data by default. This is the default state for every user."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "read-privacy",
+            "quote": "You may choose to opt-in or opt-out at any time, via your account settings."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "read-privacy",
+            "quote": "Third-party AI tools are not permitted to use any user data collected via Google Workspace APIs"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "read-privacy",
+            "quote": "We have appointed Adam Brogden of GDPRLocal Ltd. as our EU and UK representative under Article 27, GDPR."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "read-pricing",
+            "quote": "We do not offer admin-only licenses"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Privacy policy says Read may use information to train and improve its models within its services, consistent with account settings.",
+          "evidence": [
+            {
+              "source": "read-privacy",
+              "quote": "using information to train and improve our models within our Services"
+            }
+          ]
+        },
+        {
+          "text": "Audio and video are stored per internal policy, for no longer than 2 years.",
+          "evidence": [
+            {
+              "source": "read-privacy",
+              "quote": "in no case for longer than 2 years"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 29.75,
+            "billing": "monthly"
+          },
+          {
+            "amount": 22.5,
+            "billing": "annual"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "read-pricing",
+            "quote": "$29.75"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account settings",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "read-article",
+            "quote": "Read AI does not train on customer data by default. This is the default state for every user."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "read-privacy",
+            "quote": "You may choose to opt-in or opt-out at any time, via your account settings."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "read-privacy",
+            "quote": "Third-party AI tools are not permitted to use any user data collected via Google Workspace APIs"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "read-privacy",
+            "quote": "We have appointed Adam Brogden of GDPRLocal Ltd. as our EU and UK representative under Article 27, GDPR."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "read-pricing",
+            "quote": "We do not offer admin-only licenses"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Privacy policy says Read may use information to train and improve its models within its services, consistent with account settings.",
+          "evidence": [
+            {
+              "source": "read-privacy",
+              "quote": "using information to train and improve our models within our Services"
+            }
+          ]
+        },
+        {
+          "text": "Audio and video are stored per internal policy, for no longer than 2 years.",
+          "evidence": [
+            {
+              "source": "read-privacy",
+              "quote": "in no case for longer than 2 years"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise+",
+      "audience": "enterprise",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 39.75,
+            "billing": "monthly"
+          },
+          {
+            "amount": 29.75,
+            "billing": "annual"
+          }
+        ],
+        "minSeats": 5,
+        "evidence": [
+          {
+            "source": "read-pricing",
+            "quote": "$39.75"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "user-setting",
+        "optOutPath": "Account settings",
+        "subprocessorTraining": "not-stated",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "read-article",
+            "quote": "Read AI does not train on customer data by default. This is the default state for every user."
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "read-privacy",
+            "quote": "You may choose to opt-in or opt-out at any time, via your account settings."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "read-privacy",
+            "quote": "Third-party AI tools are not permitted to use any user data collected via Google Workspace APIs"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "read-privacy",
+            "quote": "We have appointed Adam Brogden of GDPRLocal Ltd. as our EU and UK representative under Article 27, GDPR."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "read-pricing",
+            "quote": "We do not offer admin-only licenses"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Privacy policy says Read may use information to train and improve its models within its services, consistent with account settings.",
+          "evidence": [
+            {
+              "source": "read-privacy",
+              "quote": "using information to train and improve our models within our Services"
+            }
+          ]
+        },
+        {
+          "text": "Audio and video are stored per internal policy, for no longer than 2 years.",
+          "evidence": [
+            {
+              "source": "read-privacy",
+              "quote": "in no case for longer than 2 years"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

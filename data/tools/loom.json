@@ -1,0 +1,358 @@
+{
+  "slug": "loom",
+  "name": "Loom",
+  "vendor": "Atlassian",
+  "website": "https://www.atlassian.com/software/loom",
+  "summary": "Async video messaging from Atlassian; paid AI adds auto titles, summaries, chapters and meeting recaps for CSM walkthroughs.",
+  "workflows": ["async-video", "follow-up-email", "onboarding", "call-notes"],
+  "worksWith": ["standalone"],
+  "form": ["web", "desktop", "mobile", "browser-extension", "integration"],
+  "sources": [
+    {
+      "id": "loom-pricing",
+      "url": "https://www.atlassian.com/software/loom/pricing",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "loom-ai-features",
+      "url": "https://support.atlassian.com/loom/docs/loom-ai-features/",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "atlassian-ai-trust",
+      "url": "https://www.atlassian.com/trust/atlassian-intelligence",
+      "kind": "trust",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "atlassian-dpa",
+      "url": "https://www.atlassian.com/legal/data-processing-addendum",
+      "kind": "dpa",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "loom-enterprise",
+      "url": "https://www.atlassian.com/software/loom/enterprise",
+      "kind": "help",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Starter",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "loom-pricing",
+            "quote": "25 recordings"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "unclear",
+        "subprocessorTraining": "excluded",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "We currently only offer opt-out controls for AI features at the app level."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "loom-ai-features",
+            "quote": "Neither OpenAI nor any other LLM provider retains your inputs and outputs."
+          },
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "The LLM providers we use do not use your inputs and outputs to improve their services."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "atlassian-dpa",
+            "quote": "supplements the Atlassian Customer Agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "loom-ai-features",
+            "quote": "Most Loom AI features are included on Business + AI and Enterprise plans."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Atlassian says it may use metadata to fine-tune open-source models hosted in its own infrastructure.",
+          "evidence": [
+            {
+              "source": "atlassian-ai-trust",
+              "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 18,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "loom-pricing",
+            "quote": "$18"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "unclear",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "We currently only offer opt-out controls for AI features at the app level."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "loom-ai-features",
+            "quote": "Neither OpenAI nor any other LLM provider retains your inputs and outputs."
+          },
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "The LLM providers we use do not use your inputs and outputs to improve their services."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "atlassian-dpa",
+            "quote": "supplements the Atlassian Customer Agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "loom-ai-features",
+            "quote": "Most Loom AI features are included on Business + AI and Enterprise plans."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Atlassian says it may use metadata to fine-tune open-source models hosted in its own infrastructure.",
+          "evidence": [
+            {
+              "source": "atlassian-ai-trust",
+              "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business + AI",
+      "audience": "business",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 24,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "loom-pricing",
+            "quote": "$24"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "unclear",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "We currently only offer opt-out controls for AI features at the app level."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "loom-ai-features",
+            "quote": "Neither OpenAI nor any other LLM provider retains your inputs and outputs."
+          },
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "The LLM providers we use do not use your inputs and outputs to improve their services."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "atlassian-dpa",
+            "quote": "supplements the Atlassian Customer Agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "loom-ai-features",
+            "quote": "you can turn AI settings on or off for all workspace members"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Atlassian says it may use metadata to fine-tune open-source models hosted in its own infrastructure.",
+          "evidence": [
+            {
+              "source": "atlassian-ai-trust",
+              "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure"
+            }
+          ]
+        },
+        {
+          "text": "AI features send transcript text to OpenAI; video and audio are not sent.",
+          "evidence": [
+            {
+              "source": "loom-ai-features",
+              "quote": "OpenAI does not receive video or audio content."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "unverified",
+        "reason": "Pricing page says contact sales; no amount is published."
+      },
+      "facts": {
+        "trainingDefault": "unclear",
+        "trainingControl": "unclear",
+        "subprocessorTraining": "excluded",
+        "dpa": "incorporated",
+        "adminEnforcement": true
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure"
+          }
+        ],
+        "trainingControl": [
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "We currently only offer opt-out controls for AI features at the app level."
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "loom-ai-features",
+            "quote": "Neither OpenAI nor any other LLM provider retains your inputs and outputs."
+          },
+          {
+            "source": "atlassian-ai-trust",
+            "quote": "The LLM providers we use do not use your inputs and outputs to improve their services."
+          }
+        ],
+        "dpa": [
+          {
+            "source": "atlassian-dpa",
+            "quote": "supplements the Atlassian Customer Agreement"
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "loom-enterprise",
+            "quote": "Enterprise Loom admins control provisioning, access, and settings."
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Atlassian says it may use metadata to fine-tune open-source models hosted in its own infrastructure.",
+          "evidence": [
+            {
+              "source": "atlassian-ai-trust",
+              "quote": "Atlassian may use metadata to fine-tune open-source models that operate strictly within Atlassian's infrastructure"
+            }
+          ]
+        },
+        {
+          "text": "AI features send transcript text to OpenAI; video and audio are not sent.",
+          "evidence": [
+            {
+              "source": "loom-ai-features",
+              "quote": "OpenAI does not receive video or audio content."
+            }
+          ]
+        },
+        {
+          "text": "Enterprise offers custom data retention policies; the default retention period is not stated on the pricing page.",
+          "evidence": [
+            {
+              "source": "loom-pricing",
+              "quote": "Custom data retention policies"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

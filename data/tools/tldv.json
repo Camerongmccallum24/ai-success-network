@@ -1,0 +1,269 @@
+{
+  "slug": "tldv",
+  "name": "tl;dv",
+  "vendor": "tl;dv (Tldx Solutions GmbH)",
+  "website": "https://tldv.io",
+  "summary": "AI meeting recorder and note taker with a free plan; says customer content is not used to train AI models.",
+  "workflows": ["call-notes", "follow-up-email"],
+  "worksWith": ["standalone"],
+  "form": ["meeting-bot", "web", "integration"],
+  "sources": [
+    {
+      "id": "tldv-home",
+      "url": "https://tldv.io/",
+      "kind": "pricing",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "tldv-pricing",
+      "url": "https://tldv.io/app/pricing/",
+      "kind": "pricing",
+      "verify": "manual",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "tldv-privacy",
+      "url": "https://tldv.io/privacy/",
+      "kind": "privacy",
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "tldv-security",
+      "url": "https://tldv.io/features/security-commitment/",
+      "kind": "trust",
+      "lastVerified": "2026-10-01"
+    }
+  ],
+  "plans": [
+    {
+      "name": "Free",
+      "audience": "personal",
+      "price": {
+        "status": "listed",
+        "currency": "USD",
+        "per": "user-month",
+        "amounts": [
+          {
+            "amount": 0,
+            "billing": "unstated"
+          }
+        ],
+        "evidence": [
+          {
+            "source": "tldv-home",
+            "quote": "Free Forever plan"
+          }
+        ]
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "tldv-privacy",
+            "quote": "to train, fine-tune, or improve foundation models, large language models"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "tldv-privacy",
+            "quote": "or such providers to train or improve their general-purpose AI models"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "tldv-security",
+            "quote": "tl;dv is GDPR-compliant for all users."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "tldv-security",
+            "quote": "Single Sign-On (SSO) is available to all users"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "Free-plan recordings are kept for 3 months; paid plans until account deletion.",
+          "evidence": [
+            {
+              "source": "tldv-privacy",
+              "quote": "Free user: 3 months"
+            }
+          ]
+        },
+        {
+          "text": "tl;dv works with Anthropic and says it anonymises metadata shared with it.",
+          "evidence": [
+            {
+              "source": "tldv-security",
+              "quote": "We are anonymizing any metadata we share with Anthropic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pro",
+      "audience": "business",
+      "price": {
+        "status": "unverified",
+        "reason": "Pricing page tldv.io/app/pricing is blocked to automated fetch (robots) and tldv.io/pricing returns 404; amounts need a manual check."
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "tldv-privacy",
+            "quote": "to train, fine-tune, or improve foundation models, large language models"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "tldv-privacy",
+            "quote": "or such providers to train or improve their general-purpose AI models"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "tldv-security",
+            "quote": "tl;dv is GDPR-compliant for all users."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "tldv-security",
+            "quote": "Single Sign-On (SSO) is available to all users"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "tl;dv works with Anthropic and says it anonymises metadata shared with it.",
+          "evidence": [
+            {
+              "source": "tldv-security",
+              "quote": "We are anonymizing any metadata we share with Anthropic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "audience": "business",
+      "price": {
+        "status": "unverified",
+        "reason": "Pricing page tldv.io/app/pricing is blocked to automated fetch (robots) and tldv.io/pricing returns 404; amounts need a manual check."
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "tldv-privacy",
+            "quote": "to train, fine-tune, or improve foundation models, large language models"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "tldv-privacy",
+            "quote": "or such providers to train or improve their general-purpose AI models"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "tldv-security",
+            "quote": "tl;dv is GDPR-compliant for all users."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "tldv-security",
+            "quote": "Single Sign-On (SSO) is available to all users"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "tl;dv works with Anthropic and says it anonymises metadata shared with it.",
+          "evidence": [
+            {
+              "source": "tldv-security",
+              "quote": "We are anonymizing any metadata we share with Anthropic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Enterprise",
+      "audience": "enterprise",
+      "price": {
+        "status": "unverified",
+        "reason": "Pricing page tldv.io/app/pricing is blocked to automated fetch (robots) and tldv.io/pricing returns 404; amounts need a manual check."
+      },
+      "facts": {
+        "trainingDefault": "off",
+        "trainingControl": "not-needed",
+        "subprocessorTraining": "excluded",
+        "dpa": "unclear",
+        "adminEnforcement": false
+      },
+      "evidence": {
+        "trainingDefault": [
+          {
+            "source": "tldv-privacy",
+            "quote": "to train, fine-tune, or improve foundation models, large language models"
+          }
+        ],
+        "subprocessorTraining": [
+          {
+            "source": "tldv-privacy",
+            "quote": "or such providers to train or improve their general-purpose AI models"
+          }
+        ],
+        "dpa": [
+          {
+            "source": "tldv-security",
+            "quote": "tl;dv is GDPR-compliant for all users."
+          }
+        ],
+        "adminEnforcement": [
+          {
+            "source": "tldv-security",
+            "quote": "Single Sign-On (SSO) is available to all users"
+          }
+        ]
+      },
+      "caveats": [
+        {
+          "text": "tl;dv works with Anthropic and says it anonymises metadata shared with it.",
+          "evidence": [
+            {
+              "source": "tldv-security",
+              "quote": "We are anonymizing any metadata we share with Anthropic."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ import { Tool } from '../packages/schema/src/index.ts';
 const dataDir = new URL('../data/tools/', import.meta.url);
 const reportUrl = new URL('../data/reports/quote-check.json', import.meta.url);
 const CHALLENGE =
-  /just a moment|verify you are human|checking your browser|attention required|access denied|are you a robot|captcha|enable javascript and cookies/i;
+  /just a moment|verify you are human|checking your browser|attention required|access denied|are you a robot|captcha|enable javascript and cookies|security verification|malicious bots|waiting for [a-z.]+ to respond|ray id/i;
 
 /** Quotes are compared after folding typographic variants and whitespace. */
 const fold = (s: string): string =>

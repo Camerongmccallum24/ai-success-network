@@ -12,43 +12,50 @@
       "id": "canva-pricing",
       "url": "https://www.canva.com/pricing/",
       "kind": "pricing",
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
     },
     {
       "id": "canva-trust-privacy",
       "url": "https://www.canva.com/trust/privacy/",
       "kind": "trust",
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
     },
     {
       "id": "canva-privacy-policy",
       "url": "https://www.canva.com/policies/privacy-policy/",
       "kind": "privacy",
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
     },
     {
       "id": "canva-ai-terms",
       "url": "https://www.canva.com/policies/ai-product-terms/",
       "kind": "terms",
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
     },
     {
       "id": "canva-dpa",
       "url": "https://www.canva.com/policies/data-processing-addendum/",
       "kind": "dpa",
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
     },
     {
       "id": "canva-magic-admin",
       "url": "https://www.canva.com/help/magic-features-admin-controls/",
       "kind": "help",
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
     },
     {
       "id": "canva-teams-help",
       "url": "https://www.canva.com/help/about-canva-teams/",
       "kind": "help",
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
     }
   ],
   "plans": [

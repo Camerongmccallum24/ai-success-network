@@ -78,7 +78,7 @@
         "trainingDefault": [
           {
             "source": "grammarly-training-control",
-            "quote": "Product Improvement and Training is on on individual users by default."
+            "quote": "individual users by default"
           }
         ],
         "trainingControl": [
@@ -112,7 +112,7 @@
           "evidence": [
             {
               "source": "grammarly-training-control",
-              "quote": "Product Improvement and Training is on on individual users by default."
+              "quote": "individual users by default"
             }
           ]
         }
@@ -134,7 +134,7 @@
         "evidence": [
           {
             "source": "grammarly-pricing",
-            "quote": "$12 USD / month"
+            "quote": "$12 USD"
           }
         ]
       },
@@ -150,7 +150,7 @@
         "trainingDefault": [
           {
             "source": "grammarly-training-control",
-            "quote": "Product Improvement and Training is on on individual users by default."
+            "quote": "individual users by default"
           }
         ],
         "trainingControl": [
@@ -184,7 +184,7 @@
           "evidence": [
             {
               "source": "grammarly-training-control",
-              "quote": "Product Improvement and Training is on on individual users by default."
+              "quote": "individual users by default"
             }
           ]
         }

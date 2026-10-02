@@ -103,7 +103,7 @@
         "dpa": [
           {
             "source": "otter-terms",
-            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply"
+            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms"
           }
         ],
         "adminEnforcement": [
@@ -199,7 +199,7 @@
         "dpa": [
           {
             "source": "otter-terms",
-            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply"
+            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms"
           }
         ],
         "adminEnforcement": [
@@ -295,7 +295,7 @@
         "dpa": [
           {
             "source": "otter-terms",
-            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply"
+            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms"
           }
         ],
         "adminEnforcement": [
@@ -355,7 +355,7 @@
         "trainingControl": [
           {
             "source": "otter-admin-help",
-            "quote": "Workspace-wide settings override each user's individual Account Settings preferences"
+            "quote": "Workspace-wide settings override each user's individual Account Settings"
           }
         ],
         "subprocessorTraining": [
@@ -371,7 +371,7 @@
         "dpa": [
           {
             "source": "otter-terms",
-            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms apply"
+            "quote": "the terms of the Data Processing Attachment in Appendix 1 of these Terms"
           }
         ],
         "adminEnforcement": [

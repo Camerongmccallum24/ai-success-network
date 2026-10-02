@@ -24,7 +24,8 @@
       "id": "make-terms",
       "url": "https://www.make.com/en/terms-and-conditions",
       "kind": "terms",
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "verify": "manual"
     },
     {
       "id": "make-dpa",

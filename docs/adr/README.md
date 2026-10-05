@@ -15,3 +15,4 @@ Format: [MADR](https://adr.github.io/madr/). One decision per file; a reversal g
 | [0009](0009-typescript-6-not-7.md)                | Pin TypeScript 6.0, not 7                                          | Accepted |
 | [0010](0010-vanilla-script-filters.md)            | Directory filters are an inline script, not React                  | Accepted |
 | [0011](0011-quotes-verified-on-the-page.md)       | Every cited quote is checked against the live page                 | Accepted |
+| [0012](0012-prices-in-vendor-currency.md)         | Prices kept in the vendor currency, pinned rate for the ceiling    | Accepted |

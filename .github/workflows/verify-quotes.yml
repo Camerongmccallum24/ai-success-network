@@ -1,20 +1,27 @@
 name: verify-quotes
 
-# Checks every cited quote appears verbatim on its source page. Manual for now; Phase 2
-# turns this into the scheduled verification pipeline.
+# Checks every cited quote appears verbatim on its source page. Runs on pull requests that touch
+# data or the verifier, and on demand. The result is a sticky PR comment and a job summary.
+# Nothing is committed back, so the token never needs write access to contents.
 on:
   workflow_dispatch:
-  push:
-    branches: [phase-1/dataset, phase-1/dataset-2]
-    paths: ['data/tools/**', 'scripts/verify-quotes.ts']
+  pull_request:
+    paths: ['data/tools/**', 'scripts/verify-quotes.ts', '.github/workflows/verify-quotes.yml']
 
 permissions:
-  contents: write # commits the report to the branch it ran on
+  contents: read
+
+concurrency:
+  group: verify-quotes-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   verify:
     runs-on: ubuntu-24.04
     timeout-minutes: 60
+    permissions:
+      contents: read
+      pull-requests: write # sticky comment on the pull request
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
@@ -24,12 +31,52 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps chromium
-      - run: pnpm verify:quotes
+      - name: Remove the committed report so a crash cannot pass as a result
+        run: rm -f data/reports/quote-check.json
+      - name: Verify quotes
+        id: verify
+        run: pnpm verify:quotes
         continue-on-error: true
-      - name: Commit report
+      - name: Build summary
+        if: always()
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f data/reports/quote-check.json
-          git commit -m "chore(data): quote check report [skip ci]" || exit 0
-          git push
+          node -e '
+          const fs = process.getBuiltinModule("fs");
+          const file = "data/reports/quote-check.json";
+          const mark = "<!-- verify-quotes -->";
+          let out = mark + "\n### Quote check\n\n";
+          if (!fs.existsSync(file)) {
+            out += "The verifier did not produce a report. See the workflow log.\n";
+          } else {
+            const { summary: s, checks } = JSON.parse(fs.readFileSync(file, "utf8"));
+            const missing = checks.filter((c) => c.status === "missing");
+            out += s.found + " found, " + s.missing + " missing, " + s.unreachable + " unreachable (checked " + s.checkedAt + ").\n";
+            if (missing.length) {
+              out += "\n**Missing quotes.** Fix the quote or the source:\n\n";
+              for (const c of missing.slice(0, 40)) {
+                out += "- `" + c.tool + "/" + c.where + "` [" + c.source + "] \"" + c.quote + "\"\n";
+                out += "  - nearest on page: \"" + c.nearest + "\"\n";
+              }
+            }
+            if (s.unreachable) {
+              out += "\nUnreachable pages need a human tick in `data/reports/manual-check.md`. The verifier never evades bot checks.\n";
+            }
+          }
+          fs.writeFileSync("summary.md", out);
+          '
+          cat summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Post sticky comment
+        if: always() && github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" --paginate --jq '.[] | select(.body | contains("<!-- verify-quotes -->")) | .id' | head -n1)
+          if [ -n "$id" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" -F body=@summary.md
+          else
+            gh api -X POST "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -F body=@summary.md
+          fi
+      - name: Fail if the verifier failed
+        if: steps.verify.outcome == 'failure'
+        run: exit 1

@@ -2,7 +2,7 @@
 
 **Verified AI tools for customer success managers.** Which tools help a CSM's workflow, which plan is safe for customer data, and the vendor evidence behind every answer.
 
-> Status: rebuild in progress. Phase 0 (foundations) is in review. The May 2025 prototype is preserved as [v0.1.0-2025-original](https://github.com/Camerongmccallum24/ai-success-network/releases/tag/v0.1.0-2025-original).
+> Status: rebuild in progress. Phase 0 (foundations) and the first Phase 1 dataset (21 tool records and the web directory) are merged. The Phase 1 gate is still open: assessments, manual source checks and CI hardening remain. See [docs/STATUS.md](docs/STATUS.md). The May 2025 prototype is preserved as [v0.1.0-2025-original](https://github.com/Camerongmccallum24/ai-success-network/releases/tag/v0.1.0-2025-original).
 
 ## The problem
 
